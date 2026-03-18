@@ -1,0 +1,2952 @@
+[
+  {
+    "id": "Git.Git",
+    "name": "Git",
+    "description": "Distributed version control system",
+    "category": "Developer",
+    "tags": ["version-control", "vcs", "development"],
+    "icon": "git",
+    "popular": true,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Microsoft.VisualStudioCode",
+    "name": "Visual Studio Code",
+    "description": "Code editing. Redefined.",
+    "category": "Developer",
+    "tags": ["editor", "ide", "code"],
+    "icon": "vscode",
+    "popular": true,
+    "size": "~90 MB"
+  },
+  {
+    "id": "OpenJS.NodeJS.LTS",
+    "name": "Node.js LTS",
+    "description": "JavaScript runtime built on Chrome's V8 engine",
+    "category": "Developer",
+    "tags": ["javascript", "runtime", "node"],
+    "icon": "nodejs",
+    "popular": true,
+    "size": "~30 MB"
+  },
+  {
+    "id": "Python.Python.3.13",
+    "name": "Python 3.13",
+    "description": "Programming language that lets you work quickly",
+    "category": "Developer",
+    "tags": ["python", "programming", "language"],
+    "icon": "python",
+    "popular": true,
+    "size": "~25 MB"
+  },
+  {
+    "id": "Docker.DockerDesktop",
+    "name": "Docker Desktop",
+    "description": "Securely build, share and run any application anywhere",
+    "category": "Developer",
+    "tags": ["containers", "docker", "virtualization"],
+    "icon": "docker",
+    "popular": true,
+    "size": "~500 MB"
+  },
+  {
+    "id": "Microsoft.WindowsTerminal",
+    "name": "Windows Terminal",
+    "description": "Modern terminal application for Windows",
+    "category": "Developer",
+    "tags": ["terminal", "console", "cli"],
+    "icon": "terminal",
+    "popular": true,
+    "size": "~80 MB"
+  },
+  {
+    "id": "Postman.Postman",
+    "name": "Postman",
+    "description": "Complete API development environment",
+    "category": "Developer",
+    "tags": ["api", "testing", "http"],
+    "icon": "postman",
+    "popular": true,
+    "size": "~180 MB"
+  },
+  {
+    "id": "Microsoft.PowerShell",
+    "name": "PowerShell",
+    "description": "Cross-platform task automation and configuration management",
+    "category": "Developer",
+    "tags": ["shell", "automation", "cli"],
+    "icon": "powershell",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "GitHub.GitHubDesktop",
+    "name": "GitHub Desktop",
+    "description": "Simple collaboration from your desktop",
+    "category": "Developer",
+    "tags": ["git", "github", "version-control"],
+    "icon": "github",
+    "popular": true,
+    "size": "~150 MB"
+  },
+  {
+    "id": "JetBrains.IntelliJIDEA.Community",
+    "name": "IntelliJ IDEA Community",
+    "description": "Capable and ergonomic IDE for JVM",
+    "category": "Developer",
+    "tags": ["ide", "java", "kotlin"],
+    "icon": "intellij",
+    "popular": true,
+    "size": "~600 MB"
+  },
+  {
+    "id": "JetBrains.WebStorm",
+    "name": "WebStorm",
+    "description": "Smartest JavaScript IDE",
+    "category": "Developer",
+    "tags": ["ide", "javascript", "webstorm"],
+    "icon": "webstorm",
+    "popular": false,
+    "size": "~400 MB"
+  },
+  {
+    "id": "Cursor.Cursor",
+    "name": "Cursor",
+    "description": "AI-powered code editor",
+    "category": "Developer",
+    "tags": ["editor", "ide", "ai", "code"],
+    "icon": "cursor",
+    "popular": true,
+    "size": "~110 MB"
+  },
+  {
+    "id": "JetBrains.PyCharm.Community",
+    "name": "PyCharm Community",
+    "description": "Python IDE for professional developers",
+    "category": "Developer",
+    "tags": ["ide", "python", "pycharm"],
+    "icon": "pycharm",
+    "popular": true,
+    "size": "~500 MB"
+  },
+  {
+    "id": "Rustlang.Rustup",
+    "name": "Rustup",
+    "description": "Rust toolchain installer",
+    "category": "Developer",
+    "tags": ["rust", "toolchain", "compiler"],
+    "icon": "rust",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "GoLang.Go",
+    "name": "Go",
+    "description": "Go programming language tools",
+    "category": "Developer",
+    "tags": ["go", "golang", "compiler"],
+    "icon": "go",
+    "popular": false,
+    "size": "~120 MB"
+  },
+  {
+    "id": "Microsoft.DotNet.Runtime.8",
+    "name": ".NET Desktop Runtime 8",
+    "description": ".NET Desktop Runtime (x86)",
+    "category": "Developer",
+    "tags": ["dotnet", "runtime", "microsoft"],
+    "icon": "dotnet",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Microsoft.DotNet.DesktopRuntime.8",
+    "name": ".NET Desktop Runtime x64 8",
+    "description": ".NET Desktop Runtime (x64)",
+    "category": "Developer",
+    "tags": ["dotnet", "runtime", "microsoft"],
+    "icon": "dotnet",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Microsoft.DotNet.Runtime.9",
+    "name": ".NET Desktop Runtime 9",
+    "description": ".NET Desktop Runtime (x86)",
+    "category": "Developer",
+    "tags": ["dotnet", "runtime", "microsoft"],
+    "icon": "dotnet",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Microsoft.DotNet.DesktopRuntime.9",
+    "name": ".NET Desktop Runtime x64 9",
+    "description": ".NET Desktop Runtime (x64)",
+    "category": "Developer",
+    "tags": ["dotnet", "runtime", "microsoft"],
+    "icon": "dotnet",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Microsoft.DotNet.Runtime.10",
+    "name": ".NET Desktop Runtime 10",
+    "description": ".NET Desktop Runtime (x86)",
+    "category": "Developer",
+    "tags": ["dotnet", "runtime", "microsoft"],
+    "icon": "dotnet",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Microsoft.DotNet.DesktopRuntime.10",
+    "name": ".NET Desktop Runtime x64 10",
+    "description": ".NET Desktop Runtime (x64)",
+    "category": "Developer",
+    "tags": ["dotnet", "runtime", "microsoft"],
+    "icon": "dotnet",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Microsoft.ASP.NET.Core.8",
+    "name": "ASP.NET Core Runtime 8",
+    "description": "ASP.NET Core Runtime",
+    "category": "Developer",
+    "tags": ["aspnet", "dotnet", "runtime"],
+    "icon": "aspnet",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "Microsoft.ASP.NET.Core.9",
+    "name": "ASP.NET Core Runtime 9",
+    "description": "ASP.NET Core Runtime",
+    "category": "Developer",
+    "tags": ["aspnet", "dotnet", "runtime"],
+    "icon": "aspnet",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "Microsoft.ASP.NET.Core.10",
+    "name": "ASP.NET Core Runtime 10",
+    "description": "ASP.NET Core Runtime",
+    "category": "Developer",
+    "tags": ["aspnet", "dotnet", "runtime"],
+    "icon": "aspnet",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "AdoptOpenJDK.OpenJDK.8",
+    "name": "Java (AdoptOpenJDK) x64 8",
+    "description": "64-bit Java Runtime (JRE)",
+    "category": "Developer",
+    "tags": ["java", "jdk", "runtime"],
+    "icon": "java",
+    "popular": false,
+    "size": "~70 MB"
+  },
+  {
+    "id": "AdoptOpenJDK.OpenJDK.11",
+    "name": "Java (AdoptOpenJDK) x64 11",
+    "description": "64-bit Java Runtime (JRE)",
+    "category": "Developer",
+    "tags": ["java", "jdk", "runtime"],
+    "icon": "java",
+    "popular": false,
+    "size": "~80 MB"
+  },
+  {
+    "id": "AdoptOpenJDK.OpenJDK.17",
+    "name": "Java (AdoptOpenJDK) x64 17",
+    "description": "64-bit Java Runtime (JRE)",
+    "category": "Developer",
+    "tags": ["java", "jdk", "runtime"],
+    "icon": "java",
+    "popular": false,
+    "size": "~90 MB"
+  },
+  {
+    "id": "AdoptOpenJDK.OpenJDK.21",
+    "name": "Java (AdoptOpenJDK) x64 21",
+    "description": "64-bit Java Runtime (JRE)",
+    "category": "Developer",
+    "tags": ["java", "jdk", "runtime"],
+    "icon": "java",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Amazon.Corretto.17",
+    "name": "JDK (Amazon Corretto) x64 17",
+    "description": "64-bit Java Development Kit",
+    "category": "Developer",
+    "tags": ["java", "jdk", "amazon"],
+    "icon": "java",
+    "popular": false,
+    "size": "~90 MB"
+  },
+  {
+    "id": "Amazon.Corretto.21",
+    "name": "JDK (Amazon Corretto) x64 21",
+    "description": "64-bit Java Development Kit",
+    "category": "Developer",
+    "tags": ["java", "jdk", "amazon"],
+    "icon": "java",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Hashicorp.Terraform",
+    "name": "Terraform",
+    "description": "Infrastructure as Code tool",
+    "category": "Developer",
+    "tags": ["infrastructure", "iac", "devops"],
+    "icon": "terraform",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Microsoft.AzureCLI",
+    "name": "Azure CLI",
+    "description": "Command-line tools for Azure",
+    "category": "Developer",
+    "tags": ["azure", "cloud", "cli"],
+    "icon": "azure",
+    "popular": false,
+    "size": "~80 MB"
+  },
+  {
+    "id": "Amazon.AWSCLI",
+    "name": "AWS CLI",
+    "description": "Unified command line interface for AWS",
+    "category": "Developer",
+    "tags": ["aws", "cloud", "cli"],
+    "icon": "aws",
+    "popular": false,
+    "size": "~60 MB"
+  },
+  {
+    "id": "Neovim.Neovim",
+    "name": "Neovim",
+    "description": "Vim-focused text editor",
+    "category": "Developer",
+    "tags": ["editor", "vim", "terminal"],
+    "icon": "neovim",
+    "popular": false,
+    "size": "~40 MB"
+  },
+  {
+    "id": "dbeaver.dbeaver",
+    "name": "DBeaver",
+    "description": "Universal database tool",
+    "category": "Developer",
+    "tags": ["database", "sql", "tool"],
+    "icon": "dbeaver",
+    "popular": false,
+    "size": "~80 MB"
+  },
+  {
+    "id": "Insomnia.Insomnia",
+    "name": "Insomnia",
+    "description": "REST and GraphQL client",
+    "category": "Developer",
+    "tags": ["api", "rest", "graphql"],
+    "icon": "insomnia",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Google.Chrome",
+    "name": "Google Chrome",
+    "description": "Fast, secure, and free web browser",
+    "category": "Browsers",
+    "tags": ["browser", "chrome", "web"],
+    "icon": "chrome",
+    "popular": true,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Mozilla.Firefox",
+    "name": "Mozilla Firefox",
+    "description": "Free open-source web browser",
+    "category": "Browsers",
+    "tags": ["browser", "firefox", "web"],
+    "icon": "firefox",
+    "popular": true,
+    "size": "~80 MB"
+  },
+  {
+    "id": "Brave.Brave",
+    "name": "Brave Browser",
+    "description": "Fast, private, and secure web browser",
+    "category": "Browsers",
+    "tags": ["browser", "privacy", "web"],
+    "icon": "brave",
+    "popular": true,
+    "size": "~110 MB"
+  },
+  {
+    "id": "Microsoft.Edge",
+    "name": "Microsoft Edge",
+    "description": "Microsoft Edge Browser",
+    "category": "Browsers",
+    "tags": ["browser", "edge", "web", "microsoft"],
+    "icon": "edge",
+    "popular": true,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Opera.Opera",
+    "name": "Opera Browser",
+    "description": "Feature-rich web browser",
+    "category": "Browsers",
+    "tags": ["browser", "opera", "web"],
+    "icon": "opera",
+    "popular": false,
+    "size": "~90 MB"
+  },
+  {
+    "id": "Vivaldi.Vivaldi",
+    "name": "Vivaldi Browser",
+    "description": "Browser that puts you in control",
+    "category": "Browsers",
+    "tags": ["browser", "vivaldi", "web"],
+    "icon": "vivaldi",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Zen-Team.Zen-Browser",
+    "name": "Zen Browser",
+    "description": "Privacy-focused web browser",
+    "category": "Browsers",
+    "tags": ["browser", "privacy", "zen"],
+    "icon": "zen",
+    "popular": false,
+    "size": "~85 MB"
+  },
+  {
+    "id": "VideoLAN.VLC",
+    "name": "VLC media player",
+    "description": "Free and open source cross-platform media player",
+    "category": "Media",
+    "tags": ["video", "audio", "player"],
+    "icon": "vlc",
+    "popular": true,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Spotify.Spotify",
+    "name": "Spotify",
+    "description": "Music streaming service",
+    "category": "Media",
+    "tags": ["music", "streaming", "audio"],
+    "icon": "spotify",
+    "popular": true,
+    "size": "~150 MB"
+  },
+  {
+    "id": "OBSProject.OBSStudio",
+    "name": "OBS Studio",
+    "description": "Free streaming and recording software",
+    "category": "Media",
+    "tags": ["video", "streaming", "recording"],
+    "icon": "obs",
+    "popular": true,
+    "size": "~100 MB"
+  },
+  {
+    "id": "GIMP.GIMP",
+    "name": "GIMP",
+    "description": "GNU Image Manipulation Program",
+    "category": "Media",
+    "tags": ["image", "editor", "graphics"],
+    "icon": "gimp",
+    "popular": true,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Inkscape.Inkscape",
+    "name": "Inkscape",
+    "description": "Professional vector graphics editor",
+    "category": "Media",
+    "tags": ["vector", "graphics", "svg"],
+    "icon": "inkscape",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "dotnet.Paint.NET",
+    "name": "Paint.NET",
+    "description": "Image Editor",
+    "category": "Media",
+    "tags": ["image", "editor", "graphics"],
+    "icon": "paintnet",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "IrfanSkiljan.IrfanView",
+    "name": "IrfanView",
+    "description": "Image Viewer",
+    "category": "Media",
+    "tags": ["image", "viewer", "graphics"],
+    "icon": "irfanview",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "XnSoft.XnView",
+    "name": "XnView",
+    "description": "Image Viewer",
+    "category": "Media",
+    "tags": ["image", "viewer", "graphics"],
+    "icon": "xnview",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "FastStone.FastStoneImageViewer",
+    "name": "FastStone Image Viewer",
+    "description": "FastStone Image Viewer",
+    "category": "Media",
+    "tags": ["image", "viewer", "graphics"],
+    "icon": "faststone",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "HandBrake.HandBrake",
+    "name": "HandBrake",
+    "description": "Open source video transcoder",
+    "category": "Media",
+    "tags": ["video", "transcoder", "converter"],
+    "icon": "handbrake",
+    "popular": false,
+    "size": "~60 MB"
+  },
+  {
+    "id": "Audacity.Audacity",
+    "name": "Audacity",
+    "description": "Free, open source, cross-platform audio software",
+    "category": "Media",
+    "tags": ["audio", "editor", "recording"],
+    "icon": "audacity",
+    "popular": false,
+    "size": "~40 MB"
+  },
+  {
+    "id": "Apple.iTunes",
+    "name": "iTunes",
+    "description": "Music/Media Manager",
+    "category": "Media",
+    "tags": ["media", "music", "apple", "player"],
+    "icon": "itunes",
+    "popular": false,
+    "size": "~250 MB"
+  },
+  {
+    "id": "AIMP.AIMP",
+    "name": "AIMP",
+    "description": "Music Player",
+    "category": "Media",
+    "tags": ["music", "audio", "player"],
+    "icon": "aimp",
+    "popular": false,
+    "size": "~15 MB"
+  },
+  {
+    "id": "foobar2000.foobar2000",
+    "name": "foobar2000",
+    "description": "Music Player",
+    "category": "Media",
+    "tags": ["music", "audio", "player"],
+    "icon": "foobar",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "Winamp.Winamp",
+    "name": "Winamp",
+    "description": "Music Player",
+    "category": "Media",
+    "tags": ["music", "audio", "player"],
+    "icon": "winamp",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "MusicBee.MusicBee",
+    "name": "MusicBee",
+    "description": "Music Manager & Player",
+    "category": "Media",
+    "tags": ["music", "audio", "player", "manager"],
+    "icon": "musicbee",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "CodecGuide.K-LiteCodecPack",
+    "name": "K-Lite Codecs",
+    "description": "Video decoders plus Media Player Classic",
+    "category": "Media",
+    "tags": ["codecs", "video", "media"],
+    "icon": "klite",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "GOMLab.GOMPlayer",
+    "name": "GOM Player",
+    "description": "Video Player",
+    "category": "Media",
+    "tags": ["video", "player", "media"],
+    "icon": "gom",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "CCCP.CCCP",
+    "name": "CCCP",
+    "description": "Video decoders plus MPC",
+    "category": "Media",
+    "tags": ["codecs", "video", "media"],
+    "icon": "cccp",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "MediaMonkey.MediaMonkey",
+    "name": "MediaMonkey",
+    "description": "Music Organizer",
+    "category": "Media",
+    "tags": ["music", "audio", "organizer"],
+    "icon": "mediamonkey",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "Kdenlive.Kdenlive",
+    "name": "Kdenlive",
+    "description": "Non-linear video editor",
+    "category": "Media",
+    "tags": ["video", "editor", "nle"],
+    "icon": "kdenlive",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "Discord.Discord",
+    "name": "Discord",
+    "description": "Voice, video, and text chat app",
+    "category": "Communication",
+    "tags": ["chat", "voice", "gaming"],
+    "icon": "discord",
+    "popular": true,
+    "size": "~120 MB"
+  },
+  {
+    "id": "Microsoft.Teams",
+    "name": "Microsoft Teams",
+    "description": "Hub for teamwork in Microsoft 365",
+    "category": "Communication",
+    "tags": ["chat", "video", "collaboration"],
+    "icon": "teams",
+    "popular": true,
+    "size": "~150 MB"
+  },
+  {
+    "id": "SlackTechnologies.Slack",
+    "name": "Slack",
+    "description": "Business communication platform",
+    "category": "Communication",
+    "tags": ["chat", "business", "collaboration"],
+    "icon": "slack",
+    "popular": true,
+    "size": "~140 MB"
+  },
+  {
+    "id": "Zoom.Zoom",
+    "name": "Zoom",
+    "description": "Video conferencing and web conferencing service",
+    "category": "Communication",
+    "tags": ["video", "conferencing", "meeting"],
+    "icon": "zoom",
+    "popular": true,
+    "size": "~80 MB"
+  },
+  {
+    "id": "Telegram.TelegramDesktop",
+    "name": "Telegram Desktop",
+    "description": "Cloud-based messaging and VoIP service",
+    "category": "Communication",
+    "tags": ["chat", "messaging", "voip"],
+    "icon": "telegram",
+    "popular": true,
+    "size": "~60 MB"
+  },
+  {
+    "id": "WhatsApp.WhatsApp",
+    "name": "WhatsApp",
+    "description": "Free messaging app",
+    "category": "Communication",
+    "tags": ["chat", "messaging", "social"],
+    "icon": "whatsapp",
+    "popular": true,
+    "size": "~150 MB"
+  },
+  {
+    "id": "Signal.Signal",
+    "name": "Signal",
+    "description": "Privacy-focused messaging app",
+    "category": "Communication",
+    "tags": ["chat", "privacy", "messaging"],
+    "icon": "signal",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Mozilla.Thunderbird",
+    "name": "Thunderbird",
+    "description": "Email Reader by Mozilla",
+    "category": "Communication",
+    "tags": ["email", "client", "mozilla"],
+    "icon": "thunderbird",
+    "popular": false,
+    "size": "~60 MB"
+  },
+  {
+    "id": "Pidgin.Pidgin",
+    "name": "Pidgin",
+    "description": "Multi-IM Client",
+    "category": "Communication",
+    "tags": ["im", "chat", "messaging"],
+    "icon": "pidgin",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "7zip.7zip",
+    "name": "7-Zip",
+    "description": "File archiver with high compression ratio",
+    "category": "Utilities",
+    "tags": ["compression", "archive", "utility"],
+    "icon": "7zip",
+    "popular": true,
+    "size": "~1.5 MB"
+  },
+  {
+    "id": "PeaZip.Peazip",
+    "name": "PeaZip",
+    "description": "File Compression Tool",
+    "category": "Utilities",
+    "tags": ["compression", "archive", "utility"],
+    "icon": "peazip",
+    "popular": false,
+    "size": "~15 MB"
+  },
+  {
+    "id": "RARLab.WinRAR",
+    "name": "WinRAR",
+    "description": "Another Compression Tool",
+    "category": "Utilities",
+    "tags": ["compression", "archive", "utility"],
+    "icon": "winrar",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "Notepad++.Notepad++",
+    "name": "Notepad++",
+    "description": "Free source code editor",
+    "category": "Utilities",
+    "tags": ["editor", "text", "notepad"],
+    "icon": "notepad",
+    "popular": true,
+    "size": "~4 MB"
+  },
+  {
+    "id": "Microsoft.VCRedist.2015+.x64",
+    "name": "VC Redist x64 2015+",
+    "description": "Microsoft C and C++ (MSVC) runtime libraries",
+    "category": "Utilities",
+    "tags": ["vc++", "redist", "microsoft", "runtime"],
+    "icon": "vcredist",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "Microsoft.VCRedist.2015+.x86",
+    "name": "VC Redist x86 2015+",
+    "description": "Microsoft C and C++ (MSVC) runtime libraries",
+    "category": "Utilities",
+    "tags": ["vc++", "redist", "microsoft", "runtime"],
+    "icon": "vcredist",
+    "popular": false,
+    "size": "~15 MB"
+  },
+  {
+    "id": "Microsoft.VCRedist.2013.x64",
+    "name": "VC Redist x64 2013",
+    "description": "Microsoft C and C++ (MSVC) runtime libraries",
+    "category": "Utilities",
+    "tags": ["vc++", "redist", "microsoft", "runtime"],
+    "icon": "vcredist",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "Microsoft.VCRedist.2013.x86",
+    "name": "VC Redist x86 2013",
+    "description": "Microsoft C and C++ (MSVC) runtime libraries",
+    "category": "Utilities",
+    "tags": ["vc++", "redist", "microsoft", "runtime"],
+    "icon": "vcredist",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "FileZillaClient.FileZilla",
+    "name": "FileZilla",
+    "description": "FTP Client",
+    "category": "Utilities",
+    "tags": ["ftp", "client", "transfer"],
+    "icon": "filezilla",
+    "popular": false,
+    "size": "~15 MB"
+  },
+  {
+    "id": "WinSCP.WinSCP",
+    "name": "WinSCP",
+    "description": "SCP Client",
+    "category": "Utilities",
+    "tags": ["scp", "ftp", "sftp"],
+    "icon": "winscp",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "PuTTY.PuTTY",
+    "name": "PuTTY",
+    "description": "SSH client",
+    "category": "Utilities",
+    "tags": ["ssh", "telnet", "terminal"],
+    "icon": "putty",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "WinMerge.WinMerge",
+    "name": "WinMerge",
+    "description": "Compare and Merge Files",
+    "category": "Utilities",
+    "tags": ["diff", "merge", "compare"],
+    "icon": "winmerge",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "EclipseAdoptium.Temurin.17.JDK",
+    "name": "Eclipse IDE for Java",
+    "description": "IDE for Java",
+    "category": "Developer",
+    "tags": ["ide", "java", "eclipse"],
+    "icon": "eclipse",
+    "popular": false,
+    "size": "~250 MB"
+  },
+  {
+    "id": "Microsoft.PowerToys",
+    "name": "Microsoft PowerToys",
+    "description": "Set of utilities for power users",
+    "category": "Utilities",
+    "tags": ["utilities", "productivity", "windows"],
+    "icon": "powertoys",
+    "popular": true,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Bitwarden.Bitwarden",
+    "name": "Bitwarden",
+    "description": "Open source password manager",
+    "category": "Utilities",
+    "tags": ["password", "security", "manager"],
+    "icon": "bitwarden",
+    "popular": true,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Malwarebytes.Malwarebytes",
+    "name": "Malwarebytes",
+    "description": "Malware Remover",
+    "category": "Utilities",
+    "tags": ["security", "antimalware", "protection"],
+    "icon": "malwarebytes",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Avast.Avast",
+    "name": "Avast Free Antivirus",
+    "description": "Avast Free Antivirus",
+    "category": "Utilities",
+    "tags": ["security", "antivirus", "protection"],
+    "icon": "avast",
+    "popular": false,
+    "size": "~400 MB"
+  },
+  {
+    "id": "AVG.AVG",
+    "name": "AVG Free Antivirus",
+    "description": "AVG Free Antivirus",
+    "category": "Utilities",
+    "tags": ["security", "antivirus", "protection"],
+    "icon": "avg",
+    "popular": false,
+    "size": "~400 MB"
+  },
+  {
+    "id": "SaferNetworkingLimited.SpybotAntiBeacon",
+    "name": "Spybot 2",
+    "description": "Spyware Remover",
+    "category": "Utilities",
+    "tags": ["security", "antispyware", "protection"],
+    "icon": "spybot",
+    "popular": false,
+    "size": "~80 MB"
+  },
+  {
+    "id": "Avira.Avira",
+    "name": "Avira Free Antivirus",
+    "description": "Avira Free Antivirus",
+    "category": "Utilities",
+    "tags": ["security", "antivirus", "protection"],
+    "icon": "avira",
+    "popular": false,
+    "size": "~300 MB"
+  },
+  {
+    "id": "SUPERAntiSpyware.SUPERAntiSpyware",
+    "name": "SUPERAntiSpyware",
+    "description": "SUPERAntiSpyware Free",
+    "category": "Utilities",
+    "tags": ["security", "antispyware", "protection"],
+    "icon": "superantispyware",
+    "popular": false,
+    "size": "~150 MB"
+  },
+  {
+    "id": "Greenshot.Greenshot",
+    "name": "Greenshot",
+    "description": "Screenshot tool optimized for productivity",
+    "category": "Utilities",
+    "tags": ["screenshot", "capture", "tool"],
+    "icon": "greenshot",
+    "popular": false,
+    "size": "~2 MB"
+  },
+  {
+    "id": "ShareX.ShareX",
+    "name": "ShareX",
+    "description": "Screen capture, recording, and sharing tool",
+    "category": "Utilities",
+    "tags": ["screenshot", "recording", "sharing"],
+    "icon": "sharex",
+    "popular": true,
+    "size": "~10 MB"
+  },
+  {
+    "id": "qBittorrent.qBittorrent",
+    "name": "qBittorrent",
+    "description": "Free Bittorrent Client",
+    "category": "Utilities",
+    "tags": ["torrent", "p2p", "download"],
+    "icon": "qbittorrent",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "Dropbox.Dropbox",
+    "name": "Dropbox",
+    "description": "Great Online Backup/File Sync",
+    "category": "Utilities",
+    "tags": ["cloud", "storage", "sync"],
+    "icon": "dropbox",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Google.Drive",
+    "name": "Google Drive for Desktop",
+    "description": "Online File Sync",
+    "category": "Utilities",
+    "tags": ["cloud", "storage", "sync", "google"],
+    "icon": "googledrive",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Microsoft.OneDrive",
+    "name": "OneDrive",
+    "description": "Online File Sync by Microsoft",
+    "category": "Utilities",
+    "tags": ["cloud", "storage", "sync", "microsoft"],
+    "icon": "onedrive",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "WinDirStat.WinDirStat",
+    "name": "WinDirStat",
+    "description": "Disk usage statistics viewer and cleanup tool",
+    "category": "Utilities",
+    "tags": ["disk", "storage", "cleanup"],
+    "icon": "windirstat",
+    "popular": true,
+    "size": "~1 MB"
+  },
+  {
+    "id": "AutoHotkey.AutoHotkey",
+    "name": "AutoHotkey",
+    "description": "Automation and scripting tool",
+    "category": "Utilities",
+    "tags": ["automation", "scripting", "hotkey"],
+    "icon": "autohotkey",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "voidtools.Everything",
+    "name": "Everything",
+    "description": "Fast file search utility",
+    "category": "Utilities",
+    "tags": ["search", "file", "utility"],
+    "icon": "everything",
+    "popular": true,
+    "size": "~1.5 MB"
+  },
+  {
+    "id": "Evernote.Evernote",
+    "name": "Evernote",
+    "description": "Online Notes",
+    "category": "Utilities",
+    "tags": ["notes", "productivity", "organize"],
+    "icon": "evernote",
+    "popular": false,
+    "size": "~400 MB"
+  },
+  {
+    "id": "Google.Earth",
+    "name": "Google Earth",
+    "description": "Online Atlas by Google",
+    "category": "Utilities",
+    "tags": ["maps", "earth", "google"],
+    "icon": "googleearth",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "KeePassKeePass.KeePass",
+    "name": "KeePass 2",
+    "description": "Password Manager",
+    "category": "Utilities",
+    "tags": ["password", "security", "manager"],
+    "icon": "keepass",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "NVAccess.NVDA",
+    "name": "NV Access",
+    "description": "Screen Reader",
+    "category": "Utilities",
+    "tags": ["accessibility", "screen-reader", "blind"],
+    "icon": "nvda",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "AnyDeskSoftwareGmbH.AnyDesk",
+    "name": "AnyDesk",
+    "description": "Remote Desktop",
+    "category": "Utilities",
+    "tags": ["remote", "desktop", "support"],
+    "icon": "anydesk",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "TeamViewer.TeamViewer",
+    "name": "TeamViewer 15",
+    "description": "Remote Access Tool",
+    "category": "Utilities",
+    "tags": ["remote", "desktop", "support"],
+    "icon": "teamviewer",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "LIGHTNINGUK.ImgBurn",
+    "name": "ImgBurn",
+    "description": "Disc Burner",
+    "category": "Utilities",
+    "tags": ["burn", "disc", "iso"],
+    "icon": "imgburn",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "RealVNC.RealVNC",
+    "name": "RealVNC Viewer",
+    "description": "RealVNC Remote Access",
+    "category": "Utilities",
+    "tags": ["remote", "desktop", "vnc"],
+    "icon": "realvnc",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "TightVNC.TightVNC",
+    "name": "TightVNC",
+    "description": "TightVNC Remote Desktop Software",
+    "category": "Utilities",
+    "tags": ["remote", "desktop", "vnc"],
+    "icon": "tightvnc",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "CodeSector.TeraCopy",
+    "name": "TeraCopy",
+    "description": "Better File Copy",
+    "category": "Utilities",
+    "tags": ["file", "copy", "utility"],
+    "icon": "teracopy",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "CDBurnerXP.CDBurnerXP",
+    "name": "CDBurnerXP",
+    "description": "Disc Burner",
+    "category": "Utilities",
+    "tags": ["burn", "disc", "iso"],
+    "icon": "cdburnerxp",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "RevoUninstaller.RevoUninstaller",
+    "name": "Revo",
+    "description": "App Uninstaller/Reverse Ninite",
+    "category": "Utilities",
+    "tags": ["uninstaller", "cleanup", "utility"],
+    "icon": "revo",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "Launchy.Launchy",
+    "name": "Launchy",
+    "description": "Hotkey Launcher",
+    "category": "Utilities",
+    "tags": ["launcher", "productivity", "hotkey"],
+    "icon": "launchy",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "AntibodySoftware.WizTree",
+    "name": "WizTree",
+    "description": "Directory Statistics",
+    "category": "Utilities",
+    "tags": ["disk", "storage", "cleanup"],
+    "icon": "wiztree",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "Glarysoft.GlaryUtilities",
+    "name": "Glary",
+    "description": "System Utilities",
+    "category": "Utilities",
+    "tags": ["utilities", "cleanup", "system"],
+    "icon": "glary",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "Infrarecorder.Infrarecorder",
+    "name": "InfraRecorder",
+    "description": "Disc Burner",
+    "category": "Utilities",
+    "tags": ["burn", "disc", "iso"],
+    "icon": "infrarecorder",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "Open-Shell.Open-Shell",
+    "name": "Open-Shell",
+    "description": "Old-Style Start Menu",
+    "category": "Utilities",
+    "tags": ["start-menu", "windows", "ui"],
+    "icon": "openshell",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "Piriform.CCleaner",
+    "name": "CCleaner",
+    "description": "PC Crap Remover",
+    "category": "Utilities",
+    "tags": ["cleanup", "utility", "registry"],
+    "icon": "ccleaner",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "Flow-Launcher.Flow-Launcher",
+    "name": "Flow Launcher",
+    "description": "Keystroke launcher for Windows",
+    "category": "Utilities",
+    "tags": ["launcher", "productivity", "search"],
+    "icon": "flow",
+    "popular": false,
+    "size": "~60 MB"
+  },
+  {
+    "id": "Notion.Notion",
+    "name": "Notion",
+    "description": "All-in-one workspace for notes and projects",
+    "category": "Productivity",
+    "tags": ["notes", "productivity", "workspace"],
+    "icon": "notion",
+    "popular": true,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Obsidian.Obsidian",
+    "name": "Obsidian",
+    "description": "Knowledge base app for markdown notes",
+    "category": "Productivity",
+    "tags": ["notes", "markdown", "knowledge"],
+    "icon": "obsidian",
+    "popular": true,
+    "size": "~150 MB"
+  },
+  {
+    "id": "LibreOffice.LibreOffice",
+    "name": "LibreOffice",
+    "description": "Free and open source office suite",
+    "category": "Productivity",
+    "tags": ["office", "productivity", "documents"],
+    "icon": "libreoffice",
+    "popular": true,
+    "size": "~300 MB"
+  },
+  {
+    "id": "Foxit.FoxitReader",
+    "name": "Foxit Reader",
+    "description": "Alternative PDF Reader",
+    "category": "Productivity",
+    "tags": ["pdf", "reader", "document"],
+    "icon": "foxit",
+    "popular": false,
+    "size": "~80 MB"
+  },
+  {
+    "id": "SumatraPDF.SumatraPDF",
+    "name": "SumatraPDF",
+    "description": "Lightweight PDF Reader",
+    "category": "Productivity",
+    "tags": ["pdf", "reader", "document"],
+    "icon": "sumatra",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "Cutepdf.CutePDF",
+    "name": "CutePDF",
+    "description": "Print Documents as PDF Files",
+    "category": "Productivity",
+    "tags": ["pdf", "print", "document"],
+    "icon": "cutepdf",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "Apache.OpenOffice",
+    "name": "OpenOffice",
+    "description": "Free Office Suite",
+    "category": "Productivity",
+    "tags": ["office", "productivity", "documents"],
+    "icon": "openoffice",
+    "popular": false,
+    "size": "~250 MB"
+  },
+  {
+    "id": "Todoist.Todoist",
+    "name": "Todoist",
+    "description": "Task management and to-do list app",
+    "category": "Productivity",
+    "tags": ["tasks", "productivity", "todo"],
+    "icon": "todoist",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Anki.Anki",
+    "name": "Anki",
+    "description": "Powerful and intelligent flashcard program",
+    "category": "Productivity",
+    "tags": ["flashcards", "learning", "study"],
+    "icon": "anki",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Logseq.Logseq",
+    "name": "Logseq",
+    "description": "Privacy-first knowledge base",
+    "category": "Productivity",
+    "tags": ["notes", "knowledge", "privacy"],
+    "icon": "logseq",
+    "popular": false,
+    "size": "~250 MB"
+  },
+  {
+    "id": "calibre.calibre",
+    "name": "calibre",
+    "description": "E-book library management application",
+    "category": "Productivity",
+    "tags": ["ebook", "library", "reading"],
+    "icon": "calibre",
+    "popular": false,
+    "size": "~150 MB"
+  },
+  {
+    "id": "Figma.Figma",
+    "name": "Figma",
+    "description": "Collaborative interface design tool",
+    "category": "Design",
+    "tags": ["design", "ui", "ux"],
+    "icon": "figma",
+    "popular": true,
+    "size": "~120 MB"
+  },
+  {
+    "id": "Canva.Canva",
+    "name": "Canva",
+    "description": "Online design and publishing tool",
+    "category": "Design",
+    "tags": ["design", "graphics", "templates"],
+    "icon": "canva",
+    "popular": true,
+    "size": "~150 MB"
+  },
+  {
+    "id": "Blender.Blender",
+    "name": "Blender",
+    "description": "Free and open source 3D creation suite",
+    "category": "Design",
+    "tags": ["3d", "animation", "modeling"],
+    "icon": "blender",
+    "popular": true,
+    "size": "~400 MB"
+  },
+  {
+    "id": "KDE.Krita",
+    "name": "Krita",
+    "description": "Professional painting and drawing application",
+    "category": "Design",
+    "tags": ["painting", "drawing", "art"],
+    "icon": "krita",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "darktable.darktable",
+    "name": "darktable",
+    "description": "Open source photography workflow application",
+    "category": "Design",
+    "tags": ["photography", "raw", "editing"],
+    "icon": "darktable",
+    "popular": false,
+    "size": "~250 MB"
+  },
+  {
+    "id": "Valve.Steam",
+    "name": "Steam",
+    "description": "Gaming platform and digital distribution",
+    "category": "Gaming",
+    "tags": ["gaming", "steam", "games"],
+    "icon": "steam",
+    "popular": true,
+    "size": "~2 MB"
+  },
+  {
+    "id": "EpicGames.EpicGamesLauncher",
+    "name": "Epic Games Launcher",
+    "description": "Game store and launcher from Epic Games",
+    "category": "Gaming",
+    "tags": ["gaming", "epic", "store"],
+    "icon": "epic",
+    "popular": true,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Playnite.Playnite",
+    "name": "Playnite",
+    "description": "Open source video game library manager",
+    "category": "Gaming",
+    "tags": ["gaming", "library", "manager"],
+    "icon": "playnite",
+    "popular": false,
+    "size": "~80 MB"
+  },
+  {
+    "id": "GOG.Galaxy",
+    "name": "GOG Galaxy",
+    "description": "Gaming client from GOG",
+    "category": "Gaming",
+    "tags": ["gaming", "gog", "client"],
+    "icon": "gog",
+    "popular": false,
+    "size": "~150 MB"
+  },
+  {
+    "id": "Overwolf.CurseForge",
+    "name": "CurseForge",
+    "description": "Game modding platform",
+    "category": "Gaming",
+    "tags": ["gaming", "mods", "addons"],
+    "icon": "curseforge",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Microsoft.VisualStudio.2022.Community",
+    "name": "Visual Studio 2022",
+    "description": "IDE for Windows, Mac, and Linux",
+    "category": "Developer",
+    "tags": ["ide", "microsoft", "development"],
+    "icon": "visualstudio",
+    "popular": false,
+    "size": "~5 GB"
+  },
+  {
+    "id": "JetBrains.Toolbox",
+    "name": "JetBrains Toolbox",
+    "description": "JetBrains IDEs management tool",
+    "category": "Developer",
+    "tags": ["jetbrains", "ide", "toolbox"],
+    "icon": "jetbox",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Oracle.JDK.21",
+    "name": "Java JDK 21",
+    "description": "Oracle Java Development Kit 21",
+    "category": "Developer",
+    "tags": ["java", "jdk", "oracle"],
+    "icon": "java",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Oracle.JDK.17",
+    "name": "Java JDK 17",
+    "description": "Oracle Java Development Kit 17",
+    "category": "Developer",
+    "tags": ["java", "jdk", "oracle"],
+    "icon": "java",
+    "popular": false,
+    "size": "~180 MB"
+  },
+  {
+    "id": "Rustlang.Rust.MSVC",
+    "name": "Rust (MSVC)",
+    "description": "Rust toolchain for MSVC",
+    "category": "Developer",
+    "tags": ["rust", "toolchain", "msvc"],
+    "icon": "rust",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "RubyInstallerTeam.Ruby",
+    "name": "Ruby",
+    "description": "Ruby programming language",
+    "category": "Developer",
+    "tags": ["ruby", "programming", "language"],
+    "icon": "ruby",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "PHP.PHP",
+    "name": "PHP",
+    "description": "PHP programming language",
+    "category": "Developer",
+    "tags": ["php", "programming", "language"],
+    "icon": "php",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "PHP.Composer",
+    "name": "Composer",
+    "description": "PHP package manager",
+    "category": "Developer",
+    "tags": ["php", "composer", "package-manager"],
+    "icon": "composer",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "Oracle.MySQL",
+    "name": "MySQL",
+    "description": "MySQL Database Server",
+    "category": "Developer",
+    "tags": ["database", "mysql", "sql"],
+    "icon": "mysql",
+    "popular": false,
+    "size": "~400 MB"
+  },
+  {
+    "id": "PostgreSQL.PostgreSQL",
+    "name": "PostgreSQL",
+    "description": "PostgreSQL Database Server",
+    "category": "Developer",
+    "tags": ["database", "postgresql", "sql"],
+    "icon": "postgresql",
+    "popular": false,
+    "size": "~300 MB"
+  },
+  {
+    "id": "MongoDB.Server",
+    "name": "MongoDB",
+    "description": "MongoDB Database Server",
+    "category": "Developer",
+    "tags": ["database", "mongodb", "nosql"],
+    "icon": "mongodb",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "Redis.Redis",
+    "name": "Redis",
+    "description": "Redis in-memory data store",
+    "category": "Developer",
+    "tags": ["database", "redis", "cache"],
+    "icon": "redis",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "TablePlus.TablePlus",
+    "name": "TablePlus",
+    "description": "Modern database client",
+    "category": "Developer",
+    "tags": ["database", "sql", "client"],
+    "icon": "tableplus",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Axosoft.GitKraken",
+    "name": "GitKraken",
+    "description": "Git GUI client",
+    "category": "Developer",
+    "tags": ["git", "gui", "client"],
+    "icon": "gitkraken",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Atlassian.Sourcetree",
+    "name": "Sourcetree",
+    "description": "Git GUI client",
+    "category": "Developer",
+    "tags": ["git", "gui", "client"],
+    "icon": "sourcetree",
+    "popular": false,
+    "size": "~150 MB"
+  },
+  {
+    "id": "MSYS2.MSYS2",
+    "name": "MSYS2",
+    "description": "Software distribution and building platform for Windows",
+    "category": "Developer",
+    "tags": ["msys2", "unix", "terminal"],
+    "icon": "msys2",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Kitware.CMake",
+    "name": "CMake",
+    "description": "Cross-platform build system",
+    "category": "Developer",
+    "tags": ["build", "cmake", "tools"],
+    "icon": "cmake",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "LLVM.LLVM",
+    "name": "LLVM",
+    "description": "LLVM compiler infrastructure",
+    "category": "Developer",
+    "tags": ["llvm", "compiler", "tools"],
+    "icon": "llvm",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "Yarn.Yarn",
+    "name": "Yarn",
+    "description": "JavaScript package manager",
+    "category": "Developer",
+    "tags": ["javascript", "package-manager", "yarn"],
+    "icon": "yarn",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "pnpm.pnpm",
+    "name": "pnpm",
+    "description": "Fast JavaScript package manager",
+    "category": "Developer",
+    "tags": ["javascript", "package-manager", "pnpm"],
+    "icon": "pnpm",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "DenoLand.Deno",
+    "name": "Deno",
+    "description": "Secure JavaScript/TypeScript runtime",
+    "category": "Developer",
+    "tags": ["javascript", "typescript", "runtime"],
+    "icon": "deno",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Oven-sh.Bun",
+    "name": "Bun",
+    "description": "Fast JavaScript runtime",
+    "category": "Developer",
+    "tags": ["javascript", "runtime", "bun"],
+    "icon": "bun",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Netlify.Netlify",
+    "name": "Netlify CLI",
+    "description": "Netlify command line interface",
+    "category": "Developer",
+    "tags": ["netlify", "cli", "deployment"],
+    "icon": "netlify",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Google.CloudSDK",
+    "name": "Google Cloud SDK",
+    "description": "Command-line tools for Google Cloud",
+    "category": "Developer",
+    "tags": ["google", "cloud", "cli"],
+    "icon": "gcp",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Kubernetes.kubectl",
+    "name": "Kubernetes (kubectl)",
+    "description": "Kubernetes command line tool",
+    "category": "Developer",
+    "tags": ["kubernetes", "kubectl", "containers"],
+    "icon": "kubernetes",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Helm.Helm",
+    "name": "Helm",
+    "description": "Kubernetes package manager",
+    "category": "Developer",
+    "tags": ["kubernetes", "helm", "package-manager"],
+    "icon": "helm",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "SublimeHQ.SublimeText.4",
+    "name": "Sublime Text",
+    "description": "Sophisticated text editor",
+    "category": "Developer",
+    "tags": ["editor", "text", "sublime"],
+    "icon": "sublime",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "GitHub.Atom",
+    "name": "Atom",
+    "description": "Hackable text editor",
+    "category": "Developer",
+    "tags": ["editor", "text", "github"],
+    "icon": "atom",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "vim.vim",
+    "name": "Vim",
+    "description": "Text editor",
+    "category": "Developer",
+    "tags": ["editor", "vim", "terminal"],
+    "icon": "vim",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "GNU.Emacs",
+    "name": "Emacs",
+    "description": "Extensible text editor",
+    "category": "Developer",
+    "tags": ["editor", "emacs", "terminal"],
+    "icon": "emacs",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Opera.OperaGX",
+    "name": "Opera GX",
+    "description": "Gaming browser",
+    "category": "Browsers",
+    "tags": ["browser", "opera", "gaming"],
+    "icon": "operagx",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "TorProject.TorBrowser",
+    "name": "Tor Browser",
+    "description": "Privacy-focused browser",
+    "category": "Browsers",
+    "tags": ["browser", "privacy", "tor"],
+    "icon": "tor",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "LibreWolf.LibreWolf",
+    "name": "LibreWolf",
+    "description": "Privacy-focused Firefox fork",
+    "category": "Browsers",
+    "tags": ["browser", "privacy", "firefox"],
+    "icon": "librewolf",
+    "popular": false,
+    "size": "~80 MB"
+  },
+  {
+    "id": "clsid2.mpc-hc",
+    "name": "MPC-HC",
+    "description": "Media Player Classic",
+    "category": "Media",
+    "tags": ["video", "player", "media"],
+    "icon": "mpchc",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "Daum.PotPlayer",
+    "name": "PotPlayer",
+    "description": "Video player",
+    "category": "Media",
+    "tags": ["video", "player", "media"],
+    "icon": "potplayer",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "mpv.net",
+    "name": "MPV",
+    "description": "Video player",
+    "category": "Media",
+    "tags": ["video", "player", "media"],
+    "icon": "mpv",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "PeterPawlowski.foobar2000",
+    "name": "foobar2000",
+    "description": "Music player",
+    "category": "Media",
+    "tags": ["music", "audio", "player"],
+    "icon": "foobar",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "Gyan.FFmpeg",
+    "name": "FFmpeg",
+    "description": "Video processing tools",
+    "category": "Media",
+    "tags": ["video", "ffmpeg", "media"],
+    "icon": "ffmpeg",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "CodecGuide.K-LiteCodecPack.Full",
+    "name": "K-Lite Codec Pack Full",
+    "description": "Full codec pack",
+    "category": "Media",
+    "tags": ["codecs", "video", "media"],
+    "icon": "klitefull",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Streamlabs.Streamlabs",
+    "name": "Streamlabs",
+    "description": "Streaming software",
+    "category": "Media",
+    "tags": ["streaming", "video", "broadcasting"],
+    "icon": "streamlabs",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Blackmagic.DaVinciResolve",
+    "name": "DaVinci Resolve",
+    "description": "Professional video editing",
+    "category": "Media",
+    "tags": ["video", "editing", "professional"],
+    "icon": "davinci",
+    "popular": false,
+    "size": "~1.5 GB"
+  },
+  {
+    "id": "Meltytech.Shotcut",
+    "name": "Shotcut",
+    "description": "Video editor",
+    "category": "Media",
+    "tags": ["video", "editor", "nle"],
+    "icon": "shotcut",
+    "popular": false,
+    "size": "~300 MB"
+  },
+  {
+    "id": "ImageMagick.ImageMagick",
+    "name": "ImageMagick",
+    "description": "Image manipulation tools",
+    "category": "Media",
+    "tags": ["image", "graphics", "tools"],
+    "icon": "imagemagick",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "Microsoft.Skype",
+    "name": "Skype",
+    "description": "Video and voice calling",
+    "category": "Communication",
+    "tags": ["chat", "video", "voip"],
+    "icon": "skype",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "OpenWhisperSystems.Signal",
+    "name": "Signal",
+    "description": "Privacy-focused messaging",
+    "category": "Communication",
+    "tags": ["chat", "privacy", "messaging"],
+    "icon": "signal",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Viber.Viber",
+    "name": "Viber",
+    "description": "Messaging and calling app",
+    "category": "Communication",
+    "tags": ["chat", "voip", "messaging"],
+    "icon": "viber",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Element.Element",
+    "name": "Element",
+    "description": "Matrix messaging client",
+    "category": "Communication",
+    "tags": ["chat", "matrix", "messaging"],
+    "icon": "element",
+    "popular": false,
+    "size": "~150 MB"
+  },
+  {
+    "id": "Mattermost.MattermostDesktop",
+    "name": "Mattermost",
+    "description": "Team messaging",
+    "category": "Communication",
+    "tags": ["chat", "team", "messaging"],
+    "icon": "mattermost",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "eMClient.eMClient",
+    "name": "eM Client",
+    "description": "Email client",
+    "category": "Communication",
+    "tags": ["email", "client", "calendar"],
+    "icon": "emclient",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "ElectronicArts.EADesktop",
+    "name": "EA App",
+    "description": "EA gaming platform",
+    "category": "Gaming",
+    "tags": ["gaming", "ea", "store"],
+    "icon": "ea",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Blizzard.BattleNet",
+    "name": "Battle.net",
+    "description": "Blizzard gaming platform",
+    "category": "Gaming",
+    "tags": ["gaming", "blizzard", "store"],
+    "icon": "battlenet",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Ubisoft.Connect",
+    "name": "Ubisoft Connect",
+    "description": "Ubisoft gaming platform",
+    "category": "Gaming",
+    "tags": ["gaming", "ubisoft", "store"],
+    "icon": "ubisoft",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Microsoft.GamingApp",
+    "name": "Xbox App",
+    "description": "Xbox gaming on Windows",
+    "category": "Gaming",
+    "tags": ["gaming", "xbox", "microsoft"],
+    "icon": "xbox",
+    "popular": false,
+    "size": "~150 MB"
+  },
+  {
+    "id": "Parsec.Parsec",
+    "name": "Parsec",
+    "description": "Game streaming",
+    "category": "Gaming",
+    "tags": ["gaming", "streaming", "remote"],
+    "icon": "parsec",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "Nvidia.GeForceExperience",
+    "name": "GeForce Experience",
+    "description": "NVIDIA game optimization",
+    "category": "Gaming",
+    "tags": ["gaming", "nvidia", "drivers"],
+    "icon": "geforce",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Guru3D.MSIAfterburner",
+    "name": "MSI Afterburner",
+    "description": "GPU overclocking tool",
+    "category": "Gaming",
+    "tags": ["gaming", "overclocking", "gpu"],
+    "icon": "afterburner",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "REALiX.HWiNFO",
+    "name": "HWiNFO",
+    "description": "System information tool",
+    "category": "Gaming",
+    "tags": ["system", "hardware", "monitoring"],
+    "icon": "hwinfo",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "CPUID.CPU-Z",
+    "name": "CPU-Z",
+    "description": "CPU information tool",
+    "category": "Gaming",
+    "tags": ["system", "cpu", "hardware"],
+    "icon": "cpuz",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "TechPowerUp.GPU-Z",
+    "name": "GPU-Z",
+    "description": "GPU information tool",
+    "category": "Gaming",
+    "tags": ["system", "gpu", "hardware"],
+    "icon": "gpuz",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "Flameshot.Flameshot",
+    "name": "Flameshot",
+    "description": "Screenshot tool",
+    "category": "Utilities",
+    "tags": ["screenshot", "capture", "tool"],
+    "icon": "flameshot",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "Skillbrains.Lightshot",
+    "name": "Lightshot",
+    "description": "Screenshot tool",
+    "category": "Utilities",
+    "tags": ["screenshot", "capture", "tool"],
+    "icon": "lightshot",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "NirSoft.NirLauncher",
+    "name": "NirLauncher",
+    "description": "NirSoft utilities collection",
+    "category": "Utilities",
+    "tags": ["utilities", "nirsoft", "tools"],
+    "icon": "nirsoft",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Microsoft.Sysinternals",
+    "name": "SysInternals Suite",
+    "description": "Windows utilities",
+    "category": "Utilities",
+    "tags": ["utilities", "microsoft", "sysinternals"],
+    "icon": "sysinternals",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "CrystalDewWorld.CrystalDiskInfo",
+    "name": "CrystalDiskInfo",
+    "description": "Disk health monitor",
+    "category": "Utilities",
+    "tags": ["disk", "hardware", "monitoring"],
+    "icon": "crystaldiskinfo",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "CrystalDewWorld.CrystalDiskMark",
+    "name": "CrystalDiskMark",
+    "description": "Disk benchmark tool",
+    "category": "Utilities",
+    "tags": ["disk", "benchmark", "tools"],
+    "icon": "crystaldiskmark",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "JAMSoftware.TreeSize.Free",
+    "name": "TreeSize Free",
+    "description": "Disk space analyzer",
+    "category": "Utilities",
+    "tags": ["disk", "storage", "cleanup"],
+    "icon": "treesize",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "BulkRenameUtility.BulkRenameUtility",
+    "name": "Bulk Rename Utility",
+    "description": "Batch file renaming",
+    "category": "Utilities",
+    "tags": ["file", "rename", "utility"],
+    "icon": "bulkrename",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "Tichau.FileConverter",
+    "name": "File Converter",
+    "description": "File conversion tool",
+    "category": "Utilities",
+    "tags": ["file", "converter", "utility"],
+    "icon": "fileconverter",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "TwistedBit.GeekUninstaller",
+    "name": "Geek Uninstaller",
+    "description": "Program uninstaller",
+    "category": "Utilities",
+    "tags": ["uninstaller", "cleanup", "utility"],
+    "icon": "geekuninstaller",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "BleachBit.BleachBit",
+    "name": "BleachBit",
+    "description": "System cleaner",
+    "category": "Utilities",
+    "tags": ["cleanup", "privacy", "utility"],
+    "icon": "bleachbit",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "Piriform.Defraggler",
+    "name": "Defraggler",
+    "description": "Disk defragmenter",
+    "category": "Utilities",
+    "tags": ["disk", "defrag", "utility"],
+    "icon": "defraggler",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "Piriform.Recuva",
+    "name": "Recuva",
+    "description": "File recovery tool",
+    "category": "Utilities",
+    "tags": ["recovery", "file", "utility"],
+    "icon": "recuva",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "EaseUS.DataRecovery",
+    "name": "EaseUS Data Recovery",
+    "description": "Data recovery software",
+    "category": "Utilities",
+    "tags": ["recovery", "data", "utility"],
+    "icon": "easeus",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Rufus.Rufus",
+    "name": "Rufus",
+    "description": "USB bootable tool",
+    "category": "Utilities",
+    "tags": ["usb", "boot", "iso"],
+    "icon": "rufus",
+    "popular": false,
+    "size": "~2 MB"
+  },
+  {
+    "id": "Ventoy.Ventoy",
+    "name": "Ventoy",
+    "description": "Bootable USB solution",
+    "category": "Utilities",
+    "tags": ["usb", "boot", "iso"],
+    "icon": "ventoy",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Balena.Etcher",
+    "name": "Balena Etcher",
+    "description": "USB image writer",
+    "category": "Utilities",
+    "tags": ["usb", "boot", "iso"],
+    "icon": "etcher",
+    "popular": false,
+    "size": "~150 MB"
+  },
+  {
+    "id": "Microsoft.Sysinternals.Autoruns",
+    "name": "AutoRuns",
+    "description": "Startup manager",
+    "category": "Utilities",
+    "tags": ["startup", "sysinternals", "utility"],
+    "icon": "autoruns",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "Microsoft.Sysinternals.ProcessExplorer",
+    "name": "Process Explorer",
+    "description": "Process monitoring tool",
+    "category": "Utilities",
+    "tags": ["process", "sysinternals", "monitoring"],
+    "icon": "processexplorer",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "digimezzo.dopamine",
+    "name": "Dopamine",
+    "description": "Music player",
+    "category": "Utilities",
+    "tags": ["music", "audio", "player"],
+    "icon": "dopamine",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "Ditto.Ditto",
+    "name": "Ditto Clipboard",
+    "description": "Clipboard manager",
+    "category": "Utilities",
+    "tags": ["clipboard", "productivity", "utility"],
+    "icon": "ditto",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "Keypirinha.Keypirinha",
+    "name": "Keypirinha",
+    "description": "Launcher for Windows",
+    "category": "Utilities",
+    "tags": ["launcher", "productivity", "search"],
+    "icon": "keypirinha",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "Wox.Wox",
+    "name": "Wox",
+    "description": "Launcher for Windows",
+    "category": "Utilities",
+    "tags": ["launcher", "productivity", "search"],
+    "icon": "wox",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "Microsoft.Office",
+    "name": "Microsoft Office",
+    "description": "Microsoft Office suite",
+    "category": "Productivity",
+    "tags": ["office", "microsoft", "productivity"],
+    "icon": "office",
+    "popular": false,
+    "size": "~5 GB"
+  },
+  {
+    "id": "Kingsoft.WPSOffice",
+    "name": "WPS Office",
+    "description": "Office suite",
+    "category": "Productivity",
+    "tags": ["office", "productivity", "documents"],
+    "icon": "wpsoffice",
+    "popular": false,
+    "size": "~300 MB"
+  },
+  {
+    "id": "ONLYOFFICE.DesktopEditors",
+    "name": "OnlyOffice",
+    "description": "Office suite",
+    "category": "Productivity",
+    "tags": ["office", "productivity", "documents"],
+    "icon": "onlyoffice",
+    "popular": false,
+    "size": "~300 MB"
+  },
+  {
+    "id": "Joplin.Joplin",
+    "name": "Joplin",
+    "description": "Note-taking app",
+    "category": "Productivity",
+    "tags": ["notes", "productivity", "markdown"],
+    "icon": "joplin",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Typora.Typora",
+    "name": "Typora",
+    "description": "Markdown editor",
+    "category": "Productivity",
+    "tags": ["markdown", "editor", "writing"],
+    "icon": "typora",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "marktext.marktext",
+    "name": "Mark Text",
+    "description": "Markdown editor",
+    "category": "Productivity",
+    "tags": ["markdown", "editor", "writing"],
+    "icon": "marktext",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "NotepadQQ.Notepad",
+    "name": "Notepadqq",
+    "description": "Text editor",
+    "category": "Productivity",
+    "tags": ["editor", "text", "notepad"],
+    "icon": "notepadqq",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "geeksoftwareGmbH.PDF24Creator",
+    "name": "PDF24 Creator",
+    "description": "PDF tools",
+    "category": "Productivity",
+    "tags": ["pdf", "creator", "tools"],
+    "icon": "pdf24",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Adobe.Acrobat.Reader.64-bit",
+    "name": "Adobe Acrobat Reader",
+    "description": "PDF reader",
+    "category": "Productivity",
+    "tags": ["pdf", "reader", "adobe"],
+    "icon": "acrobat",
+    "popular": false,
+    "size": "~300 MB"
+  },
+  {
+    "id": "Xournalpp.Xournalpp",
+    "name": "Xournal++",
+    "description": "Note-taking PDF annotator",
+    "category": "Productivity",
+    "tags": ["pdf", "notes", "annotation"],
+    "icon": "xournal",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "JGraph.Draw",
+    "name": "Draw.io",
+    "description": "Diagramming tool",
+    "category": "Productivity",
+    "tags": ["diagrams", "flowcharts", "visual"],
+    "icon": "drawio",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Atlassian.Trello",
+    "name": "Trello",
+    "description": "Project management",
+    "category": "Productivity",
+    "tags": ["project", "management", "kanban"],
+    "icon": "trello",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "KeePassXCTeam.KeePassXC",
+    "name": "KeePassXC",
+    "description": "Cross-platform password manager",
+    "category": "Utilities",
+    "tags": ["password", "security", "manager"],
+    "icon": "keepassxc",
+    "popular": false,
+    "size": "~30 MB"
+  },
+  {
+    "id": "AgileBits.1Password",
+    "name": "1Password",
+    "description": "Password manager",
+    "category": "Utilities",
+    "tags": ["password", "security", "manager"],
+    "icon": "1password",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Dashlane.Dashlane",
+    "name": "Dashlane",
+    "description": "Password manager",
+    "category": "Utilities",
+    "tags": ["password", "security", "manager"],
+    "icon": "dashlane",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "AO Kaspersky Lab.KasperskyFree",
+    "name": "Kaspersky",
+    "description": "Antivirus",
+    "category": "Utilities",
+    "tags": ["security", "antivirus", "protection"],
+    "icon": "kaspersky",
+    "popular": false,
+    "size": "~300 MB"
+  },
+  {
+    "id": "ProtonVPN.ProtonVPN",
+    "name": "ProtonVPN",
+    "description": "VPN service",
+    "category": "Utilities",
+    "tags": ["vpn", "privacy", "security"],
+    "icon": "protonvpn",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "OpenVPNTechnologies.OpenVPN",
+    "name": "OpenVPN",
+    "description": "VPN client",
+    "category": "Utilities",
+    "tags": ["vpn", "privacy", "security"],
+    "icon": "openvpn",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "WireGuard.WireGuard",
+    "name": "WireGuard",
+    "description": "VPN protocol",
+    "category": "Utilities",
+    "tags": ["vpn", "privacy", "security"],
+    "icon": "wireguard",
+    "popular": false,
+    "size": "~5 MB"
+  },
+  {
+    "id": "VeraCrypt.VeraCrypt",
+    "name": "Veracrypt",
+    "description": "Disk encryption",
+    "category": "Utilities",
+    "tags": ["encryption", "security", "privacy"],
+    "icon": "veracrypt",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "GnuPG.GnuPG",
+    "name": "GnuPG",
+    "description": "Encryption tools",
+    "category": "Utilities",
+    "tags": ["encryption", "security", "gpg"],
+    "icon": "gnupg",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Transmission.Transmission",
+    "name": "Transmission",
+    "description": "BitTorrent client",
+    "category": "Utilities",
+    "tags": ["torrent", "p2p", "download"],
+    "icon": "transmission",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "Nextcloud.NextcloudDesktop",
+    "name": "Nextcloud",
+    "description": "Self-hosted cloud storage",
+    "category": "Utilities",
+    "tags": ["cloud", "storage", "sync"],
+    "icon": "nextcloud",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Syncthing.Syncthing",
+    "name": "Syncthing",
+    "description": "File synchronization",
+    "category": "Utilities",
+    "tags": ["sync", "file", "p2p"],
+    "icon": "syncthing",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "FreeFileSync.FreeFileSync",
+    "name": "FreeFileSync",
+    "description": "Folder comparison and sync",
+    "category": "Utilities",
+    "tags": ["sync", "file", "backup"],
+    "icon": "freefilesync",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Cyberduck.Cyberduck",
+    "name": "Cyberduck",
+    "description": "FTP/SFTP client",
+    "category": "Utilities",
+    "tags": ["ftp", "sftp", "transfer"],
+    "icon": "cyberduck",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Mega.MEGASync",
+    "name": "MegaSync",
+    "description": "MEGA cloud storage",
+    "category": "Utilities",
+    "tags": ["cloud", "storage", "mega"],
+    "icon": "mega",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Rclone.Rclone",
+    "name": "rclone",
+    "description": "Cloud storage sync tool",
+    "category": "Utilities",
+    "tags": ["cloud", "sync", "storage"],
+    "icon": "rclone",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Restic.Restic",
+    "name": "Restic",
+    "description": "Backup tool",
+    "category": "Utilities",
+    "tags": ["backup", "storage", "security"],
+    "icon": "restic",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "Duplicati.Duplicati",
+    "name": "Duplicati",
+    "description": "Backup tool",
+    "category": "Utilities",
+    "tags": ["backup", "storage", "encryption"],
+    "icon": "duplicati",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Ghisler.TotalCommander",
+    "name": "Total Commander",
+    "description": "File manager",
+    "category": "Utilities",
+    "tags": ["file", "manager", "utility"],
+    "icon": "totalcmd",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "alexx2000.DoubleCommander",
+    "name": "Double Commander",
+    "description": "File manager",
+    "category": "Utilities",
+    "tags": ["file", "manager", "utility"],
+    "icon": "doublecmd",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "StefanHenke.Q-Dir",
+    "name": "Q-Dir",
+    "description": "File manager",
+    "category": "Utilities",
+    "tags": ["file", "manager", "utility"],
+    "icon": "qdir",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "StataCorp.Stata",
+    "name": "Stata",
+    "description": "Statistical software",
+    "category": "Developer",
+    "tags": ["statistics", "data", "science"],
+    "icon": "stata",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "RProject.R",
+    "name": "R",
+    "description": "R programming language",
+    "category": "Developer",
+    "tags": ["r", "statistics", "programming"],
+    "icon": "rlang",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Posit.RStudio",
+    "name": "RStudio",
+    "description": "R IDE",
+    "category": "Developer",
+    "tags": ["r", "ide", "statistics"],
+    "icon": "rstudio",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "Anaconda.Anaconda3",
+    "name": "Anaconda",
+    "description": "Python distribution",
+    "category": "Developer",
+    "tags": ["python", "data-science", "anaconda"],
+    "icon": "anaconda",
+    "popular": false,
+    "size": "~1 GB"
+  },
+  {
+    "id": "Anaconda.Miniconda3",
+    "name": "Miniconda",
+    "description": "Minimal Python distribution",
+    "category": "Developer",
+    "tags": ["python", "miniconda", "data-science"],
+    "icon": "miniconda",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Project Jupyter.JupyterDesktop",
+    "name": "Jupyter",
+    "description": "Jupyter notebook desktop",
+    "category": "Developer",
+    "tags": ["jupyter", "python", "notebook"],
+    "icon": "jupyter",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "JuliaLang.julia",
+    "name": "Julia",
+    "description": "Julia programming language",
+    "category": "Developer",
+    "tags": ["julia", "programming", "scientific"],
+    "icon": "julia",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "MathWorks.MATLAB",
+    "name": "MATLAB",
+    "description": "Numerical computing",
+    "category": "Developer",
+    "tags": ["matlab", "scientific", "computing"],
+    "icon": "matlab",
+    "popular": false,
+    "size": "~5 GB"
+  },
+  {
+    "id": "GNU.Octave",
+    "name": "Octave",
+    "description": "Numerical computing",
+    "category": "Developer",
+    "tags": ["octave", "scientific", "computing"],
+    "icon": "octave",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "SageMath.SageMath",
+    "name": "SageMath",
+    "description": "Mathematics software",
+    "category": "Developer",
+    "tags": ["math", "scientific", "computing"],
+    "icon": "sagemath",
+    "popular": false,
+    "size": "~5 GB"
+  },
+  {
+    "id": "OSGeo.QGIS",
+    "name": "QGIS",
+    "description": "GIS software",
+    "category": "Developer",
+    "tags": ["gis", "mapping", "geospatial"],
+    "icon": "qgis",
+    "popular": false,
+    "size": "~1 GB"
+  },
+  {
+    "id": "OpenBabel.OpenBabel",
+    "name": "OpenBabel",
+    "description": "Chemistry tools",
+    "category": "Developer",
+    "tags": ["chemistry", "science", "molecular"],
+    "icon": "openbabel",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Zotero.Zotero",
+    "name": "Zotero",
+    "description": "Research manager",
+    "category": "Productivity",
+    "tags": ["research", "citations", "academic"],
+    "icon": "zotero",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Elsevier.Mendeley",
+    "name": "Mendeley",
+    "description": "Reference manager",
+    "category": "Productivity",
+    "tags": ["research", "citations", "academic"],
+    "icon": "mendeley",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "JabRef.JabRef",
+    "name": "JabRef",
+    "description": "Reference manager",
+    "category": "Productivity",
+    "tags": ["research", "citations", "bibtex"],
+    "icon": "jabref",
+    "popular": false,
+    "size": "~300 MB"
+  },
+  {
+    "id": "MiKTeX.MiKTeX",
+    "name": "LaTeX (MiKTeX)",
+    "description": "LaTeX distribution",
+    "category": "Developer",
+    "tags": ["latex", "tex", "documents"],
+    "icon": "miktex",
+    "popular": false,
+    "size": "~1 GB"
+  },
+  {
+    "id": "TeX.Live",
+    "name": "LaTeX (TeX Live)",
+    "description": "LaTeX distribution",
+    "category": "Developer",
+    "tags": ["latex", "tex", "documents"],
+    "icon": "texlive",
+    "popular": false,
+    "size": "~5 GB"
+  },
+  {
+    "id": "Oracle.VirtualBox",
+    "name": "VirtualBox",
+    "description": "Virtualization platform",
+    "category": "Utilities",
+    "tags": ["virtualization", "vm", "oracle"],
+    "icon": "virtualbox",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "VMware.WorkstationPlayer",
+    "name": "VMware Workstation Player",
+    "description": "Virtualization platform",
+    "category": "Utilities",
+    "tags": ["virtualization", "vm", "vmware"],
+    "icon": "vmware",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "QEMU.QEMU",
+    "name": "QEMU",
+    "description": "Virtualization platform",
+    "category": "Utilities",
+    "tags": ["virtualization", "emulation", "qemu"],
+    "icon": "qemu",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "Microsoft.WSL",
+    "name": "WSL (enable)",
+    "description": "Windows Subsystem for Linux",
+    "category": "Utilities",
+    "tags": ["wsl", "linux", "windows"],
+    "icon": "wsl",
+    "popular": false,
+    "size": "~10 MB"
+  },
+  {
+    "id": "HashiCorp.Vagrant",
+    "name": "Vagrant",
+    "description": "Virtualization tool",
+    "category": "Utilities",
+    "tags": ["virtualization", "vagrant", "devops"],
+    "icon": "vagrant",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "SUSE.RancherDesktop",
+    "name": "Rancher Desktop",
+    "description": "Kubernetes container management",
+    "category": "Utilities",
+    "tags": ["kubernetes", "containers", "rancher"],
+    "icon": "rancher",
+    "popular": false,
+    "size": "~500 MB"
+  },
+  {
+    "id": "RealVNC.VNCViewer",
+    "name": "VNC Viewer",
+    "description": "VNC client",
+    "category": "Utilities",
+    "tags": ["vnc", "remote", "desktop"],
+    "icon": "vncviewer",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "stascorp.rdpwrap",
+    "name": "RDP Wrapper",
+    "description": "Remote Desktop enable",
+    "category": "Utilities",
+    "tags": ["rdp", "remote", "windows"],
+    "icon": "rdpwrap",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "tailscale.tailscale",
+    "name": "Tailscale",
+    "description": "VPN mesh network",
+    "category": "Utilities",
+    "tags": ["vpn", "mesh", "networking"],
+    "icon": "tailscale",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "angryziber.AngryIPScanner",
+    "name": "Angry IP Scanner",
+    "description": "IP scanner",
+    "category": "Utilities",
+    "tags": ["network", "scanner", "ip"],
+    "icon": "angryip",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "WiresharkFoundation.Wireshark",
+    "name": "Wireshark",
+    "description": "Network protocol analyzer",
+    "category": "Utilities",
+    "tags": ["network", "wireshark", "analyzer"],
+    "icon": "wireshark",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Insecure.Nmap",
+    "name": "Nmap",
+    "description": "Network scanner",
+    "category": "Utilities",
+    "tags": ["network", "scanner", "security"],
+    "icon": "nmap",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "Telerik.Fiddler",
+    "name": "Fiddler",
+    "description": "Web debugging proxy",
+    "category": "Utilities",
+    "tags": ["web", "debugging", "proxy"],
+    "icon": "fiddler",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "mRemoteNG.mRemoteNG",
+    "name": "mRemoteNG",
+    "description": "Remote connections manager",
+    "category": "Utilities",
+    "tags": ["remote", "rdp", "ssh"],
+    "icon": "mremoteng",
+    "popular": false,
+    "size": "~20 MB"
+  },
+  {
+    "id": "RoyalApps.RoyalTS",
+    "name": "Royal TS",
+    "description": "Remote connections manager",
+    "category": "Utilities",
+    "tags": ["remote", "rdp", "ssh"],
+    "icon": "royalts",
+    "popular": false,
+    "size": "~50 MB"
+  },
+  {
+    "id": "SimonMuerner.NetSpeedMonitor",
+    "name": "NetSpeedMonitor",
+    "description": "Network speed monitor",
+    "category": "Utilities",
+    "tags": ["network", "monitor", "speed"],
+    "icon": "netspeed",
+    "popular": false,
+    "size": "~3 MB"
+  },
+  {
+    "id": "GlassWire.GlassWire",
+    "name": "Glasswire",
+    "description": "Network monitor",
+    "category": "Utilities",
+    "tags": ["network", "monitor", "firewall"],
+    "icon": "glasswire",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Fortinet.FortiClientVPN",
+    "name": "FortiClient VPN",
+    "description": "Fortinet VPN client",
+    "category": "Utilities",
+    "tags": ["vpn", "fortinet", "security"],
+    "icon": "forticlient",
+    "popular": false,
+    "size": "~100 MB"
+  },
+  {
+    "id": "Cisco.WebexTeams",
+    "name": "Cisco Webex",
+    "description": "Webex meetings",
+    "category": "Communication",
+    "tags": ["video", "meeting", "cisco"],
+    "icon": "webex",
+    "popular": false,
+    "size": "~200 MB"
+  },
+  {
+    "id": "LogMeIn.Hamachi",
+    "name": "Hamachi",
+    "description": "VPN networking",
+    "category": "Utilities",
+    "tags": ["vpn", "networking", "hamachi"],
+    "icon": "hamachi",
+    "popular": false,
+    "size": "~10 MB"
+  }
+]

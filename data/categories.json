@@ -1,0 +1,58 @@
+[
+  {
+    "id": "Developer",
+    "name": "Developer",
+    "description": "Development tools, IDEs, and programming languages",
+    "icon": "💻",
+    "color": "hsl(210, 100%, 50%)"
+  },
+  {
+    "id": "Browsers",
+    "name": "Browsers",
+    "description": "Web browsers for browsing the internet",
+    "icon": "🌐",
+    "color": "hsl(25, 95%, 53%)"
+  },
+  {
+    "id": "Media",
+    "name": "Media",
+    "description": "Audio, video, and image editing tools",
+    "icon": "🎬",
+    "color": "hsl(280, 70%, 55%)"
+  },
+  {
+    "id": "Communication",
+    "name": "Communication",
+    "description": "Chat, video conferencing, and messaging apps",
+    "icon": "💬",
+    "color": "hsl(160, 70%, 45%)"
+  },
+  {
+    "id": "Utilities",
+    "name": "Utilities",
+    "description": "System utilities and productivity helpers",
+    "icon": "🔧",
+    "color": "hsl(30, 90%, 55%)"
+  },
+  {
+    "id": "Productivity",
+    "name": "Productivity",
+    "description": "Notes, tasks, and office applications",
+    "icon": "📊",
+    "color": "hsl(145, 60%, 45%)"
+  },
+  {
+    "id": "Design",
+    "name": "Design",
+    "description": "Creative tools for design and art",
+    "icon": "🎨",
+    "color": "hsl(330, 80%, 55%)"
+  },
+  {
+    "id": "Gaming",
+    "name": "Gaming",
+    "description": "Game launchers and gaming platforms",
+    "icon": "🎮",
+    "color": "hsl(0, 80%, 55%)"
+  }
+]

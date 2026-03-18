@@ -1,0 +1,85 @@
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="4.236096000000001">
+<testsuite name="performance.spec.ts" timestamp="2026-03-18T11:27:16.696Z" hostname="chromium" tests="9" failures="0" skipped="0" time="9.107" errors="0">
+<testcase name="Performance Tests › Landing page should load quickly" classname="performance.spec.ts" time="1.418">
+<system-out>
+<![CDATA[
+📊 Landing Page Performance Metrics:
+  DOM Content Loaded: 279ms
+  Load Complete: 458ms
+  First Contentful Paint: 204ms
+  Largest Contentful Paint: 0ms
+  Cumulative Layout Shift: 0
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › App page should perform well" classname="performance.spec.ts" time="2.992">
+<system-out>
+<![CDATA[
+📊 App Page Performance Metrics:
+  DOM Content Loaded: 204ms
+  Load Complete: 1251ms
+  First Contentful Paint: 412ms
+  Largest Contentful Paint: 0ms
+  Cumulative Layout Shift: 0
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › should have reasonable bundle sizes" classname="performance.spec.ts" time="0.801">
+<system-out>
+<![CDATA[
+📦 Bundle Sizes (first load):
+  Total JavaScript: 3KB
+  Total CSS: 0KB
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › should handle page interactions smoothly" classname="performance.spec.ts" time="0.873">
+<system-out>
+<![CDATA[
+⚡ First Input Delay: ~94ms
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › API endpoints should respond quickly" classname="performance.spec.ts" time="1.167">
+<system-out>
+<![CDATA[
+🚀 API Response Time: 837ms
+]]>
+</system-out>
+</testcase>
+<testcase name="Mobile Performance › should perform well on mobile viewport" classname="performance.spec.ts" time="0.514">
+<system-out>
+<![CDATA[
+📱 Mobile Performance:
+  DOM Content Loaded: 187ms
+  Load Complete: 0ms
+]]>
+</system-out>
+</testcase>
+<testcase name="Mobile Performance › should have responsive layout" classname="performance.spec.ts" time="0.846">
+<system-out>
+<![CDATA[
+📱 Responsive Layout: ✓ All viewport sizes tested
+]]>
+</system-out>
+</testcase>
+<testcase name="Resource Optimization › should use efficient images" classname="performance.spec.ts" time="0.176">
+<system-out>
+<![CDATA[
+🖼️  Image Optimization:
+  Total Images: 0
+  Without Alt: 0 (should be 0)
+  Lazy Loaded: 0
+]]>
+</system-out>
+</testcase>
+<testcase name="Resource Optimization › should use text compression" classname="performance.spec.ts" time="0.32">
+<system-out>
+<![CDATA[
+🗜️  Content Encoding: gzip
+  ✓ Compression enabled: gzip
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

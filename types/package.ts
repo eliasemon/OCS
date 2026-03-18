@@ -16,6 +16,8 @@ export interface Package {
   tags: readonly string[]
   /** Icon name/emoji for visual identification */
   icon: string
+  /** Brand slug for Simple Icons mapping (e.g., 'visualstudiocode', 'git') */
+  brandSlug?: string
   /** Whether this package is popular/featured */
   popular: boolean
   /** Approximate download size */

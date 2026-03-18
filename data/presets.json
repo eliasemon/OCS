@@ -1,0 +1,259 @@
+[
+  {
+    "id": "web-development",
+    "name": "Web Development Starter",
+    "description": "Essential tools for web development: VS Code, Node.js, Git, and browsers",
+    "icon": "💻",
+    "tags": ["development", "web", "javascript", "nodejs"],
+    "packages": [
+      "Microsoft.VisualStudioCode",
+      "OpenJS.NodeJS.LTS",
+      "Git.Git",
+      "Google.Chrome",
+      "Mozilla.Firefox",
+      "Postman.Postman",
+      "GitHub.cli"
+    ],
+    "featured": true
+  },
+  {
+    "id": "data-science",
+    "name": "Data Science & Python",
+    "description": "Python environment with Jupyter, VS Code, and essential data science libraries",
+    "icon": "📊",
+    "tags": ["development", "python", "data", "science"],
+    "packages": [
+      "Python.Python.3.12",
+      "Microsoft.VisualStudioCode",
+      "Git.Git",
+      "Anaconda.Anaconda3",
+      "Project.Julia.Julia"
+    ],
+    "featured": true
+  },
+  {
+    "id": "gaming",
+    "name": "Gaming Essentials",
+    "description": "Gaming platforms, Discord, and system utilities for gamers",
+    "icon": "🎮",
+    "tags": ["gaming", "entertainment", "social"],
+    "packages": [
+      "Valve.Steam",
+      "EpicGames.EpicGamesLauncher",
+      "Discord.Discord",
+      "Nvidia.GeForceExperience",
+      " OBSProject.OBSStudio"
+    ],
+    "featured": true
+  },
+  {
+    "id": "productivity",
+    "name": "Productivity Suite",
+    "description": "Office apps, note-taking, and productivity tools for getting work done",
+    "icon": "📝",
+    "tags": ["productivity", "office", "business"],
+    "packages": [
+      "Microsoft.Office",
+      "Notion.Notion",
+      "Obsidian.Obsidian",
+      "Toggl.TogglDesktop",
+      "Grammarly.Grammarly",
+      "Notion.Notion"
+    ],
+    "featured": true
+  },
+  {
+    "id": "design-creative",
+    "name": "Design & Creative",
+    "description": "Graphic design, photo editing, and creative tools",
+    "icon": "🎨",
+    "tags": ["design", "creative", "graphics"],
+    "packages": [
+      "Adobe.PhotoshopExpress",
+      "Figma.Figma",
+      "Inkscape.Inkscape",
+      "GIMP.GIMP",
+      "Krita.Krita",
+      "BlenderFoundation.Blender"
+    ],
+    "featured": true
+  },
+  {
+    "id": "developer-tools",
+    "name": "Developer Tools",
+    "description": "CLI tools, Docker, databases, and development utilities",
+    "icon": "🛠️",
+    "tags": ["development", "tools", "utilities"],
+    "packages": [
+      "Microsoft.VisualStudioCode",
+      "Git.Git",
+      "OpenJS.NodeJS.LTS",
+      "Golang.Go",
+      "Rustlang.Rust.MSVC",
+      "Docker.DockerDesktop",
+      "PostgreSQL.PostgreSQL",
+      "Mozilla.Firefox.DeveloperEdition"
+    ],
+    "featured": false
+  },
+  {
+    "id": "browsers-internet",
+    "name": "Browsers & Internet",
+    "description": "All major browsers and internet utilities",
+    "icon": "🌐",
+    "tags": ["browsers", "internet", "web"],
+    "packages": [
+      "Google.Chrome",
+      "Mozilla.Firefox",
+      "Microsoft.Edge",
+      "Brave.Brave",
+      "Opera.Opera",
+      "Vivaldi.Vivaldi"
+    ],
+    "featured": false
+  },
+  {
+    "id": "media-entertainment",
+    "name": "Media & Entertainment",
+    "description": "Streaming apps, media players, and entertainment tools",
+    "icon": "🎬",
+    "tags": ["media", "entertainment", "streaming"],
+    "packages": [
+      "Spotify.Spotify",
+      "Netflix.Netflix",
+      "VLC.VLC",
+      "MPV.MPV",
+      "Kode54.Cider",
+      "TIDAL.TIDAL"
+    ],
+    "featured": false
+  },
+  {
+    "id": "communication",
+    "name": "Communication Tools",
+    "description": "Chat, video conferencing, and team collaboration apps",
+    "icon": "💬",
+    "tags": ["communication", "chat", "collaboration"],
+    "packages": [
+      "Slack.Slack",
+      "Microsoft.Teams",
+      "Zoom.Zoom",
+      "Discord.Discord",
+      "WhatsApp.WhatsApp",
+      "Telegram.TelegramDesktop"
+    ],
+    "featured": false
+  },
+  {
+    "id": "utilities",
+    "name": "System Utilities",
+    "description": "Essential system utilities and maintenance tools",
+    "icon": "⚙️",
+    "tags": ["utilities", "system", "tools"],
+    "packages": [
+      "7zip.7zip",
+      "Microsoft.PowerToys",
+      "Voidtools.Everything",
+      "REALiX.HWiNFO",
+      "CPUID.CPU-Z",
+      "GerhardGuenther.Greenshot"
+    ],
+    "featured": false
+  },
+  {
+    "id": "security-privacy",
+    "name": "Security & Privacy",
+    "description": "Antivirus, VPN, password managers, and security tools",
+    "icon": "🔒",
+    "tags": ["security", "privacy", "antivirus"],
+    "packages": [
+      "Bitwarden.Bitwarden",
+      "KeePassXCTeam.KeePassXC",
+      "ProtonTechnologies.ProtonVPN",
+      "Mozilla.VPN",
+      "Malwarebytes.Malwarebytes"
+    ],
+    "featured": false
+  },
+  {
+    "id": "cloud-storage",
+    "name": "Cloud Storage",
+    "description": "Cloud storage and file synchronization services",
+    "icon": "☁️",
+    "tags": ["cloud", "storage", "files"],
+    "packages": [
+      "Google.Drive",
+      "Microsoft.OneDrive",
+      "Dropbox.Dropbox",
+      "Resilio.ResilioSync",
+      "Nextcloud.Nextcloud"
+    ],
+    "featured": false
+  },
+  {
+    "id": "student-essentials",
+    "name": "Student Essentials",
+    "description": "Essential apps for students: office, research, and study tools",
+    "icon": "📚",
+    "tags": ["student", "education", "school"],
+    "packages": [
+      "Microsoft.Office",
+      "Notion.Notion",
+      "Obsidian.Obsidian",
+      "Anki.Anki",
+      "Grammarly.Grammarly",
+      "Zotero.Zotero"
+    ],
+    "featured": true
+  },
+  {
+    "id": "minimal-setup",
+    "name": "Minimal Setup",
+    "description": "Just the essentials: browser, editor, and terminal",
+    "icon": "✨",
+    "tags": ["minimal", "essential", "simple"],
+    "packages": [
+      "Google.Chrome",
+      "Microsoft.VisualStudioCode",
+      "Microsoft.WindowsTerminal",
+      "Git.Git"
+    ],
+    "featured": true
+  },
+  {
+    "id": "full-stack",
+    "name": "Full Stack Developer",
+    "description": "Complete development environment: frontend, backend, databases, and DevOps tools",
+    "icon": "🚀",
+    "tags": ["development", "fullstack", "frontend", "backend"],
+    "packages": [
+      "Microsoft.VisualStudioCode",
+      "OpenJS.NodeJS.LTS",
+      "Golang.Go",
+      "Python.Python.3.12",
+      "Git.Git",
+      "Docker.DockerDesktop",
+      "PostgreSQL.PostgreSQL",
+      "Redis.Redis",
+      "Mozilla.Firefox.DeveloperEdition",
+      "Postman.Postman"
+    ],
+    "featured": false
+  },
+  {
+    "id": "content-creator",
+    "name": "Content Creator",
+    "description": "Tools for YouTubers, streamers, and content creators",
+    "icon": "🎥",
+    "tags": ["content", "creator", "streaming", "video"],
+    "packages": [
+      "OBSProject.OBSStudio",
+      "Audacity.Audacity",
+      "KDE.Kdenlive",
+      "BlenderFoundation.Blender",
+      "Inkscape.Inkscape",
+      "Discord.Discord"
+    ],
+    "featured": false
+  }
+]
