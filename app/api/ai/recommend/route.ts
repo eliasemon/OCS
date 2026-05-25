@@ -22,7 +22,13 @@ interface RecommendResponse {
 }
 
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY
-const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "google/gemini-flash-1.5"
+const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "meta-llama/llama-3.1-8b-instruct:free"
+
+// Fallback models if primary fails
+const FALLBACK_MODELS = [
+  "meta-llama/llama-3.1-8b-instruct:free",
+  "microsoft/phi-3-mini-128k-instruct:free",
+]
 
 // Mock recommendations when API key is not configured
 function getMockRecommendations(
@@ -60,13 +66,17 @@ function getMockRecommendations(
   }
 }
 
-async function callOpenRouter(
+/**
+ * Call OpenRouter API with a specific model
+ */
+async function callOpenRouterWithModel(
   context: string,
   selectedPackages: string[],
   category: string | undefined,
-  limit: number
+  limit: number,
+  model: string,
+  packages: Package[]
 ): Promise<RecommendResponse> {
-  const packages = packagesData as Package[]
   const selected = new Set(selectedPackages)
 
   // Build package list for context
@@ -108,7 +118,7 @@ Recommend ${limit} packages based on this context.`
       "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://winsetup.app",
     },
     body: JSON.stringify({
-      model: OPENROUTER_MODEL,
+      model,
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: userPrompt },
@@ -137,6 +147,35 @@ Recommend ${limit} packages based on this context.`
   }
 
   return JSON.parse(jsonContent) as RecommendResponse
+}
+
+/**
+ * Call AI service with OpenRouter fallback models
+ */
+async function callAIService(
+  context: string,
+  selectedPackages: string[],
+  category: string | undefined,
+  limit: number
+): Promise<RecommendResponse> {
+  const packages = packagesData as Package[]
+  const errors: Error[] = []
+
+  // Try OpenRouter models
+  if (OPENROUTER_API_KEY) {
+    const modelsToTry = [OPENROUTER_MODEL, ...FALLBACK_MODELS.filter(m => m !== OPENROUTER_MODEL)]
+
+    for (const model of modelsToTry) {
+      try {
+        return await callOpenRouterWithModel(context, selectedPackages, category, limit, model, packages)
+      } catch (error) {
+        errors.push(error instanceof Error ? error : new Error(String(error)))
+        console.warn(`OpenRouter model ${model} failed, trying next...`)
+      }
+    }
+  }
+
+  throw new Error(`OpenRouter AI failed. Errors: ${errors.map(e => e.message).join("; ")}`)
 }
 
 // POST /api/ai/recommend - Get AI-powered package recommendations
@@ -183,8 +222,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(mockResult, { headers })
     }
 
-    // Call OpenRouter API
-    const result = await callOpenRouter(context, selectedPackages, category, limit)
+    // Call AI service via OpenRouter
+    const result = await callAIService(context, selectedPackages, category, limit)
 
     headers["Cache-Control"] = "no-store"
     return NextResponse.json(result, { headers })

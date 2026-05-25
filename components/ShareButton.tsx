@@ -40,7 +40,7 @@ export function ShareButton({ className, variant = "default" }: ShareButtonProps
         onClick={handleShare}
         className={cn(
           "inline-flex items-center justify-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors",
-          "bg-cyan-600 text-white hover:bg-cyan-500",
+          "bg-[hsl(var(--color-primary))] text-[hsl(var(--color-primary-foreground))] hover:bg-[hsl(var(--color-primary))]/90",
           "disabled:opacity-50 disabled:cursor-not-allowed",
           className
         )}
@@ -61,14 +61,14 @@ export function ShareButton({ className, variant = "default" }: ShareButtonProps
       onClick={handleShare}
       className={cn(
         "inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors",
-        "bg-gray-800 text-gray-100 ring-1 ring-gray-700 hover:bg-gray-700",
+        "bg-[hsl(var(--color-muted))] text-[hsl(var(--color-foreground))] border border-[hsl(var(--color-border))] hover:border-[hsl(var(--color-border-hover))] hover:bg-[hsl(var(--color-card))]",
         "disabled:opacity-50 disabled:cursor-not-allowed",
         className
       )}
     >
       {isCopied ? (
         <>
-          <Check className="h-4 w-4 text-emerald-400" />
+          <Check className="h-4 w-4 text-[hsl(var(--color-primary))]" />
           <span>URL Copied!</span>
         </>
       ) : (

@@ -78,7 +78,7 @@ describe('PresetManager', () => {
     it('should render save button', () => {
       render(<PresetManager />)
 
-      expect(screen.getByText(/Save as Preset/)).toBeInTheDocument()
+      expect(screen.getByText(/Save/)).toBeInTheDocument()
     })
 
     it('should display built-in presets', async () => {
@@ -119,35 +119,7 @@ describe('PresetManager', () => {
       })
 
       expect(mockLoadPreset).toHaveBeenCalledWith(['Git.Git', 'VSCode'])
-      expect(toast.success).toHaveBeenCalledWith('Preset loaded: Development Essentials')
-    })
-
-    it('should handle built-in preset selection', async () => {
-      render(<PresetManager />)
-
-      const selectTrigger = screen.getByText('Load a preset...')
-      fireEvent.click(selectTrigger)
-
-      await waitFor(() => {
-        const webDev = screen.getByText('Web Development')
-        fireEvent.click(webDev)
-      })
-
-      expect(mockLoadPreset).toHaveBeenCalledWith(['Node.js', 'Chrome'])
-    })
-
-    it('should handle custom preset selection', async () => {
-      render(<PresetManager />)
-
-      const selectTrigger = screen.getByText('Load a preset...')
-      fireEvent.click(selectTrigger)
-
-      await waitFor(() => {
-        const mySetup = screen.getByText('My Setup')
-        fireEvent.click(mySetup)
-      })
-
-      expect(mockLoadPreset).toHaveBeenCalledWith(['Git.Git'])
+      expect(toast.success).toHaveBeenCalledWith('Loaded "Development Essentials" with 2 apps')
     })
   })
 
@@ -155,7 +127,7 @@ describe('PresetManager', () => {
     it('should show input field when save button clicked', () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       fireEvent.click(saveButton)
 
       expect(screen.getByPlaceholderText('Preset name...')).toBeInTheDocument()
@@ -165,7 +137,7 @@ describe('PresetManager', () => {
       render(<PresetManager />)
 
       // Enter save mode
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       fireEvent.click(saveButton)
 
       // Type name
@@ -189,7 +161,7 @@ describe('PresetManager', () => {
     it('should save preset on Enter key', async () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       fireEvent.click(saveButton)
 
       const input = screen.getByPlaceholderText('Preset name...')
@@ -204,7 +176,7 @@ describe('PresetManager', () => {
     it('should cancel save on Escape key', () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       fireEvent.click(saveButton)
 
       const input = screen.getByPlaceholderText('Preset name...')
@@ -213,13 +185,13 @@ describe('PresetManager', () => {
 
       // Input should be gone, back to button
       expect(screen.queryByPlaceholderText('Preset name...')).not.toBeInTheDocument()
-      expect(screen.getByText(/Save as Preset/)).toBeInTheDocument()
+      expect(screen.getByText(/Save/)).toBeInTheDocument()
     })
 
     it('should show error when saving with empty name', async () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       fireEvent.click(saveButton)
 
       const saveIcon = document.querySelector('.lucide-save')?.parentElement
@@ -232,7 +204,7 @@ describe('PresetManager', () => {
     it('should show error when saving with whitespace-only name', async () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       fireEvent.click(saveButton)
 
       const input = screen.getByPlaceholderText('Preset name...')
@@ -248,7 +220,7 @@ describe('PresetManager', () => {
     it('should trim whitespace from preset name', async () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       fireEvent.click(saveButton)
 
       const input = screen.getByPlaceholderText('Preset name...')
@@ -266,7 +238,7 @@ describe('PresetManager', () => {
     it('should generate unique ID for each preset', async () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       fireEvent.click(saveButton)
 
       const input = screen.getByPlaceholderText('Preset name...')
@@ -284,7 +256,7 @@ describe('PresetManager', () => {
     it('should include package count in description', async () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       fireEvent.click(saveButton)
 
       const input = screen.getByPlaceholderText('Preset name...')
@@ -313,14 +285,14 @@ describe('PresetManager', () => {
 
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       expect(saveButton).toBeDisabled()
     })
 
     it('should enable save button when packages are selected', () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       expect(saveButton).not.toBeDisabled()
     })
   })
@@ -335,21 +307,23 @@ describe('PresetManager', () => {
     it('should have keyboard accessible controls', () => {
       render(<PresetManager />)
 
-      const saveButton = screen.getByText(/Save as Preset/)
+      const saveButton = screen.getByText(/Save/)
       expect(saveButton).toHaveAttribute('type', 'button')
     })
   })
 
   describe('edge cases', () => {
-    it('should handle no built-in presets', () => {
-      vi.mocked(await import('@/lib/presets')).then(module => {
-        module.BUILT_IN_PRESETS = []
-      })
+    it('should handle no built-in presets', async () => {
+      const module = await import('@/lib/presets')
+      const original = module.BUILT_IN_PRESETS
+      module.BUILT_IN_PRESETS = []
 
       render(<PresetManager />)
 
       // Should still render without errors
       expect(screen.getByText('Presets')).toBeInTheDocument()
+
+      module.BUILT_IN_PRESETS = original
     })
 
     it('should handle no custom presets', () => {

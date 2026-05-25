@@ -21,7 +21,13 @@ interface SearchResponse {
 }
 
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY
-const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "google/gemini-flash-1.5"
+const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "meta-llama/llama-3.1-8b-instruct:free"
+
+// Fallback models if primary fails
+const FALLBACK_MODELS = [
+  "meta-llama/llama-3.1-8b-instruct:free",
+  "microsoft/phi-3-mini-128k-instruct:free",
+]
 
 // Mock search when API key is not configured
 function getMockSearch(query: string, limit: number): SearchResponse {
@@ -51,9 +57,15 @@ function getMockSearch(query: string, limit: number): SearchResponse {
   }
 }
 
-async function callOpenRouter(query: string, limit: number): Promise<SearchResponse> {
-  const packages = packagesData as Package[]
-
+/**
+ * Call OpenRouter API with a specific model
+ */
+async function callOpenRouterWithModel(
+  query: string,
+  limit: number,
+  model: string,
+  packages: Package[]
+): Promise<SearchResponse> {
   const systemPrompt = `You are a Windows software search expert. Find packages matching user queries.
 
 Available packages:
@@ -81,7 +93,7 @@ Constraints:
       "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://winsetup.app",
     },
     body: JSON.stringify({
-      model: OPENROUTER_MODEL,
+      model,
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: query },
@@ -110,6 +122,30 @@ Constraints:
   }
 
   return JSON.parse(jsonContent) as SearchResponse
+}
+
+/**
+ * Call AI service with OpenRouter fallback models
+ */
+async function callAIService(query: string, limit: number): Promise<SearchResponse> {
+  const packages = packagesData as Package[]
+  const errors: Error[] = []
+
+  // Try OpenRouter models
+  if (OPENROUTER_API_KEY) {
+    const modelsToTry = [OPENROUTER_MODEL, ...FALLBACK_MODELS.filter(m => m !== OPENROUTER_MODEL)]
+
+    for (const model of modelsToTry) {
+      try {
+        return await callOpenRouterWithModel(query, limit, model, packages)
+      } catch (error) {
+        errors.push(error instanceof Error ? error : new Error(String(error)))
+        console.warn(`OpenRouter model ${model} failed, trying next...`)
+      }
+    }
+  }
+
+  throw new Error(`OpenRouter AI failed. Errors: ${errors.map(e => e.message).join("; ")}`)
 }
 
 // POST /api/ai/search - Natural language package search
@@ -163,8 +199,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(mockResult, { headers })
     }
 
-    // Call OpenRouter API
-    const result = await callOpenRouter(query, limit)
+    // Call AI service via OpenRouter
+    const result = await callAIService(query, limit)
 
     headers["Cache-Control"] = "no-store"
     return NextResponse.json(result, { headers })

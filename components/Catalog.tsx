@@ -6,7 +6,7 @@ import type { Package, Category } from "@/types/package"
 import { useSelectionStore } from "@/store/selection"
 import { CategoryFilter } from "./CategoryFilter"
 import { PackageCard } from "./PackageCard"
-import { Search } from "lucide-react"
+import { Search, Package as PackageIcon } from "lucide-react"
 
 interface CatalogProps {
   packages: Package[]
@@ -26,12 +26,12 @@ function groupPackagesIntoRows(packages: Package[], columns: number) {
 
 // Get number of columns based on window width
 function getColumnsCount(width: number): number {
-  if (width >= 1024) return 3 // lg:grid-cols-3
-  if (width >= 640) return 2  // sm:grid-cols-2
+  if (width >= 1280) return 3 // xl:grid-cols-3
+  if (width >= 768) return 2  // md:grid-cols-2
   return 1                    // grid-cols-1
 }
 
-const ESTIMATED_ROW_HEIGHT = 220 // Estimated height for each row
+const ESTIMATED_ROW_HEIGHT = 180 // Estimated height for each row
 
 export function Catalog({ packages, initialSelected, searchQuery: externalSearchQuery, onSearchChange }: CatalogProps) {
   const { loadPreset } = useSelectionStore()
@@ -87,17 +87,22 @@ export function Catalog({ packages, initialSelected, searchQuery: externalSearch
     count: packageRows.length,
     getScrollElement: () => parentRef.current,
     estimateSize: () => ESTIMATED_ROW_HEIGHT,
-    overscan: 2, // Render 2 extra rows above/below viewport
+    overscan: 3, // Render 3 extra rows above/below viewport
   })
 
   if (!mounted) {
     return (
       <div className="space-y-6">
-        <div className="h-12 animate-pulse rounded-lg bg-gray-900" />
-        <div className="h-10 animate-pulse rounded-lg bg-gray-900" />
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div key={i} className="h-40 animate-pulse rounded-xl bg-gray-900" />
+        {/* Category filter skeleton */}
+        <div className="flex gap-2 overflow-hidden">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="h-10 w-24 animate-pulse rounded-xl bg-[hsl(var(--color-muted))]" />
+          ))}
+        </div>
+        {/* Cards skeleton */}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {Array.from({ length: 9 }).map((_, i) => (
+            <div key={i} className="h-40 animate-pulse rounded-xl bg-[hsl(var(--color-muted))]" />
           ))}
         </div>
       </div>
@@ -107,27 +112,43 @@ export function Catalog({ packages, initialSelected, searchQuery: externalSearch
   const virtualItems = virtualizer.getVirtualItems()
 
   return (
-    <div className="space-y-6">
-      {/* Only show CategoryFilter internally if using external search */}
+    <div className="flex flex-col h-full space-y-6">
+      {/* Category Filter */}
       <CategoryFilter
         selected={activeCategory}
         onChange={setActiveCategory}
         counts={categoryCounts}
       />
 
-      <div className="text-sm text-gray-400">
-        Showing {filteredPackages.length} of {packages.length} packages
+      {/* Results count */}
+      <div className="flex items-center justify-between">
+        <p className="text-sm text-[hsl(var(--color-muted-foreground))]">
+          Showing <span className="font-semibold text-[hsl(var(--color-foreground))]">{filteredPackages.length}</span> of {packages.length} packages
+        </p>
+        {searchQuery && (
+          <button
+            onClick={() => setSearchQuery("")}
+            className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
+          >
+            Clear search
+          </button>
+        )}
       </div>
 
+      {/* Package Grid or Empty State */}
       {filteredPackages.length === 0 ? (
-        <div className="flex flex-col items-center justify-center py-16 text-center">
-          <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-cyan-950/50 to-blue-950/50 ring-1 ring-cyan-500/20">
-            <Search className="h-10 w-10 text-cyan-400" />
+        <div className="flex flex-col items-center justify-center py-20 text-center">
+          <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500/10 to-violet-500/10 ring-1 ring-[hsl(var(--color-border))]">
+            {searchQuery ? (
+              <Search className="h-12 w-12 text-cyan-400" />
+            ) : (
+              <PackageIcon className="h-12 w-12 text-violet-400" />
+            )}
           </div>
-          <h3 className="mb-3 text-xl font-semibold text-gray-100">
+          <h3 className="mb-3 text-xl font-semibold text-[hsl(var(--color-foreground))]">
             {searchQuery ? "No packages found" : "No packages in this category"}
           </h3>
-          <p className="mb-6 max-w-md text-sm text-gray-400">
+          <p className="mb-8 max-w-md text-sm text-[hsl(var(--color-muted-foreground))] leading-relaxed">
             {searchQuery
               ? `We couldn't find any packages matching "${searchQuery}". Try different keywords or browse all packages.`
               : "There are no packages in this category yet. Try selecting a different category."}
@@ -136,14 +157,16 @@ export function Catalog({ packages, initialSelected, searchQuery: externalSearch
             <div className="flex flex-col gap-3 sm:flex-row">
               <button
                 onClick={() => setSearchQuery("")}
-                className="inline-flex items-center justify-center rounded-lg bg-cyan-600 px-4 py-2 text-sm font-semibold text-gray-100 transition-colors hover:bg-cyan-500"
+                className="btn-primary"
               >
+                <Search className="h-4 w-4 mr-2" />
                 Clear Search
               </button>
               <button
                 onClick={() => setActiveCategory("All")}
-                className="inline-flex items-center justify-center rounded-lg bg-gray-800 px-4 py-2 text-sm font-semibold text-gray-100 ring-1 ring-gray-700 transition-colors hover:bg-gray-700"
+                className="btn-secondary"
               >
+                <PackageIcon className="h-4 w-4 mr-2" />
                 Browse All Packages
               </button>
             </div>
@@ -152,7 +175,7 @@ export function Catalog({ packages, initialSelected, searchQuery: externalSearch
       ) : (
         <div
           ref={parentRef}
-          className="h-[calc(100vh-16rem)] overflow-auto"
+          className="flex-1 overflow-y-auto pr-2 -mr-2 min-h-0"
           style={{
             willChange: 'transform',
             transform: 'translateZ(0)',
@@ -178,10 +201,10 @@ export function Catalog({ packages, initialSelected, searchQuery: externalSearch
                     left: 0,
                     width: '100%',
                     transform: `translateY(${virtualItem.start}px)`,
-                    padding: '1rem 0',
+                    padding: '0.5rem 0',
                   }}
                 >
-                  <div className="grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
                     {rowPackages.map((pkg) => (
                       <PackageCard key={pkg.id} package={pkg} />
                     ))}

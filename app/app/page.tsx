@@ -11,7 +11,7 @@ export default function AppPage() {
 
 function AppPageFallback() {
   return (
-    <div className="flex flex-col min-h-screen bg-[hsl(var(--color-background))]">
+    <div className="flex flex-col h-screen overflow-hidden bg-[hsl(var(--color-background))]">
       <div className="h-16 border-b border-[hsl(var(--color-border))] animate-pulse" />
       <div className="flex flex-1 px-4 pb-4 gap-4">
         <div className="flex-1 space-y-4">

@@ -23,21 +23,21 @@ export function ShareBanner({ appIds, presetId, count }: ShareBannerProps) {
   if (dismissed || count === 0) return null
 
   return (
-    <div className="mb-6 flex items-center justify-between rounded-lg border border-amber-500/30 bg-amber-950/20 px-4 py-3">
+    <div className="mb-6 flex items-center justify-between rounded-xl border border-[hsl(var(--color-border))] bg-[hsl(var(--color-accent))/0.1] px-4 py-3">
       <div className="flex items-center gap-3">
         <span className="text-xl">🔗</span>
         <div>
-          <p className="font-medium text-amber-200">
+          <p className="font-medium text-[hsl(var(--color-foreground))]">
             {count} {count === 1 ? "app" : "apps"} pre-selected from a shared link
           </p>
           {presetId && (
-            <p className="text-sm text-amber-300/70">Using preset: {presetId}</p>
+            <p className="text-sm text-[hsl(var(--color-muted-foreground))]">Using preset: {presetId}</p>
           )}
         </div>
       </div>
       <button
         onClick={() => setDismissed(true)}
-        className="flex h-8 w-8 items-center justify-center rounded-md text-amber-300 transition-colors hover:bg-amber-900/30"
+        className="flex h-8 w-8 items-center justify-center rounded-md text-[hsl(var(--color-muted-foreground))] transition-colors hover:bg-[hsl(var(--color-muted))] hover:text-[hsl(var(--color-foreground))]"
         aria-label="Dismiss"
       >
         <X className="h-4 w-4" />

@@ -32,7 +32,7 @@ export default async function SharePage({ searchParams }: Props) {
         <main className="flex-1 overflow-y-auto p-6">
           <Catalog packages={packages} initialSelected={appIds} />
         </main>
-        <aside className="hidden md:flex flex-col w-80 border-l border-gray-800">
+        <aside className="hidden md:flex flex-col w-80 border-l border-[hsl(var(--color-border))]">
           <Sidebar packages={packages} />
         </aside>
       </div>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="peazipBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5a27"/>
+      <stop offset="100%" style="stop-color:#1a3d17"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded square -->
+  <rect x="0" y="0" width="128" height="128" rx="24" fill="url(#peazipBg)"/>
+
+  <!-- Pea pod shape -->
+  <path d="M30 64 Q30 40 50 35 L78 35 Q98 40 98 64 Q98 88 78 93 L50 93 Q30 88 30 64Z"
+        fill="#4a8a3f" stroke="#6bc45f" stroke-width="2"/>
+
+  <!-- Peas inside the pod -->
+  <ellipse cx="50" cy="55" rx="10" ry="8" fill="#7bc96f"/>
+  <ellipse cx="64" cy="55" rx="10" ry="8" fill="#7bc96f"/>
+  <ellipse cx="78" cy="55" rx="10" ry="8" fill="#7bc96f"/>
+  <ellipse cx="57" cy="72" rx="10" ry="8" fill="#7bc96f"/>
+  <ellipse cx="71" cy="72" rx="10" ry="8" fill="#7bc96f"/>
+
+  <!-- Zipper teeth on the pod -->
+  <rect x="62" y="38" width="4" height="4" fill="#8ed982"/>
+  <rect x="62" y="48" width="4" height="4" fill="#8ed982"/>
+  <rect x="62" y="58" width="4" height="4" fill="#8ed982"/>
+  <rect x="62" y="68" width="4" height="4" fill="#8ed982"/>
+  <rect x="62" y="78" width="4" height="4" fill="#8ed982"/>
+
+  <!-- Zipper pull tab -->
+  <rect x="60" y="82" width="8" height="6" rx="2" fill="#a8e89c"/>
+</svg>

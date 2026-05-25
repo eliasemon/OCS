@@ -1,7 +1,7 @@
 "use client"
 
-import { Search, X, Clock, Trash2, Sparkles } from "lucide-react"
-import { KeyboardEvent, useEffect, useState, useCallback, useRef, useMemo } from "react"
+import { Search, X, Clock, Trash2, Sparkles, Command } from "lucide-react"
+import { KeyboardEvent, useEffect, useState, useCallback, useRef } from "react"
 import { cn } from "@/lib/utils"
 
 interface SearchBarProps {
@@ -125,7 +125,8 @@ export function SearchBar({ value, onChange, onAISearch }: SearchBarProps) {
       <div className="flex items-center gap-3">
         {/* Search Input */}
         <div className="relative flex-1">
-          <div className="absolute left-3 top-1/2 -translate-y-1/2 text-[hsl(var(--color-muted-foreground))]">
+          {/* Search Icon */}
+          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[hsl(var(--color-muted-foreground))]">
             <Search className="h-4 w-4" />
           </div>
 
@@ -141,80 +142,72 @@ export function SearchBar({ value, onChange, onAISearch }: SearchBarProps) {
             }}
             onBlur={() => {
               setFocused(false)
-              // Delay hiding recent searches to allow clicking on them
               setTimeout(() => setShowRecent(false), 200)
             }}
             onKeyDown={handleKeyDown}
-            placeholder={aiEnabled ? "Describe what you need..." : "Search packages..."}
+            placeholder={aiEnabled ? "Describe what you need..." : "Search packages, IDs, or tags..."}
             className={cn(
-              "w-full rounded-lg border bg-[hsl(var(--color-card))] py-2.5 pl-10 pr-10",
+              "w-full rounded-xl py-3 pl-11 pr-24",
               "text-sm text-[hsl(var(--color-foreground))]",
               "placeholder:text-[hsl(var(--color-muted-foreground))]",
-              "transition-colors duration-200",
+              "transition-all duration-300",
               "focus:outline-none",
-              focused ? "border-[hsl(var(--color-primary))] ring-1 ring-[hsl(var(--color-primary))]" : "border-[hsl(var(--color-border))]"
+              focused 
+                ? "bg-[hsl(var(--color-card))] border border-[hsl(var(--color-primary)/0.5)] shadow-[var(--shadow-glow-primary)]" 
+                : "bg-[hsl(var(--color-card))] border border-[hsl(var(--color-border))] hover:border-[hsl(var(--color-border-hover))]"
             )}
             autoComplete="off"
           />
 
-          {value && (
-            <button
-              onClick={handleClear}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-[hsl(var(--color-muted-foreground))] transition-colors hover:text-[hsl(var(--color-foreground))]"
-              aria-label="Clear search"
-            >
-              <X className="h-4 w-4" />
-            </button>
-          )}
-
-          {!value && (
-            <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2">
-              <kbd className="hidden rounded border border-[hsl(var(--color-border))] bg-[hsl(var(--color-muted))] px-1.5 py-0.5 text-[10px] font-medium text-[hsl(var(--color-muted-foreground))] sm:inline-block">
-                ⌘K
+          {/* Right side actions */}
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
+            {value && (
+              <button
+                onClick={handleClear}
+                className="p-1 rounded-md text-[hsl(var(--color-muted-foreground))] transition-colors hover:text-[hsl(var(--color-foreground))] hover:bg-[hsl(var(--color-muted))]"
+                aria-label="Clear search"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            )}
+            {!value && (
+              <kbd className="hidden sm:inline-flex items-center gap-1 rounded-md border border-[hsl(var(--color-border))] bg-[hsl(var(--color-muted))] px-2 py-1 text-[10px] font-medium text-[hsl(var(--color-muted-foreground))]">
+                <Command className="h-3 w-3" />K
               </kbd>
-            </div>
-          )}
+            )}
+          </div>
         </div>
 
         {/* AI Toggle */}
-        <div className="flex items-center gap-2 px-3 py-2 rounded-lg glass">
+        <button
+          type="button"
+          onClick={() => setAiEnabled(!aiEnabled)}
+          className={cn(
+            "flex items-center gap-2 px-4 py-3 rounded-xl transition-all duration-300 border",
+            aiEnabled 
+              ? "bg-[hsl(var(--color-primary)/0.1)] border-[hsl(var(--color-primary)/0.5)] text-[hsl(var(--color-primary))]" 
+              : "glass border-[hsl(var(--color-border))] text-[hsl(var(--color-muted-foreground))] hover:border-[hsl(var(--color-border-hover))]"
+          )}
+        >
           <Sparkles className={cn(
-            "h-4 w-4 transition-colors",
-            aiEnabled ? "text-cyan-400" : "text-[hsl(var(--color-muted-foreground))]"
+            "h-4 w-4 transition-all duration-300",
+            aiEnabled && "animate-pulse text-[hsl(var(--color-primary))]"
           )} />
-          <button
-            type="button"
-            onClick={() => setAiEnabled(!aiEnabled)}
-            role="switch"
-            aria-checked={aiEnabled}
-            aria-label="Enable AI search"
-            className={cn(
-              "relative h-5 w-9 rounded-full transition-colors duration-200",
-              "focus:outline-none focus:ring-2 focus:ring-[hsl(var(--color-primary))] focus:ring-offset-2",
-              aiEnabled ? "bg-[hsl(var(--color-primary))]" : "bg-[hsl(var(--color-muted))]"
-            )}
-          >
-            <span
-              className={cn(
-                "absolute top-0.5 h-4 w-4 rounded-full bg-white transition-transform duration-200",
-                aiEnabled ? "translate-x-4" : "translate-x-0.5"
-              )}
-            />
-          </button>
-        </div>
+          <span className="text-sm font-medium hidden sm:block">AI</span>
+        </button>
       </div>
 
       {/* AI Hint */}
       {aiEnabled && (
-        <p className="text-xs text-[hsl(var(--color-muted-foreground))] mt-2">
+        <p className="text-xs text-[hsl(var(--color-primary))] mt-2 ml-1 animate-fade-in">
           Press Enter to search with AI
         </p>
       )}
 
       {/* Recent Searches Dropdown */}
       {showRecent && hasRecentSearches && (
-        <div className="absolute z-50 mt-2 w-full rounded-lg border border-[hsl(var(--color-border))] bg-[hsl(var(--color-card))] shadow-xl">
-          <div className="flex items-center justify-between border-b border-[hsl(var(--color-border))] px-3 py-2">
+        <div className="absolute z-50 mt-2 w-full rounded-xl border border-[hsl(var(--color-border))] bg-[hsl(var(--color-card))] shadow-xl overflow-hidden animate-scale-in">
+          <div className="flex items-center justify-between border-b border-[hsl(var(--color-border))] px-4 py-3">
             <div className="flex items-center gap-2 text-xs font-medium text-[hsl(var(--color-muted-foreground))]">
               <Clock className="h-3.5 w-3.5" />
               Recent Searches
@@ -233,12 +226,10 @@ export function SearchBar({ value, onChange, onAISearch }: SearchBarProps) {
               <button
                 key={index}
                 onClick={() => handleRecentSearch(search)}
-                className="w-full px-3 py-2 text-left text-sm text-[hsl(var(--color-muted-foreground))] transition-colors hover:bg-[hsl(var(--color-muted))] hover:text-[hsl(var(--color-foreground))]"
+                className="w-full px-4 py-2.5 text-left text-sm text-[hsl(var(--color-muted-foreground))] transition-colors hover:bg-[hsl(var(--color-muted))] hover:text-[hsl(var(--color-foreground))] flex items-center gap-3"
               >
-                <div className="flex items-center gap-2">
-                  <Clock className="h-3.5 w-3.5 flex-shrink-0" />
-                  <span className="truncate">{search}</span>
-                </div>
+                <Clock className="h-3.5 w-3.5 flex-shrink-0 opacity-50" />
+                <span className="truncate">{search}</span>
               </button>
             ))}
           </div>

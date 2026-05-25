@@ -1,14 +1,18 @@
 /**
  * Package Icon Component
  *
- * Displays brand icons for packages using Simple Icons library.
- * Falls back to OCS default icon if no brand icon is available.
+ * Displays package icons with the following priority order:
+ * 1. Downloaded logo from img.logo.dev (PNG/JPG images)
+ * 2. Simple Icons brand icon (SVG, pre-sanitized)
+ * 3. OCS default icon (fallback)
  *
- * SECURITY: All SVGs are pre-sanitized at BUILD TIME using DOMPurify
+ * SECURITY:
+ * - Simple Icons SVGs are pre-sanitized at BUILD TIME using DOMPurify
  * - Source: Simple Icons (https://simpleicons.org, MIT License)
  * - Sanitization: scripts/build-brand-icons.ts with strict whitelist
  * - SVGs are rendered using React.createElement, not innerHTML
  * - No user-generated content is ever rendered
+ * - Downloaded logos are static files from public/images/logos/
  */
 
 import { cn } from '@/lib/utils'
@@ -18,6 +22,32 @@ import React from 'react'
 
 // Import the brand icons library
 import { icons, getIcon, type BrandSlug } from '@/lib/brand-icons'
+
+/**
+ * Logo Image sub-component for downloaded logos
+ */
+function LogoImage({
+  src,
+  alt,
+  size,
+  className
+}: {
+  src: string
+  alt: string
+  size: number
+  className?: string
+}) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      width={size}
+      height={size}
+      className={cn('shrink-0 object-contain', className)}
+      loading="lazy"
+    />
+  )
+}
 
 // Common brand slug mappings for popular packages
 const BRAND_SLUG_MAP: Record<string, string> = {
@@ -119,7 +149,7 @@ function BrandIcon({ svg, size, className }: { svg: string; size: number; classN
       viewBox="0 0 24 24"
       width={size}
       height={size}
-      className={cn('flex-shrink-0', className)}
+      className={cn('shrink-0', className)}
       fill="currentColor"
       aria-hidden="true"
     >
@@ -130,17 +160,27 @@ function BrandIcon({ svg, size, className }: { svg: string; size: number; classN
 
 /**
  * Main Package Icon Component
+ *
+ * Priority order:
+ * 1. Downloaded logo (logoUrl) - from img.logo.dev
+ * 2. Simple Icons brand icon (SVG)
+ * 3. OCS default icon (fallback)
  */
 export function PackageIcon({ package: pkg, size = 24, className, showFallback = true }: PackageIconProps) {
-  const brandSlug = getBrandSlugForPackage(pkg)
+  // First priority: Check for downloaded logo from img.logo.dev
+  if ('logoUrl' in pkg && pkg.logoUrl) {
+    return <LogoImage src={pkg.logoUrl} alt={pkg.name} size={size} className={className} />
+  }
 
-  // Try to get the brand icon from our pre-sanitized library
+  // Second priority: Try Simple Icons brand icon
+  const brandSlug = getBrandSlugForPackage(pkg)
   const iconSvg = brandSlug ? getIcon(brandSlug) : null
 
   if (iconSvg && brandSlug) {
     return <BrandIcon svg={iconSvg} size={size} className={className} />
   }
 
+  // Third priority: OCS default icon
   if (showFallback) {
     return <OCSIcon size={size} className={className} />
   }

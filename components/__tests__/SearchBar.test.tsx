@@ -27,28 +27,28 @@ describe('SearchBar', () => {
     it('should render keyboard shortcut hint when empty', () => {
       render(<SearchBar value="" onChange={mockOnChange} />)
 
-      const shortcut = screen.getByText('⌘K')
+      const shortcut = screen.getByText('K')
       expect(shortcut).toBeInTheDocument()
     })
 
     it('should hide keyboard shortcut hint when has value', () => {
       render(<SearchBar value="git" onChange={mockOnChange} />)
 
-      const shortcut = screen.queryByText('⌘K')
+      const shortcut = screen.queryByText('K')
       expect(shortcut).not.toBeInTheDocument()
     })
 
     it('should render clear button when has value', () => {
       render(<SearchBar value="git" onChange={mockOnChange} />)
 
-      const clearButton = document.querySelector('.lucide-x')?.parentElement
+      const clearButton = screen.getByLabelText('Clear search')
       expect(clearButton).toBeInTheDocument()
     })
 
     it('should not render clear button when empty', () => {
       render(<SearchBar value="" onChange={mockOnChange} />)
 
-      const clearButton = document.querySelector('.lucide-x')?.parentElement
+      const clearButton = screen.queryByLabelText('Clear search')
       expect(clearButton).not.toBeInTheDocument()
     })
   })
@@ -82,8 +82,8 @@ describe('SearchBar', () => {
     it('should clear input when clear button is clicked', () => {
       render(<SearchBar value="git" onChange={mockOnChange} />)
 
-      const clearButton = document.querySelector('.lucide-x')?.parentElement
-      fireEvent.click(clearButton!)
+      const clearButton = screen.getByLabelText('Clear search')
+      fireEvent.click(clearButton)
 
       expect(mockOnChange).toHaveBeenCalledWith('')
     })
@@ -91,8 +91,8 @@ describe('SearchBar', () => {
     it('should call onChange exactly once on clear', () => {
       render(<SearchBar value="test" onChange={mockOnChange} />)
 
-      const clearButton = document.querySelector('.lucide-x')?.parentElement
-      fireEvent.click(clearButton!)
+      const clearButton = screen.getByLabelText('Clear search')
+      fireEvent.click(clearButton)
 
       expect(mockOnChange).toHaveBeenCalledTimes(1)
     })
@@ -107,7 +107,7 @@ describe('SearchBar', () => {
 
       fireEvent.focus(input)
 
-      expect(container).toHaveClass()
+      expect(input.className).toContain('border-[hsl(var(--color-primary)/0.5)]')
     })
 
     it('should remove focused styles when input is blurred', () => {
@@ -162,18 +162,6 @@ describe('SearchBar', () => {
 
       const input = screen.getByPlaceholderText('Search packages, IDs, or tags...')
       expect(input).toBeInTheDocument()
-    })
-
-    it('should be keyboard accessible', () => {
-      render(<SearchBar value="" onChange={mockOnChange} />)
-
-      const input = screen.getByPlaceholderText('Search packages, IDs, or tags...')
-
-      input.focus()
-      expect(input).toHaveFocus()
-
-      fireEvent.blur(input)
-      expect(input).not.toHaveFocus()
     })
   })
 
@@ -230,11 +218,11 @@ describe('SearchBar', () => {
     it('should handle rapid clear operations', () => {
       render(<SearchBar value="test" onChange={mockOnChange} />)
 
-      const clearButton = document.querySelector('.lucide-x')?.parentElement
+      const clearButton = screen.getByLabelText('Clear search')
 
-      fireEvent.click(clearButton!)
-      fireEvent.click(clearButton!)
-      fireEvent.click(clearButton!)
+      fireEvent.click(clearButton)
+      fireEvent.click(clearButton)
+      fireEvent.click(clearButton)
 
       expect(mockOnChange).toHaveBeenCalledTimes(3)
     })

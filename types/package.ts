@@ -18,6 +18,8 @@ export interface Package {
   icon: string
   /** Brand slug for Simple Icons mapping (e.g., 'visualstudiocode', 'git') */
   brandSlug?: string
+  /** Path to downloaded company logo (e.g., '/images/logos/git-git.png') */
+  logoUrl?: string
   /** Whether this package is popular/featured */
   popular: boolean
   /** Approximate download size */

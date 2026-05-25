@@ -63,7 +63,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} bg-[hsl(var(--color-background))] text-[hsl(var(--color-foreground))] antialiased`}>
         <TooltipProvider>{children}</TooltipProvider>
-        <Toaster theme="dark" position="bottom-right" richColors closeButton />
+        <Toaster
+          theme="system"
+          position="bottom-right"
+          richColors
+          closeButton
+          toastOptions={{
+            style: {
+              background: 'hsl(var(--color-card))',
+              color: 'hsl(var(--color-foreground))',
+              border: '1px solid hsl(var(--color-border))',
+              borderRadius: 'var(--radius-md)',
+            },
+          }}
+        />
       </body>
     </html>
   )

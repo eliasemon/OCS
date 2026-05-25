@@ -19,42 +19,80 @@ function PackageCardComponent({ package: pkg }: PackageCardProps) {
     <button
       onClick={() => togglePackage(pkg.id)}
       className={cn(
-        "package-card group w-full text-left",
+        "package-card group w-full text-left relative",
         selected && "selected"
       )}
     >
-      {/* Header: Icon + Name + Checkbox */}
-      <div className="flex items-start gap-4">
-        <PackageIcon package={pkg} size={48} className="flex-shrink-0" />
-        <div className="flex-1 min-w-0">
-          <h3 className="font-semibold text-lg truncate text-[hsl(var(--color-foreground))]">{pkg.name}</h3>
-          <p className="text-sm text-[hsl(var(--color-muted-foreground))] line-clamp-2">
-            {pkg.description}
-          </p>
+      {/* Selection glow effect */}
+      <div className={cn(
+        "absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300",
+        "bg-[hsl(var(--color-primary)/0.1)]",
+        selected && "opacity-100"
+      )} />
+
+      {/* Content */}
+      <div className="relative">
+        {/* Header: Icon + Name + Checkbox */}
+        <div className="flex items-start gap-4">
+          {/* Package Icon */}
+          <div className={cn(
+            "flex-shrink-0 p-3 rounded-xl transition-all duration-300",
+            "bg-[hsl(var(--color-muted))]",
+            "group-hover:shadow-lg",
+            selected && "bg-[hsl(var(--color-primary)/0.2)]"
+          )}>
+            <PackageIcon package={pkg} size={32} />
+          </div>
+
+          <div className="flex-1 min-w-0">
+            <h3 className="font-semibold text-base truncate text-[hsl(var(--color-foreground))] group-hover:text-[hsl(var(--color-primary))] transition-colors">
+              {pkg.name}
+            </h3>
+            <p className="text-sm text-[hsl(var(--color-muted-foreground))] line-clamp-2 mt-1">
+              {pkg.description}
+            </p>
+          </div>
+
+          {/* Checkbox */}
+          <div className={cn(
+            "flex-shrink-0 h-6 w-6 rounded-lg border transition-all duration-300",
+            "flex items-center justify-center",
+            selected
+              ? "bg-[hsl(var(--color-primary))] border-[hsl(var(--color-primary))] shadow-[var(--shadow-glow-primary)]"
+              : "border-[hsl(var(--color-border))] group-hover:border-[hsl(var(--color-border-hover))]"
+          )}>
+            <Check className={cn(
+              "h-3.5 w-3.5 text-white transition-all duration-300",
+              selected ? "opacity-100 scale-100" : "opacity-0 scale-50"
+            )} strokeWidth={3} />
+          </div>
         </div>
-        <div className={cn(
-          "flex-shrink-0 h-5 w-5 rounded border transition-all duration-200",
-          "flex items-center justify-center",
-          selected
-            ? "bg-[hsl(var(--color-primary))] border-[hsl(var(--color-primary))]"
-            : "border-[hsl(var(--color-border))] group-hover:border-[hsl(var(--color-muted-foreground))]"
-        )}>
-          {selected && <Check className="h-3 w-3 text-[hsl(var(--color-primary-foreground))]" strokeWidth={3} />}
+
+        {/* Footer: Category + Badge */}
+        <div className="flex items-center justify-between mt-4 pt-4 border-t border-[hsl(var(--color-border))]">
+          <span className={cn(
+            "rounded-lg px-2.5 py-1 text-xs font-medium transition-colors duration-300",
+            "bg-[hsl(var(--color-muted))] text-[hsl(var(--color-muted-foreground))]",
+            "group-hover:bg-[hsl(var(--color-primary)/0.1)] group-hover:text-[hsl(var(--color-primary))]"
+          )}>
+            {pkg.category}
+          </span>
+          {pkg.popular && (
+            <span className="flex items-center gap-1 text-xs text-[hsl(var(--color-warning))] font-medium">
+              <Star className="h-3 w-3 fill-[hsl(var(--color-warning))]" />
+              Popular
+            </span>
+          )}
         </div>
       </div>
 
-      {/* Footer: Category + Badge */}
-      <div className="flex items-center justify-between mt-4 pt-4 border-t border-[hsl(var(--color-border))]">
-        <span className="rounded-md bg-[hsl(var(--color-muted))] px-2 py-1 text-xs text-[hsl(var(--color-muted-foreground))]">
-          {pkg.category}
-        </span>
-        {pkg.popular && (
-          <span className="flex items-center gap-1 text-xs text-amber-400">
-            <Star className="h-3 w-3 fill-amber-400" />
-            Popular
-          </span>
-        )}
-      </div>
+      {/* Hover gradient border effect */}
+      <div className={cn(
+        "absolute inset-0 rounded-xl pointer-events-none",
+        "border border-transparent transition-all duration-300",
+        "group-hover:border-[hsl(var(--color-border-hover))]",
+        selected && "border-[hsl(var(--color-primary)/0.5)]"
+      )} />
     </button>
   )
 }
