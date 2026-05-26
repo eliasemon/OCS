@@ -55,3 +55,31 @@ fi
 
   return cmd.trim()
 }
+
+export function buildLinuxCommand(appIds: string[]): string {
+  const aptPackages = appIds.filter(id => id.startsWith('apt:')).map(id => id.replace('apt:', ''))
+  const flatpakPackages = appIds.filter(id => id.startsWith('flatpak:')).map(id => id.replace('flatpak:', ''))
+  const snapPackages = appIds.filter(id => id.startsWith('snap:')).map(id => id.replace('snap:', ''))
+  const unclassified = appIds.filter(id => !id.startsWith('apt:') && !id.startsWith('flatpak:') && !id.startsWith('snap:'))
+
+  let cmd = `#!/bin/bash\n\n`
+  
+  if (aptPackages.length > 0 || unclassified.length > 0) {
+    cmd += `# Update and install APT packages\n`
+    cmd += `sudo apt update\n`
+    const allApt = [...aptPackages, ...unclassified]
+    cmd += `sudo apt install -y ${allApt.join(" ")}\n\n`
+  }
+
+  if (flatpakPackages.length > 0) {
+    cmd += `# Install Flatpak packages\n`
+    cmd += `flatpak install -y flathub ${flatpakPackages.join(" ")}\n\n`
+  }
+
+  if (snapPackages.length > 0) {
+    cmd += `# Install Snap packages\n`
+    cmd += `sudo snap install ${snapPackages.join(" ")}\n\n`
+  }
+
+  return cmd.trim()
+}

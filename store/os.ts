@@ -4,7 +4,7 @@ import { create } from "zustand"
 import { persist } from "zustand/middleware"
 import { useSelectionStore } from "./selection"
 
-export type OsMode = "windows" | "mac"
+export type OsMode = "windows" | "mac" | "linux"
 
 interface OsStore {
   os: OsMode

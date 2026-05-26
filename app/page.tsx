@@ -3,17 +3,19 @@ import Link from "next/link"
 import { ArrowRight, Zap, Shield, Bookmark, Package, Github, Terminal, Clock, Users, ChevronRight, Star, Check, FileText, Book, Layers, Code2, Bug, FileCheck, Lock, Scale } from "lucide-react"
 import { MetricCounter } from "@/components/MetricCounter"
 import { DemoTerminal } from "@/components/DemoTerminal"
-import { WindowsLogo, AppIcons } from "@/components/HeroIllustrations"
+import { OsLogos, AppIcons } from "@/components/HeroIllustrations"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "oneCommandSetup (OCS) - Set Up Windows & macOS in Minutes",
-  description: "Set Up Windows & macOS in Minutes. One command installs everything. Skip the installer clicking and get your perfect development environment in just 5 minutes.",
+  title: "oneCommandSetup (OCS) - Set Up Windows, macOS & Linux in Minutes",
+  description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking and get your perfect development environment in just 5 minutes.",
   keywords: [
     "winget",
     "homebrew",
+    "apt",
     "windows package manager",
     "mac package manager",
+    "linux package manager",
     "oneCommandSetup",
     "OCS",
     "mac installer",
@@ -31,22 +33,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://onecommandsetup.app",
-    title: "oneCommandSetup - Set Up Windows & macOS in Minutes",
-    description: "Set Up Windows & macOS in Minutes. One command installs everything. Skip the installer clicking.",
+    title: "oneCommandSetup - Set Up Windows, macOS & Linux in Minutes",
+    description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
     siteName: "oneCommandSetup",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "oneCommandSetup - Set Up Windows & macOS in Minutes"
+        alt: "oneCommandSetup - Set Up Windows, macOS & Linux in Minutes"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "oneCommandSetup - Set Up Windows & macOS in Minutes",
-    description: "Set Up Windows & macOS in Minutes. One command installs everything. Skip the installer clicking.",
+    title: "oneCommandSetup - Set Up Windows, macOS & Linux in Minutes",
+    description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
     images: ["/og-image.png"],
   },
   alternates: {
@@ -58,14 +60,14 @@ const features = [
   {
     icon: Zap,
     title: "Lightning Fast",
-    description: "Install 50+ apps in the time it takes to install one manually. Winget and Homebrew handle everything.",
+    description: "Install 50+ apps in the time it takes to install one manually. Winget, Homebrew, and APT handle everything.",
     gradient: "from-[hsl(var(--color-primary))] to-[hsl(var(--color-accent))] bg-gradient-to-br",
     bgGradient: "from-[hsl(var(--color-primary)/0.1)] to-[hsl(var(--color-accent)/0.05)]",
   },
   {
     icon: Shield,
     title: "Official Sources",
-    description: "Every package comes directly from the official publishers via Microsoft's Winget and Apple's Homebrew.",
+    description: "Every package comes directly from the official publishers via Microsoft's Winget, Apple's Homebrew, and Linux repositories.",
     gradient: "from-[hsl(var(--color-accent))] to-[hsl(var(--color-primary))] bg-gradient-to-br",
     bgGradient: "from-[hsl(var(--color-accent)/0.1)] to-[hsl(var(--color-primary)/0.05)]",
   },
@@ -94,7 +96,7 @@ const steps = [
   {
     number: "03",
     title: "Generate",
-    description: "Copy your custom PowerShell or Homebrew command with one click",
+    description: "Copy your custom PowerShell, Homebrew, or Bash command with one click",
     icon: Terminal,
   },
   {
@@ -118,7 +120,7 @@ export default function LandingPage() {
       <section className="hero-bg relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Animated background grid */}
         <div className="hero-grid" />
-        
+
         {/* Floating gradient orbs */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[hsl(var(--color-primary)/0.15)] rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[hsl(var(--color-accent)/0.1)] rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
@@ -138,7 +140,7 @@ export default function LandingPage() {
 
               {/* Headline */}
               <h1 className="text-5xl font-bold tracking-tight mb-6 sm:text-6xl lg:text-7xl animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-                Set Up Windows <br className="hidden sm:block" />& macOS
+                Set Up Windows, <br className="hidden sm:block" />macOS & Linux
                 <span className="gradient-text-animated block mt-2">
                   in Minutes
                 </span>
@@ -172,13 +174,22 @@ export default function LandingPage() {
             </div>
 
             {/* Right Column: Illustrations */}
-            <div className="relative hidden lg:flex items-center justify-center min-h-[500px]">
-              <div className="absolute top-10 right-0 animate-float" style={{ animationDelay: '0.5s' }}>
-                <WindowsLogo />
+            <div className="relative hidden lg:flex items-center justify-center min-h-[600px] w-full perspective-[2000px]">
+
+              {/* App Icons (Background Layer) */}
+              <div className="absolute left-1/2 top-1/2 -translate-y-1/2 translate-x-[10%] scale-[0.8] opacity-50 blur-[3px] z-0">
+                <div className="animate-float" style={{ animationDelay: '1s' }}>
+                  <AppIcons />
+                </div>
               </div>
-              <div className="absolute bottom-10 left-0 animate-float" style={{ animationDelay: '1.5s', zIndex: 10 }}>
-                <AppIcons />
+
+              {/* OS Logos (Foreground Layer) */}
+              <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-[90%] scale-[1.15] opacity-100 blur-0 z-10">
+                <div className="animate-float" style={{ animationDelay: '0s' }}>
+                  <OsLogos />
+                </div>
               </div>
+
             </div>
           </div>
 
@@ -212,7 +223,7 @@ export default function LandingPage() {
               Why Choose <span className="gradient-text">OCS</span>?
             </h2>
             <p className="text-lg text-[hsl(var(--color-muted-foreground))] max-w-2xl mx-auto">
-              The fastest way to set up your Windows or macOS development environment with trusted, official packages.
+              The fastest way to set up your Windows, macOS, or Linux development environment with trusted, official packages.
             </p>
           </div>
 
@@ -226,7 +237,7 @@ export default function LandingPage() {
               >
                 {/* Hover glow effect */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-                
+
                 {/* Icon */}
                 <div className={`relative mb-6 flex h-14 w-14 items-center justify-center rounded-xl ${feature.gradient} shadow-lg`}>
                   <feature.icon className="h-7 w-7 text-white" />
@@ -250,7 +261,7 @@ export default function LandingPage() {
       <section className="py-32 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[hsl(var(--color-primary)/0.02)] to-transparent" />
-        
+
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-20">
@@ -266,7 +277,7 @@ export default function LandingPage() {
           <div className="relative">
             {/* Connection line */}
             <div className="absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[hsl(var(--color-border))] to-transparent hidden lg:block" />
-            
+
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-4 lg:gap-8">
               {steps.map((step, index) => (
                 <div key={index} className="relative group">
@@ -280,7 +291,7 @@ export default function LandingPage() {
                         {index + 1}
                       </div>
                     </div>
-                    
+
                     <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
                     <p className="text-sm text-[hsl(var(--color-muted-foreground))] max-w-xs">
                       {step.description}
@@ -321,7 +332,7 @@ export default function LandingPage() {
           <div className="relative rounded-3xl overflow-hidden">
             {/* Gradient background */}
             <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--color-primary))] to-[hsl(var(--color-accent))] opacity-90" />
-            
+
             {/* Animated pattern overlay */}
             <div className="absolute inset-0 opacity-20">
               <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(0_0%_100%_/_0.1)_1px,transparent_1px),linear-gradient(to_bottom,hsl(0_0%_100%_/_0.1)_1px,transparent_1px)] bg-[size:2rem_2rem]" />
@@ -375,7 +386,7 @@ export default function LandingPage() {
                 <span className="text-xl font-bold">OCS</span>
               </Link>
               <p className="text-sm text-[hsl(var(--color-muted-foreground))] max-w-xs">
-                Open source • Powered by Winget & Homebrew • Built for developers
+                Open source • Powered by Winget, Homebrew & APT • Built for developers
               </p>
             </div>
 

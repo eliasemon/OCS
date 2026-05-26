@@ -8,6 +8,7 @@
 import { useState } from "react"
 import windowsPackagesData from "@/data/packages.json"
 import macPackagesData from "@/data/mac-packages.json"
+import linuxPackagesData from "@/data/linux-packages.json"
 import type { Package } from "@/types/package"
 import { Catalog } from "@/components/Catalog"
 import { Sidebar } from "@/components/Sidebar"
@@ -19,7 +20,7 @@ import { useOsStore } from "@/store/os"
 
 export function AppPageClient() {
   const { os } = useOsStore()
-  const packages = (os === "mac" ? macPackagesData : windowsPackagesData) as Package[]
+  const packages = (os === "linux" ? linuxPackagesData : os === "mac" ? macPackagesData : windowsPackagesData) as Package[]
   const [searchQuery, setSearchQuery] = useState("")
   const [commandModalOpen, setCommandModalOpen] = useState(false)
 

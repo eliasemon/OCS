@@ -7,6 +7,7 @@ import {
   buildPowerShellCommand,
   buildCmdCommand,
   buildBrewCommand,
+  buildLinuxCommand,
   buildShareUrl,
   copyToClipboard,
   downloadJson,
@@ -35,13 +36,15 @@ type TerminalType = "powershell" | "cmd" | "zsh" | "bash"
 export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) {
   const { os } = useOsStore()
   const [copied, setCopied] = useState(false)
-  const [terminalType, setTerminalType] = useState<TerminalType>(os === "mac" ? "zsh" : "powershell")
+  const [terminalType, setTerminalType] = useState<TerminalType>(os === "mac" ? "zsh" : os === "linux" ? "bash" : "powershell")
   const [showAdvanced, setShowAdvanced] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
 
   // Ensure terminal type matches current OS
   if (os === "mac" && (terminalType === "powershell" || terminalType === "cmd")) {
     setTerminalType("zsh")
+  } else if (os === "linux" && (terminalType === "powershell" || terminalType === "cmd")) {
+    setTerminalType("bash")
   } else if (os === "windows" && (terminalType === "zsh" || terminalType === "bash")) {
     setTerminalType("powershell")
   }
@@ -49,10 +52,13 @@ export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) 
   const powerShellCommand = buildPowerShellCommand(selectedIds)
   const cmdCommand = buildCmdCommand(selectedIds)
   const brewCommand = buildBrewCommand(selectedIds)
+  const linuxCommand = buildLinuxCommand(selectedIds)
   const shareUrl = buildShareUrl(selectedIds)
 
   const currentCommand = os === "mac" 
     ? brewCommand 
+    : os === "linux"
+    ? linuxCommand
     : terminalType === "powershell" ? powerShellCommand : cmdCommand
 
   const handleCopyCommand = async () => {
@@ -147,7 +153,7 @@ export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) 
                   CMD
                 </button>
               </>
-            ) : (
+            ) : os === "mac" ? (
               <>
                 <button
                   onClick={() => setTerminalType("zsh")}
@@ -174,6 +180,21 @@ export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) 
                   Bash
                 </button>
               </>
+            ) : (
+              <>
+                <button
+                  onClick={() => setTerminalType("bash")}
+                  className={cn(
+                    "flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300",
+                    terminalType === "bash"
+                      ? "bg-[hsl(var(--color-primary))] text-white shadow-lg"
+                      : "text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]"
+                  )}
+                >
+                  <Terminal className="h-4 w-4" />
+                  Bash
+                </button>
+              </>
             )}
             </div>
           </div>
@@ -192,7 +213,7 @@ export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) 
                     <div className="w-3 h-3 rounded-full bg-green-500/80" />
                   </div>
                   <span className="text-xs font-medium text-[hsl(var(--color-muted-foreground))] ml-2">
-                    {os === "mac" ? (terminalType === "zsh" ? "ZSH" : "Bash") : (terminalType === "powershell" ? "PowerShell" : "Command Prompt")}
+                    {os === "mac" ? (terminalType === "zsh" ? "ZSH" : "Bash") : os === "linux" ? "Bash" : (terminalType === "powershell" ? "PowerShell" : "Command Prompt")}
                   </span>
                 </div>
                 <span className="text-xs text-[hsl(var(--color-muted-foreground))]">
@@ -242,7 +263,7 @@ export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) 
               <strong className="text-[hsl(var(--color-foreground))]">How to use:</strong>
               <ol className="mt-2 space-y-1 list-decimal list-inside">
                 <li>Copy the command above</li>
-                <li>Open {os === "mac" ? "Terminal" : (terminalType === "powershell" ? "PowerShell" : "Command Prompt")} {os === "windows" && "as Administrator"}</li>
+                <li>Open {os === "mac" || os === "linux" ? "Terminal" : (terminalType === "powershell" ? "PowerShell" : "Command Prompt")} {os === "windows" && "as Administrator"}</li>
                 <li>Paste and press Enter</li>
               </ol>
             </div>

@@ -1,0 +1,2247 @@
+[
+  {
+    "id": "apt:logseq",
+    "name": "Logseq",
+    "description": "Privacy-first, open-source outliner for notes",
+    "category": "Productivity",
+    "tags": [
+      "notes",
+      "outliner",
+      "privacy"
+    ],
+    "icon": "logseq",
+    "popular": false,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/logseq-logseq.png"
+  },
+  {
+    "id": "apt:obsidian",
+    "name": "Obsidian",
+    "description": "Local-first Markdown knowledge base",
+    "category": "Productivity",
+    "tags": [
+      "notes",
+      "markdown",
+      "knowledge"
+    ],
+    "icon": "obsidian",
+    "popular": true,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/obsidian-obsidian.png"
+  },
+  {
+    "id": "apt:notion",
+    "name": "Notion",
+    "description": "All-in-one workspace and project tracker",
+    "category": "Productivity",
+    "tags": [
+      "notes",
+      "workspace",
+      "productivity"
+    ],
+    "icon": "notion",
+    "popular": true,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/notion-notion.png"
+  },
+  {
+    "id": "apt:todoist",
+    "name": "Todoist",
+    "description": "Feature-packed, multi-platform task organizer",
+    "category": "Productivity",
+    "tags": [
+      "tasks",
+      "todo",
+      "productivity"
+    ],
+    "icon": "todoist",
+    "popular": true,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/todoist-todoist.png"
+  },
+  {
+    "id": "apt:visual-studio-code",
+    "name": "Visual Studio Code",
+    "description": "The most popular open-source code editor",
+    "category": "Developer",
+    "tags": [
+      "editor",
+      "ide",
+      "code"
+    ],
+    "icon": "vscode",
+    "popular": true,
+    "size": "~90 MB",
+    "logoUrl": "/images/logos/microsoft-visualstudiocode.png"
+  },
+  {
+    "id": "apt:sublime-text",
+    "name": "Sublime Text",
+    "description": "Blazing fast, lightweight text editor",
+    "category": "Developer",
+    "tags": [
+      "editor",
+      "ide"
+    ],
+    "icon": "sublime",
+    "popular": false,
+    "size": "~40 MB",
+    "logoUrl": "/images/logos/sublimehq-sublimetext-4.png"
+  },
+  {
+    "id": "apt:github-desktop",
+    "name": "GitHub Desktop",
+    "description": "Clean GUI for version control and Git tracking",
+    "category": "Developer",
+    "tags": [
+      "git",
+      "github",
+      "version-control"
+    ],
+    "icon": "github",
+    "popular": true,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/github-githubdesktop.png"
+  },
+  {
+    "id": "apt:insomnia",
+    "name": "Insomnia",
+    "description": "Streamlined API client for testing GraphQL, REST, and gRPC",
+    "category": "Developer",
+    "tags": [
+      "api",
+      "rest",
+      "graphql"
+    ],
+    "icon": "insomnia",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/insomnia-insomnia.png"
+  },
+  {
+    "id": "apt:postman",
+    "name": "Postman",
+    "description": "Comprehensive API development and testing network platform",
+    "category": "Developer",
+    "tags": [
+      "api",
+      "testing",
+      "http"
+    ],
+    "icon": "postman",
+    "popular": true,
+    "size": "~180 MB",
+    "logoUrl": "/images/logos/postman-postman.png"
+  },
+  {
+    "id": "apt:tableplus",
+    "name": "TablePlus",
+    "description": "Modern, fast native GUI database client",
+    "category": "Developer",
+    "tags": [
+      "database",
+      "sql",
+      "client"
+    ],
+    "icon": "tableplus",
+    "popular": true,
+    "size": "~60 MB",
+    "logoUrl": "/images/logos/tableplus-tableplus.png"
+  },
+  {
+    "id": "apt:wireshark",
+    "name": "Wireshark",
+    "description": "Industry-standard network protocol analyzer",
+    "category": "Developer",
+    "tags": [
+      "network",
+      "analyzer"
+    ],
+    "icon": "wireshark",
+    "popular": false,
+    "size": "~120 MB",
+    "logoUrl": "/images/logos/wiresharkfoundation-wireshark.png"
+  },
+  {
+    "id": "apt:google-chrome",
+    "name": "Google Chrome",
+    "description": "Google's mainstay web browser",
+    "category": "Browsers",
+    "tags": [
+      "browser",
+      "chrome",
+      "web"
+    ],
+    "icon": "chrome",
+    "popular": true,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/google-chrome.svg"
+  },
+  {
+    "id": "apt:brave-browser",
+    "name": "Brave Browser",
+    "description": "Blocks ads and trackers natively by default",
+    "category": "Browsers",
+    "tags": [
+      "browser",
+      "privacy",
+      "web"
+    ],
+    "icon": "brave",
+    "popular": true,
+    "size": "~110 MB",
+    "logoUrl": "/images/logos/brave-brave.png"
+  },
+  {
+    "id": "apt:handbrake",
+    "name": "Handbrake",
+    "description": "Open-source video transcoder and converter",
+    "category": "Media",
+    "tags": [
+      "video",
+      "transcoder",
+      "converter"
+    ],
+    "icon": "handbrake",
+    "popular": false,
+    "size": "~60 MB",
+    "logoUrl": "/images/logos/handbrake-handbrake.png"
+  },
+  {
+    "id": "apt:spotify",
+    "name": "Spotify",
+    "description": "Music streaming desktop interface",
+    "category": "Media",
+    "tags": [
+      "music",
+      "streaming",
+      "audio"
+    ],
+    "icon": "spotify",
+    "popular": true,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/spotify-spotify.png"
+  },
+  {
+    "id": "apt:audacity",
+    "name": "Audacity",
+    "description": "Open-source multi-track audio editor and recorder",
+    "category": "Media",
+    "tags": [
+      "audio",
+      "editor"
+    ],
+    "icon": "audacity",
+    "popular": false,
+    "size": "~80 MB",
+    "logoUrl": "/images/logos/audacity-audacity.png"
+  },
+  {
+    "id": "apt:obs-studio",
+    "name": "OBS Studio",
+    "description": "Free video recording and live streaming suite",
+    "category": "Media",
+    "tags": [
+      "video",
+      "streaming",
+      "recording"
+    ],
+    "icon": "obs",
+    "popular": true,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/obsproject-obsstudio.png"
+  },
+  {
+    "id": "apt:gimp",
+    "name": "GIMP",
+    "description": "Open-source alternative to Photoshop",
+    "category": "Media",
+    "tags": [
+      "image",
+      "editor",
+      "graphics"
+    ],
+    "icon": "gimp",
+    "popular": true,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/gimp-gimp.png"
+  },
+  {
+    "id": "apt:inkscape",
+    "name": "Inkscape",
+    "description": "Vector graphics editor using SVG format",
+    "category": "Media",
+    "tags": [
+      "vector",
+      "graphics",
+      "svg"
+    ],
+    "icon": "inkscape",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/inkscape-inkscape.png"
+  },
+  {
+    "id": "apt:blender",
+    "name": "Blender",
+    "description": "Comprehensive 3D creation and rendering suite",
+    "category": "Media",
+    "tags": [
+      "3d",
+      "rendering",
+      "graphics"
+    ],
+    "icon": "blender",
+    "popular": false,
+    "size": "~300 MB",
+    "logoUrl": "/images/logos/blender-blender.png"
+  },
+  {
+    "id": "apt:figma",
+    "name": "Figma",
+    "description": "Collaborative interface design tool",
+    "category": "Media",
+    "tags": [
+      "design",
+      "graphics"
+    ],
+    "icon": "figma",
+    "popular": true,
+    "size": "~120 MB",
+    "logoUrl": "/images/logos/figma-figma.png"
+  },
+  {
+    "id": "apt:bitwarden",
+    "name": "Bitwarden",
+    "description": "Open-source, secure password manager",
+    "category": "Utilities",
+    "tags": [
+      "password",
+      "security"
+    ],
+    "icon": "bitwarden",
+    "popular": true,
+    "size": "~80 MB",
+    "logoUrl": "/images/logos/bitwarden-bitwarden.png"
+  },
+  {
+    "id": "apt:1password",
+    "name": "1Password",
+    "description": "Polished, secure team and personal password manager",
+    "category": "Utilities",
+    "tags": [
+      "password",
+      "security"
+    ],
+    "icon": "1password",
+    "popular": true,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/agilebits-1password.png"
+  },
+  {
+    "id": "apt:cyberduck",
+    "name": "Cyberduck",
+    "description": "Cloud storage browser for FTP, SFTP, and S3 networks",
+    "category": "Utilities",
+    "tags": [
+      "ftp",
+      "s3",
+      "cloud"
+    ],
+    "icon": "cyberduck",
+    "popular": false,
+    "size": "~120 MB",
+    "logoUrl": "/images/logos/cyberduck-cyberduck.png"
+  },
+  {
+    "id": "apt:slack",
+    "name": "Slack",
+    "description": "Business messaging and work communication hub",
+    "category": "Productivity",
+    "tags": [
+      "chat",
+      "communication",
+      "team"
+    ],
+    "icon": "slack",
+    "popular": true,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/slacktechnologies-slack.png"
+  },
+  {
+    "id": "apt:discord",
+    "name": "Discord",
+    "description": "Chat, voice, and streaming hub for communities",
+    "category": "Productivity",
+    "tags": [
+      "chat",
+      "communication",
+      "gaming"
+    ],
+    "icon": "discord",
+    "popular": true,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/discord-discord.png"
+  },
+  {
+    "id": "apt:zoom",
+    "name": "Zoom",
+    "description": "Video conferencing and remote meeting client",
+    "category": "Productivity",
+    "tags": [
+      "video",
+      "meeting",
+      "communication"
+    ],
+    "icon": "zoom",
+    "popular": true,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/zoom-zoom.png"
+  },
+  {
+    "id": "apt:signal",
+    "name": "Signal",
+    "description": "Secure, encrypted private messaging client",
+    "category": "Productivity",
+    "tags": [
+      "messaging",
+      "communication",
+      "security"
+    ],
+    "icon": "signal",
+    "popular": false,
+    "size": "~120 MB",
+    "logoUrl": "/images/logos/signal-signal.png"
+  },
+  {
+    "id": "apt:whatsapp",
+    "name": "WhatsApp",
+    "description": "Meta's official chat network client",
+    "category": "Productivity",
+    "tags": [
+      "messaging",
+      "communication"
+    ],
+    "icon": "whatsapp",
+    "popular": true,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/whatsapp-whatsapp.png"
+  },
+  {
+    "id": "apt:ffmpeg",
+    "name": "ffmpeg",
+    "description": "The ultimate command-line audio/video processing powerhouse",
+    "category": "Developer",
+    "tags": [
+      "cli",
+      "video",
+      "audio"
+    ],
+    "icon": "ffmpeg",
+    "popular": true,
+    "size": "~30 MB",
+    "logoUrl": "/images/logos/gyan-ffmpeg.png"
+  },
+  {
+    "id": "apt:git",
+    "name": "git",
+    "description": "Essential distributed version control engine",
+    "category": "Developer",
+    "tags": [
+      "cli",
+      "vcs",
+      "tool"
+    ],
+    "icon": "git",
+    "popular": true,
+    "size": "~15 MB",
+    "logoUrl": "/images/logos/git-git.png"
+  },
+  {
+    "id": "apt:dropbox",
+    "name": "Dropbox",
+    "description": "Traditional local-to-cloud sync folder",
+    "category": "Productivity",
+    "tags": [
+      "cloud",
+      "storage"
+    ],
+    "icon": "dropbox",
+    "popular": true,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/dropbox-dropbox.png"
+  },
+  {
+    "id": "apt:libreoffice",
+    "name": "LibreOffice",
+    "description": "Free, open-source office suite alternative",
+    "category": "Productivity",
+    "tags": [
+      "office",
+      "suite",
+      "documents"
+    ],
+    "icon": "libreoffice",
+    "popular": false,
+    "size": "~300 MB",
+    "logoUrl": "/images/logos/libreoffice-libreoffice.png"
+  },
+  {
+    "id": "apt:steam",
+    "name": "Steam",
+    "description": "The biggest digital gaming distribution platform",
+    "category": "Media",
+    "tags": [
+      "gaming",
+      "store"
+    ],
+    "icon": "steam",
+    "popular": true,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/valve-steam.png"
+  },
+  {
+    "id": "apt:docker-desktop",
+    "name": "Docker Desktop",
+    "description": "Securely build, share and run any application anywhere",
+    "category": "Developer",
+    "tags": [
+      "containers",
+      "docker",
+      "virtualization"
+    ],
+    "icon": "docker",
+    "popular": true,
+    "size": "~500 MB",
+    "logoUrl": "/images/logos/docker-dockerdesktop.png"
+  },
+  {
+    "id": "apt:powershell",
+    "name": "PowerShell",
+    "description": "Cross-platform task automation and configuration management",
+    "category": "Developer",
+    "tags": [
+      "shell",
+      "automation",
+      "cli"
+    ],
+    "icon": "powershell",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/microsoft-powershell.png"
+  },
+  {
+    "id": "apt:webstorm",
+    "name": "WebStorm",
+    "description": "Smartest JavaScript IDE",
+    "category": "Developer",
+    "tags": [
+      "ide",
+      "javascript",
+      "webstorm"
+    ],
+    "icon": "webstorm",
+    "popular": false,
+    "size": "~400 MB",
+    "logoUrl": "/images/logos/jetbrains-webstorm.png"
+  },
+  {
+    "id": "apt:cursor",
+    "name": "Cursor",
+    "description": "AI-powered code editor",
+    "category": "Developer",
+    "tags": [
+      "editor",
+      "ide",
+      "ai",
+      "code"
+    ],
+    "icon": "cursor",
+    "popular": true,
+    "size": "~110 MB",
+    "logoUrl": "/images/logos/cursor-cursor.png"
+  },
+  {
+    "id": "apt:pycharm-community",
+    "name": "PyCharm Community",
+    "description": "Python IDE for professional developers",
+    "category": "Developer",
+    "tags": [
+      "ide",
+      "python",
+      "pycharm"
+    ],
+    "icon": "pycharm",
+    "popular": true,
+    "size": "~500 MB",
+    "logoUrl": "/images/logos/jetbrains-pycharm-community.png"
+  },
+  {
+    "id": "apt:rustup",
+    "name": "Rustup",
+    "description": "Rust toolchain installer",
+    "category": "Developer",
+    "tags": [
+      "rust",
+      "toolchain",
+      "compiler"
+    ],
+    "icon": "rust",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/rustlang-rustup.png"
+  },
+  {
+    "id": "apt:go",
+    "name": "Go",
+    "description": "Go programming language tools",
+    "category": "Developer",
+    "tags": [
+      "go",
+      "golang",
+      "compiler"
+    ],
+    "icon": "go",
+    "popular": false,
+    "size": "~120 MB",
+    "logoUrl": "/images/logos/golang-go.png"
+  },
+  {
+    "id": "apt:azure-cli",
+    "name": "Azure CLI",
+    "description": "Command-line tools for Azure",
+    "category": "Developer",
+    "tags": [
+      "azure",
+      "cloud",
+      "cli"
+    ],
+    "icon": "azure",
+    "popular": false,
+    "size": "~80 MB",
+    "logoUrl": "/images/logos/microsoft-azurecli.png"
+  },
+  {
+    "id": "apt:aws-cli",
+    "name": "AWS CLI",
+    "description": "Unified command line interface for AWS",
+    "category": "Developer",
+    "tags": [
+      "aws",
+      "cloud",
+      "cli"
+    ],
+    "icon": "aws",
+    "popular": false,
+    "size": "~60 MB",
+    "logoUrl": "/images/logos/amazon-awscli.png"
+  },
+  {
+    "id": "apt:neovim",
+    "name": "Neovim",
+    "description": "Vim-focused text editor",
+    "category": "Developer",
+    "tags": [
+      "editor",
+      "vim",
+      "terminal"
+    ],
+    "icon": "neovim",
+    "popular": false,
+    "size": "~40 MB",
+    "logoUrl": "/images/logos/neovim-neovim.png"
+  },
+  {
+    "id": "apt:microsoft-edge",
+    "name": "Microsoft Edge",
+    "description": "Microsoft Edge Browser",
+    "category": "Browsers",
+    "tags": [
+      "browser",
+      "edge",
+      "web",
+      "microsoft"
+    ],
+    "icon": "edge",
+    "popular": true,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/microsoft-edge.png"
+  },
+  {
+    "id": "apt:opera-browser",
+    "name": "Opera Browser",
+    "description": "Feature-rich web browser",
+    "category": "Browsers",
+    "tags": [
+      "browser",
+      "opera",
+      "web"
+    ],
+    "icon": "opera",
+    "popular": false,
+    "size": "~90 MB",
+    "logoUrl": "/images/logos/opera-opera.png"
+  },
+  {
+    "id": "apt:zen-browser",
+    "name": "Zen Browser",
+    "description": "Privacy-focused web browser",
+    "category": "Browsers",
+    "tags": [
+      "browser",
+      "privacy",
+      "zen"
+    ],
+    "icon": "zen",
+    "popular": false,
+    "size": "~85 MB",
+    "logoUrl": "/images/logos/zen-team-zen-browser.png"
+  },
+  {
+    "id": "apt:foobar2000",
+    "name": "foobar2000",
+    "description": "Music Player",
+    "category": "Media",
+    "tags": [
+      "music",
+      "audio",
+      "player"
+    ],
+    "icon": "foobar",
+    "popular": false,
+    "size": "~5 MB",
+    "logoUrl": "/images/logos/foobar2000-foobar2000.png"
+  },
+  {
+    "id": "apt:gom-player",
+    "name": "GOM Player",
+    "description": "Video Player",
+    "category": "Media",
+    "tags": [
+      "video",
+      "player",
+      "media"
+    ],
+    "icon": "gom",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/gomlab-gomplayer.png"
+  },
+  {
+    "id": "apt:kdenlive",
+    "name": "Kdenlive",
+    "description": "Non-linear video editor",
+    "category": "Media",
+    "tags": [
+      "video",
+      "editor",
+      "nle"
+    ],
+    "icon": "kdenlive",
+    "popular": false,
+    "size": "~500 MB",
+    "logoUrl": "/images/logos/kdenlive-kdenlive.png"
+  },
+  {
+    "id": "apt:microsoft-teams",
+    "name": "Microsoft Teams",
+    "description": "Hub for teamwork in Microsoft 365",
+    "category": "Communication",
+    "tags": [
+      "chat",
+      "video",
+      "collaboration"
+    ],
+    "icon": "teams",
+    "popular": true,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/microsoft-teams.png"
+  },
+  {
+    "id": "apt:telegram-desktop",
+    "name": "Telegram Desktop",
+    "description": "Cloud-based messaging and VoIP service",
+    "category": "Communication",
+    "tags": [
+      "chat",
+      "messaging",
+      "voip"
+    ],
+    "icon": "telegram",
+    "popular": true,
+    "size": "~60 MB",
+    "logoUrl": "/images/logos/telegram-telegramdesktop.png"
+  },
+  {
+    "id": "apt:thunderbird",
+    "name": "Thunderbird",
+    "description": "Email Reader by Mozilla",
+    "category": "Communication",
+    "tags": [
+      "email",
+      "client",
+      "mozilla"
+    ],
+    "icon": "thunderbird",
+    "popular": false,
+    "size": "~60 MB",
+    "logoUrl": "/images/logos/mozilla-thunderbird.png"
+  },
+  {
+    "id": "apt:pidgin",
+    "name": "Pidgin",
+    "description": "Multi-IM Client",
+    "category": "Communication",
+    "tags": [
+      "im",
+      "chat",
+      "messaging"
+    ],
+    "icon": "pidgin",
+    "popular": false,
+    "size": "~10 MB",
+    "logoUrl": "/images/logos/pidgin-pidgin.png"
+  },
+  {
+    "id": "apt:vc-redist-x64-2015",
+    "name": "VC Redist x64 2015+",
+    "description": "Microsoft C and C++ (MSVC) runtime libraries",
+    "category": "Utilities",
+    "tags": [
+      "vc++",
+      "redist",
+      "microsoft",
+      "runtime"
+    ],
+    "icon": "vcredist",
+    "popular": false,
+    "size": "~20 MB",
+    "logoUrl": "/images/logos/microsoft-vcredist-2015-x64.png"
+  },
+  {
+    "id": "apt:putty",
+    "name": "PuTTY",
+    "description": "SSH client",
+    "category": "Utilities",
+    "tags": [
+      "ssh",
+      "telnet",
+      "terminal"
+    ],
+    "icon": "putty",
+    "popular": false,
+    "size": "~3 MB",
+    "logoUrl": "/images/logos/putty-putty.png"
+  },
+  {
+    "id": "apt:malwarebytes",
+    "name": "Malwarebytes",
+    "description": "Malware Remover",
+    "category": "Utilities",
+    "tags": [
+      "security",
+      "antimalware",
+      "protection"
+    ],
+    "icon": "malwarebytes",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/malwarebytes-malwarebytes.png"
+  },
+  {
+    "id": "apt:qbittorrent",
+    "name": "qBittorrent",
+    "description": "Free Bittorrent Client",
+    "category": "Utilities",
+    "tags": [
+      "torrent",
+      "p2p",
+      "download"
+    ],
+    "icon": "qbittorrent",
+    "popular": false,
+    "size": "~30 MB",
+    "logoUrl": "/images/logos/qbittorrent-qbittorrent.png"
+  },
+  {
+    "id": "apt:onedrive",
+    "name": "OneDrive",
+    "description": "Online File Sync by Microsoft",
+    "category": "Utilities",
+    "tags": [
+      "cloud",
+      "storage",
+      "sync",
+      "microsoft"
+    ],
+    "icon": "onedrive",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/microsoft-onedrive.png"
+  },
+  {
+    "id": "apt:evernote",
+    "name": "Evernote",
+    "description": "Online Notes",
+    "category": "Utilities",
+    "tags": [
+      "notes",
+      "productivity",
+      "organize"
+    ],
+    "icon": "evernote",
+    "popular": false,
+    "size": "~400 MB",
+    "logoUrl": "/images/logos/evernote-evernote.png"
+  },
+  {
+    "id": "apt:anydesk",
+    "name": "AnyDesk",
+    "description": "Remote Desktop",
+    "category": "Utilities",
+    "tags": [
+      "remote",
+      "desktop",
+      "support"
+    ],
+    "icon": "anydesk",
+    "popular": false,
+    "size": "~5 MB",
+    "logoUrl": "/images/logos/anydesksoftwaregmbh-anydesk.png"
+  },
+  {
+    "id": "apt:teamviewer-15",
+    "name": "TeamViewer 15",
+    "description": "Remote Access Tool",
+    "category": "Utilities",
+    "tags": [
+      "remote",
+      "desktop",
+      "support"
+    ],
+    "icon": "teamviewer",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/teamviewer-teamviewer.png"
+  },
+  {
+    "id": "apt:ccleaner",
+    "name": "CCleaner",
+    "description": "PC Crap Remover",
+    "category": "Utilities",
+    "tags": [
+      "cleanup",
+      "utility",
+      "registry"
+    ],
+    "icon": "ccleaner",
+    "popular": false,
+    "size": "~30 MB",
+    "logoUrl": "/images/logos/piriform-ccleaner.png"
+  },
+  {
+    "id": "apt:flow-launcher",
+    "name": "Flow Launcher",
+    "description": "Keystroke launcher for Windows",
+    "category": "Utilities",
+    "tags": [
+      "launcher",
+      "productivity",
+      "search"
+    ],
+    "icon": "flow",
+    "popular": false,
+    "size": "~60 MB",
+    "logoUrl": "/images/logos/flow-launcher-flow-launcher.png"
+  },
+  {
+    "id": "apt:foxit-reader",
+    "name": "Foxit Reader",
+    "description": "Alternative PDF Reader",
+    "category": "Productivity",
+    "tags": [
+      "pdf",
+      "reader",
+      "document"
+    ],
+    "icon": "foxit",
+    "popular": false,
+    "size": "~80 MB",
+    "logoUrl": "/images/logos/foxit-foxitreader.png"
+  },
+  {
+    "id": "apt:openoffice",
+    "name": "OpenOffice",
+    "description": "Free Office Suite",
+    "category": "Productivity",
+    "tags": [
+      "office",
+      "productivity",
+      "documents"
+    ],
+    "icon": "openoffice",
+    "popular": false,
+    "size": "~250 MB",
+    "logoUrl": "/images/logos/apache-openoffice.png"
+  },
+  {
+    "id": "apt:anki",
+    "name": "Anki",
+    "description": "Powerful and intelligent flashcard program",
+    "category": "Productivity",
+    "tags": [
+      "flashcards",
+      "learning",
+      "study"
+    ],
+    "icon": "anki",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/anki-anki.png"
+  },
+  {
+    "id": "apt:calibre",
+    "name": "calibre",
+    "description": "E-book library management application",
+    "category": "Productivity",
+    "tags": [
+      "ebook",
+      "library",
+      "reading"
+    ],
+    "icon": "calibre",
+    "popular": false,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/calibre-calibre.png"
+  },
+  {
+    "id": "apt:canva",
+    "name": "Canva",
+    "description": "Online design and publishing tool",
+    "category": "Design",
+    "tags": [
+      "design",
+      "graphics",
+      "templates"
+    ],
+    "icon": "canva",
+    "popular": true,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/canva-canva.png"
+  },
+  {
+    "id": "apt:krita",
+    "name": "Krita",
+    "description": "Professional painting and drawing application",
+    "category": "Design",
+    "tags": [
+      "painting",
+      "drawing",
+      "art"
+    ],
+    "icon": "krita",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/kde-krita.png"
+  },
+  {
+    "id": "apt:darktable",
+    "name": "darktable",
+    "description": "Open source photography workflow application",
+    "category": "Design",
+    "tags": [
+      "photography",
+      "raw",
+      "editing"
+    ],
+    "icon": "darktable",
+    "popular": false,
+    "size": "~250 MB",
+    "logoUrl": "/images/logos/darktable-darktable.png"
+  },
+  {
+    "id": "apt:epic-games-launcher",
+    "name": "Epic Games Launcher",
+    "description": "Game store and launcher from Epic Games",
+    "category": "Gaming",
+    "tags": [
+      "gaming",
+      "epic",
+      "store"
+    ],
+    "icon": "epic",
+    "popular": true,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/epicgames-epicgameslauncher.png"
+  },
+  {
+    "id": "apt:gog-galaxy",
+    "name": "GOG Galaxy",
+    "description": "Gaming client from GOG",
+    "category": "Gaming",
+    "tags": [
+      "gaming",
+      "gog",
+      "client"
+    ],
+    "icon": "gog",
+    "popular": false,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/gog-galaxy.png"
+  },
+  {
+    "id": "apt:curseforge",
+    "name": "CurseForge",
+    "description": "Game modding platform",
+    "category": "Gaming",
+    "tags": [
+      "gaming",
+      "mods",
+      "addons"
+    ],
+    "icon": "curseforge",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/overwolf-curseforge.png"
+  },
+  {
+    "id": "apt:visual-studio-2022",
+    "name": "Visual Studio 2022",
+    "description": "IDE for Windows, Mac, and Linux",
+    "category": "Developer",
+    "tags": [
+      "ide",
+      "microsoft",
+      "development"
+    ],
+    "icon": "visualstudio",
+    "popular": false,
+    "size": "~5 GB",
+    "logoUrl": "/images/logos/visual-visual.svg"
+  },
+  {
+    "id": "apt:jetbrains-toolbox",
+    "name": "JetBrains Toolbox",
+    "description": "JetBrains IDEs management tool",
+    "category": "Developer",
+    "tags": [
+      "jetbrains",
+      "ide",
+      "toolbox"
+    ],
+    "icon": "jetbox",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/jetbrains-toolbox.png"
+  },
+  {
+    "id": "apt:rust-msvc",
+    "name": "Rust (MSVC)",
+    "description": "Rust toolchain for MSVC",
+    "category": "Developer",
+    "tags": [
+      "rust",
+      "toolchain",
+      "msvc"
+    ],
+    "icon": "rust",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/rustlang-rust-msvc.png"
+  },
+  {
+    "id": "apt:ruby",
+    "name": "Ruby",
+    "description": "Ruby programming language",
+    "category": "Developer",
+    "tags": [
+      "ruby",
+      "programming",
+      "language"
+    ],
+    "icon": "ruby",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/rubyinstallerteam-ruby.png"
+  },
+  {
+    "id": "apt:php",
+    "name": "PHP",
+    "description": "PHP programming language",
+    "category": "Developer",
+    "tags": [
+      "php",
+      "programming",
+      "language"
+    ],
+    "icon": "php",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/php-php.png"
+  },
+  {
+    "id": "apt:composer",
+    "name": "Composer",
+    "description": "PHP package manager",
+    "category": "Developer",
+    "tags": [
+      "php",
+      "composer",
+      "package-manager"
+    ],
+    "icon": "composer",
+    "popular": false,
+    "size": "~3 MB",
+    "logoUrl": "/images/logos/php-composer.png"
+  },
+  {
+    "id": "apt:mysql",
+    "name": "MySQL",
+    "description": "MySQL Database Server",
+    "category": "Developer",
+    "tags": [
+      "database",
+      "mysql",
+      "sql"
+    ],
+    "icon": "mysql",
+    "popular": false,
+    "size": "~400 MB",
+    "logoUrl": "/images/logos/oracle-mysql.png"
+  },
+  {
+    "id": "apt:redis",
+    "name": "Redis",
+    "description": "Redis in-memory data store",
+    "category": "Developer",
+    "tags": [
+      "database",
+      "redis",
+      "cache"
+    ],
+    "icon": "redis",
+    "popular": false,
+    "size": "~20 MB",
+    "logoUrl": "/images/logos/redis-redis.png"
+  },
+  {
+    "id": "apt:gitkraken",
+    "name": "GitKraken",
+    "description": "Git GUI client",
+    "category": "Developer",
+    "tags": [
+      "git",
+      "gui",
+      "client"
+    ],
+    "icon": "gitkraken",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/axosoft-gitkraken.png"
+  },
+  {
+    "id": "apt:sourcetree",
+    "name": "Sourcetree",
+    "description": "Git GUI client",
+    "category": "Developer",
+    "tags": [
+      "git",
+      "gui",
+      "client"
+    ],
+    "icon": "sourcetree",
+    "popular": false,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/atlassian-sourcetree.png"
+  },
+  {
+    "id": "apt:cmake",
+    "name": "CMake",
+    "description": "Cross-platform build system",
+    "category": "Developer",
+    "tags": [
+      "build",
+      "cmake",
+      "tools"
+    ],
+    "icon": "cmake",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/kitware-cmake.png"
+  },
+  {
+    "id": "apt:llvm",
+    "name": "LLVM",
+    "description": "LLVM compiler infrastructure",
+    "category": "Developer",
+    "tags": [
+      "llvm",
+      "compiler",
+      "tools"
+    ],
+    "icon": "llvm",
+    "popular": false,
+    "size": "~500 MB",
+    "logoUrl": "/images/logos/llvm-llvm.png"
+  },
+  {
+    "id": "apt:yarn",
+    "name": "Yarn",
+    "description": "JavaScript package manager",
+    "category": "Developer",
+    "tags": [
+      "javascript",
+      "package-manager",
+      "yarn"
+    ],
+    "icon": "yarn",
+    "popular": false,
+    "size": "~3 MB",
+    "logoUrl": "/images/logos/yarn-yarn.png"
+  },
+  {
+    "id": "apt:pnpm",
+    "name": "pnpm",
+    "description": "Fast JavaScript package manager",
+    "category": "Developer",
+    "tags": [
+      "javascript",
+      "package-manager",
+      "pnpm"
+    ],
+    "icon": "pnpm",
+    "popular": false,
+    "size": "~10 MB",
+    "logoUrl": "/images/logos/pnpm-pnpm.png"
+  },
+  {
+    "id": "apt:deno",
+    "name": "Deno",
+    "description": "Secure JavaScript/TypeScript runtime",
+    "category": "Developer",
+    "tags": [
+      "javascript",
+      "typescript",
+      "runtime"
+    ],
+    "icon": "deno",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/denoland-deno.png"
+  },
+  {
+    "id": "apt:netlify-cli",
+    "name": "Netlify CLI",
+    "description": "Netlify command line interface",
+    "category": "Developer",
+    "tags": [
+      "netlify",
+      "cli",
+      "deployment"
+    ],
+    "icon": "netlify",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/netlify-netlify.png"
+  },
+  {
+    "id": "apt:helm",
+    "name": "Helm",
+    "description": "Kubernetes package manager",
+    "category": "Developer",
+    "tags": [
+      "kubernetes",
+      "helm",
+      "package-manager"
+    ],
+    "icon": "helm",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/helm-helm.png"
+  },
+  {
+    "id": "apt:vim",
+    "name": "Vim",
+    "description": "Text editor",
+    "category": "Developer",
+    "tags": [
+      "editor",
+      "vim",
+      "terminal"
+    ],
+    "icon": "vim",
+    "popular": false,
+    "size": "~10 MB",
+    "logoUrl": "/images/logos/vim-vim.png"
+  },
+  {
+    "id": "apt:emacs",
+    "name": "Emacs",
+    "description": "Extensible text editor",
+    "category": "Developer",
+    "tags": [
+      "editor",
+      "emacs",
+      "terminal"
+    ],
+    "icon": "emacs",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/gnu-emacs.png"
+  },
+  {
+    "id": "apt:opera-gx",
+    "name": "Opera GX",
+    "description": "Gaming browser",
+    "category": "Browsers",
+    "tags": [
+      "browser",
+      "opera",
+      "gaming"
+    ],
+    "icon": "operagx",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/opera-operagx.png"
+  },
+  {
+    "id": "apt:tor-browser",
+    "name": "Tor Browser",
+    "description": "Privacy-focused browser",
+    "category": "Browsers",
+    "tags": [
+      "browser",
+      "privacy",
+      "tor"
+    ],
+    "icon": "tor",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/torproject-torbrowser.png"
+  },
+  {
+    "id": "apt:librewolf",
+    "name": "LibreWolf",
+    "description": "Privacy-focused Firefox fork",
+    "category": "Browsers",
+    "tags": [
+      "browser",
+      "privacy",
+      "firefox"
+    ],
+    "icon": "librewolf",
+    "popular": false,
+    "size": "~80 MB",
+    "logoUrl": "/images/logos/librewolf-librewolf.png"
+  },
+  {
+    "id": "apt:mpv",
+    "name": "MPV",
+    "description": "Video player",
+    "category": "Media",
+    "tags": [
+      "video",
+      "player",
+      "media"
+    ],
+    "icon": "mpv",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/mpv-net.png"
+  },
+  {
+    "id": "apt:streamlabs",
+    "name": "Streamlabs",
+    "description": "Streaming software",
+    "category": "Media",
+    "tags": [
+      "streaming",
+      "video",
+      "broadcasting"
+    ],
+    "icon": "streamlabs",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/streamlabs-streamlabs.png"
+  },
+  {
+    "id": "apt:shotcut",
+    "name": "Shotcut",
+    "description": "Video editor",
+    "category": "Media",
+    "tags": [
+      "video",
+      "editor",
+      "nle"
+    ],
+    "icon": "shotcut",
+    "popular": false,
+    "size": "~300 MB",
+    "logoUrl": "/images/logos/meltytech-shotcut.png"
+  },
+  {
+    "id": "apt:imagemagick",
+    "name": "ImageMagick",
+    "description": "Image manipulation tools",
+    "category": "Media",
+    "tags": [
+      "image",
+      "graphics",
+      "tools"
+    ],
+    "icon": "imagemagick",
+    "popular": false,
+    "size": "~30 MB",
+    "logoUrl": "/images/logos/imagemagick-imagemagick.png"
+  },
+  {
+    "id": "apt:skype",
+    "name": "Skype",
+    "description": "Video and voice calling",
+    "category": "Communication",
+    "tags": [
+      "chat",
+      "video",
+      "voip"
+    ],
+    "icon": "skype",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/microsoft-skype.png"
+  },
+  {
+    "id": "apt:viber",
+    "name": "Viber",
+    "description": "Messaging and calling app",
+    "category": "Communication",
+    "tags": [
+      "chat",
+      "voip",
+      "messaging"
+    ],
+    "icon": "viber",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/viber-viber.png"
+  },
+  {
+    "id": "apt:element",
+    "name": "Element",
+    "description": "Matrix messaging client",
+    "category": "Communication",
+    "tags": [
+      "chat",
+      "matrix",
+      "messaging"
+    ],
+    "icon": "element",
+    "popular": false,
+    "size": "~150 MB",
+    "logoUrl": "/images/logos/element-element.png"
+  },
+  {
+    "id": "apt:mattermost",
+    "name": "Mattermost",
+    "description": "Team messaging",
+    "category": "Communication",
+    "tags": [
+      "chat",
+      "team",
+      "messaging"
+    ],
+    "icon": "mattermost",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/mattermost-mattermostdesktop.png"
+  },
+  {
+    "id": "apt:em-client",
+    "name": "eM Client",
+    "description": "Email client",
+    "category": "Communication",
+    "tags": [
+      "email",
+      "client",
+      "calendar"
+    ],
+    "icon": "emclient",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/emclient-emclient.png"
+  },
+  {
+    "id": "apt:ea-app",
+    "name": "EA App",
+    "description": "EA gaming platform",
+    "category": "Gaming",
+    "tags": [
+      "gaming",
+      "ea",
+      "store"
+    ],
+    "icon": "ea",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/electronicarts-eadesktop.png"
+  },
+  {
+    "id": "apt:ubisoft-connect",
+    "name": "Ubisoft Connect",
+    "description": "Ubisoft gaming platform",
+    "category": "Gaming",
+    "tags": [
+      "gaming",
+      "ubisoft",
+      "store"
+    ],
+    "icon": "ubisoft",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/ubisoft-connect.png"
+  },
+  {
+    "id": "apt:parsec",
+    "name": "Parsec",
+    "description": "Game streaming",
+    "category": "Gaming",
+    "tags": [
+      "gaming",
+      "streaming",
+      "remote"
+    ],
+    "icon": "parsec",
+    "popular": false,
+    "size": "~10 MB",
+    "logoUrl": "/images/logos/parsec-parsec.png"
+  },
+  {
+    "id": "apt:flameshot",
+    "name": "Flameshot",
+    "description": "Screenshot tool",
+    "category": "Utilities",
+    "tags": [
+      "screenshot",
+      "capture",
+      "tool"
+    ],
+    "icon": "flameshot",
+    "popular": false,
+    "size": "~20 MB",
+    "logoUrl": "/images/logos/flameshot-flameshot.png"
+  },
+  {
+    "id": "apt:ditto-clipboard",
+    "name": "Ditto Clipboard",
+    "description": "Clipboard manager",
+    "category": "Utilities",
+    "tags": [
+      "clipboard",
+      "productivity",
+      "utility"
+    ],
+    "icon": "ditto",
+    "popular": false,
+    "size": "~10 MB",
+    "logoUrl": "/images/logos/ditto-ditto.png"
+  },
+  {
+    "id": "apt:wox",
+    "name": "Wox",
+    "description": "Launcher for Windows",
+    "category": "Utilities",
+    "tags": [
+      "launcher",
+      "productivity",
+      "search"
+    ],
+    "icon": "wox",
+    "popular": false,
+    "size": "~10 MB",
+    "logoUrl": "/images/logos/wox-wox.png"
+  },
+  {
+    "id": "apt:microsoft-office",
+    "name": "Microsoft Office",
+    "description": "Microsoft Office suite",
+    "category": "Productivity",
+    "tags": [
+      "office",
+      "microsoft",
+      "productivity"
+    ],
+    "icon": "office",
+    "popular": false,
+    "size": "~5 GB",
+    "logoUrl": "/images/logos/microsoft-office.png"
+  },
+  {
+    "id": "apt:wps-office",
+    "name": "WPS Office",
+    "description": "Office suite",
+    "category": "Productivity",
+    "tags": [
+      "office",
+      "productivity",
+      "documents"
+    ],
+    "icon": "wpsoffice",
+    "popular": false,
+    "size": "~300 MB",
+    "logoUrl": "/images/logos/kingsoft-wpsoffice.png"
+  },
+  {
+    "id": "apt:onlyoffice",
+    "name": "OnlyOffice",
+    "description": "Office suite",
+    "category": "Productivity",
+    "tags": [
+      "office",
+      "productivity",
+      "documents"
+    ],
+    "icon": "onlyoffice",
+    "popular": false,
+    "size": "~300 MB",
+    "logoUrl": "/images/logos/onlyoffice-desktopeditors.png"
+  },
+  {
+    "id": "apt:joplin",
+    "name": "Joplin",
+    "description": "Note-taking app",
+    "category": "Productivity",
+    "tags": [
+      "notes",
+      "productivity",
+      "markdown"
+    ],
+    "icon": "joplin",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/joplin-joplin.png"
+  },
+  {
+    "id": "apt:typora",
+    "name": "Typora",
+    "description": "Markdown editor",
+    "category": "Productivity",
+    "tags": [
+      "markdown",
+      "editor",
+      "writing"
+    ],
+    "icon": "typora",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/typora-typora.png"
+  },
+  {
+    "id": "apt:mark-text",
+    "name": "Mark Text",
+    "description": "Markdown editor",
+    "category": "Productivity",
+    "tags": [
+      "markdown",
+      "editor",
+      "writing"
+    ],
+    "icon": "marktext",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/marktext-marktext.png"
+  },
+  {
+    "id": "apt:adobe-acrobat-reader",
+    "name": "Adobe Acrobat Reader",
+    "description": "PDF reader",
+    "category": "Productivity",
+    "tags": [
+      "pdf",
+      "reader",
+      "adobe"
+    ],
+    "icon": "acrobat",
+    "popular": false,
+    "size": "~300 MB",
+    "logoUrl": "/images/logos/adobe-acrobat-reader-64-bit.png"
+  },
+  {
+    "id": "apt:xournal",
+    "name": "Xournal++",
+    "description": "Note-taking PDF annotator",
+    "category": "Productivity",
+    "tags": [
+      "pdf",
+      "notes",
+      "annotation"
+    ],
+    "icon": "xournal",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/xournalpp-xournalpp.png"
+  },
+  {
+    "id": "apt:keepassxc",
+    "name": "KeePassXC",
+    "description": "Cross-platform password manager",
+    "category": "Utilities",
+    "tags": [
+      "password",
+      "security",
+      "manager"
+    ],
+    "icon": "keepassxc",
+    "popular": false,
+    "size": "~30 MB",
+    "logoUrl": "/images/logos/keepassxcteam-keepassxc.png"
+  },
+  {
+    "id": "apt:protonvpn",
+    "name": "ProtonVPN",
+    "description": "VPN service",
+    "category": "Utilities",
+    "tags": [
+      "vpn",
+      "privacy",
+      "security"
+    ],
+    "icon": "protonvpn",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/protonvpn-protonvpn.png"
+  },
+  {
+    "id": "apt:openvpn",
+    "name": "OpenVPN",
+    "description": "VPN client",
+    "category": "Utilities",
+    "tags": [
+      "vpn",
+      "privacy",
+      "security"
+    ],
+    "icon": "openvpn",
+    "popular": false,
+    "size": "~10 MB",
+    "logoUrl": "/images/logos/openvpntechnologies-openvpn.png"
+  },
+  {
+    "id": "apt:veracrypt",
+    "name": "Veracrypt",
+    "description": "Disk encryption",
+    "category": "Utilities",
+    "tags": [
+      "encryption",
+      "security",
+      "privacy"
+    ],
+    "icon": "veracrypt",
+    "popular": false,
+    "size": "~10 MB",
+    "logoUrl": "/images/logos/veracrypt-veracrypt.png"
+  },
+  {
+    "id": "apt:gnupg",
+    "name": "GnuPG",
+    "description": "Encryption tools",
+    "category": "Utilities",
+    "tags": [
+      "encryption",
+      "security",
+      "gpg"
+    ],
+    "icon": "gnupg",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/gnupg-gnupg.png"
+  },
+  {
+    "id": "apt:transmission",
+    "name": "Transmission",
+    "description": "BitTorrent client",
+    "category": "Utilities",
+    "tags": [
+      "torrent",
+      "p2p",
+      "download"
+    ],
+    "icon": "transmission",
+    "popular": false,
+    "size": "~20 MB",
+    "logoUrl": "/images/logos/transmission-transmission.png"
+  },
+  {
+    "id": "apt:nextcloud",
+    "name": "Nextcloud",
+    "description": "Self-hosted cloud storage",
+    "category": "Utilities",
+    "tags": [
+      "cloud",
+      "storage",
+      "sync"
+    ],
+    "icon": "nextcloud",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/nextcloud-nextclouddesktop.png"
+  },
+  {
+    "id": "apt:syncthing",
+    "name": "Syncthing",
+    "description": "File synchronization",
+    "category": "Utilities",
+    "tags": [
+      "sync",
+      "file",
+      "p2p"
+    ],
+    "icon": "syncthing",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/syncthing-syncthing.png"
+  },
+  {
+    "id": "apt:freefilesync",
+    "name": "FreeFileSync",
+    "description": "Folder comparison and sync",
+    "category": "Utilities",
+    "tags": [
+      "sync",
+      "file",
+      "backup"
+    ],
+    "icon": "freefilesync",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/freefilesync-freefilesync.png"
+  },
+  {
+    "id": "apt:megasync",
+    "name": "MegaSync",
+    "description": "MEGA cloud storage",
+    "category": "Utilities",
+    "tags": [
+      "cloud",
+      "storage",
+      "mega"
+    ],
+    "icon": "mega",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/mega-megasync.png"
+  },
+  {
+    "id": "apt:rclone",
+    "name": "rclone",
+    "description": "Cloud storage sync tool",
+    "category": "Utilities",
+    "tags": [
+      "cloud",
+      "sync",
+      "storage"
+    ],
+    "icon": "rclone",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/rclone-rclone.png"
+  },
+  {
+    "id": "apt:restic",
+    "name": "Restic",
+    "description": "Backup tool",
+    "category": "Utilities",
+    "tags": [
+      "backup",
+      "storage",
+      "security"
+    ],
+    "icon": "restic",
+    "popular": false,
+    "size": "~20 MB",
+    "logoUrl": "/images/logos/restic-restic.png"
+  },
+  {
+    "id": "apt:duplicati",
+    "name": "Duplicati",
+    "description": "Backup tool",
+    "category": "Utilities",
+    "tags": [
+      "backup",
+      "storage",
+      "encryption"
+    ],
+    "icon": "duplicati",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/duplicati-duplicati.png"
+  },
+  {
+    "id": "apt:double-commander",
+    "name": "Double Commander",
+    "description": "File manager",
+    "category": "Utilities",
+    "tags": [
+      "file",
+      "manager",
+      "utility"
+    ],
+    "icon": "doublecmd",
+    "popular": false,
+    "size": "~20 MB",
+    "logoUrl": "/images/logos/alexx2000-doublecommander.png"
+  },
+  {
+    "id": "apt:r",
+    "name": "R",
+    "description": "R programming language",
+    "category": "Developer",
+    "tags": [
+      "r",
+      "statistics",
+      "programming"
+    ],
+    "icon": "rlang",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/rproject-r.png"
+  },
+  {
+    "id": "apt:rstudio",
+    "name": "RStudio",
+    "description": "R IDE",
+    "category": "Developer",
+    "tags": [
+      "r",
+      "ide",
+      "statistics"
+    ],
+    "icon": "rstudio",
+    "popular": false,
+    "size": "~500 MB",
+    "logoUrl": "/images/logos/posit-rstudio.png"
+  },
+  {
+    "id": "apt:anaconda",
+    "name": "Anaconda",
+    "description": "Python distribution",
+    "category": "Developer",
+    "tags": [
+      "python",
+      "data-science",
+      "anaconda"
+    ],
+    "icon": "anaconda",
+    "popular": false,
+    "size": "~1 GB",
+    "logoUrl": "/images/logos/anaconda-anaconda3.png"
+  },
+  {
+    "id": "apt:miniconda",
+    "name": "Miniconda",
+    "description": "Minimal Python distribution",
+    "category": "Developer",
+    "tags": [
+      "python",
+      "miniconda",
+      "data-science"
+    ],
+    "icon": "miniconda",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/anaconda-miniconda3.png"
+  },
+  {
+    "id": "apt:julia",
+    "name": "Julia",
+    "description": "Julia programming language",
+    "category": "Developer",
+    "tags": [
+      "julia",
+      "programming",
+      "scientific"
+    ],
+    "icon": "julia",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/julialang-julia.png"
+  },
+  {
+    "id": "apt:octave",
+    "name": "Octave",
+    "description": "Numerical computing",
+    "category": "Developer",
+    "tags": [
+      "octave",
+      "scientific",
+      "computing"
+    ],
+    "icon": "octave",
+    "popular": false,
+    "size": "~500 MB",
+    "logoUrl": "/images/logos/gnu-octave.png"
+  },
+  {
+    "id": "apt:qgis",
+    "name": "QGIS",
+    "description": "GIS software",
+    "category": "Developer",
+    "tags": [
+      "gis",
+      "mapping",
+      "geospatial"
+    ],
+    "icon": "qgis",
+    "popular": false,
+    "size": "~1 GB",
+    "logoUrl": "/images/logos/osgeo-qgis.png"
+  },
+  {
+    "id": "apt:zotero",
+    "name": "Zotero",
+    "description": "Research manager",
+    "category": "Productivity",
+    "tags": [
+      "research",
+      "citations",
+      "academic"
+    ],
+    "icon": "zotero",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/zotero-zotero.png"
+  },
+  {
+    "id": "apt:jabref",
+    "name": "JabRef",
+    "description": "Reference manager",
+    "category": "Productivity",
+    "tags": [
+      "research",
+      "citations",
+      "bibtex"
+    ],
+    "icon": "jabref",
+    "popular": false,
+    "size": "~300 MB",
+    "logoUrl": "/images/logos/jabref-jabref.png"
+  },
+  {
+    "id": "apt:virtualbox",
+    "name": "VirtualBox",
+    "description": "Virtualization platform",
+    "category": "Utilities",
+    "tags": [
+      "virtualization",
+      "vm",
+      "oracle"
+    ],
+    "icon": "virtualbox",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/oracle-virtualbox.png"
+  },
+  {
+    "id": "apt:qemu",
+    "name": "QEMU",
+    "description": "Virtualization platform",
+    "category": "Utilities",
+    "tags": [
+      "virtualization",
+      "emulation",
+      "qemu"
+    ],
+    "icon": "qemu",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/qemu-qemu.png"
+  },
+  {
+    "id": "apt:vagrant",
+    "name": "Vagrant",
+    "description": "Virtualization tool",
+    "category": "Utilities",
+    "tags": [
+      "virtualization",
+      "vagrant",
+      "devops"
+    ],
+    "icon": "vagrant",
+    "popular": false,
+    "size": "~200 MB",
+    "logoUrl": "/images/logos/hashicorp-vagrant.png"
+  },
+  {
+    "id": "apt:rancher-desktop",
+    "name": "Rancher Desktop",
+    "description": "Kubernetes container management",
+    "category": "Utilities",
+    "tags": [
+      "kubernetes",
+      "containers",
+      "rancher"
+    ],
+    "icon": "rancher",
+    "popular": false,
+    "size": "~500 MB",
+    "logoUrl": "/images/logos/suse-rancherdesktop.png"
+  },
+  {
+    "id": "apt:vnc-viewer",
+    "name": "VNC Viewer",
+    "description": "VNC client",
+    "category": "Utilities",
+    "tags": [
+      "vnc",
+      "remote",
+      "desktop"
+    ],
+    "icon": "vncviewer",
+    "popular": false,
+    "size": "~20 MB",
+    "logoUrl": "/images/logos/realvnc-vncviewer.png"
+  },
+  {
+    "id": "apt:tailscale",
+    "name": "Tailscale",
+    "description": "VPN mesh network",
+    "category": "Utilities",
+    "tags": [
+      "vpn",
+      "mesh",
+      "networking"
+    ],
+    "icon": "tailscale",
+    "popular": false,
+    "size": "~100 MB",
+    "logoUrl": "/images/logos/tailscale-tailscale.png"
+  },
+  {
+    "id": "apt:angry-ip-scanner",
+    "name": "Angry IP Scanner",
+    "description": "IP scanner",
+    "category": "Utilities",
+    "tags": [
+      "network",
+      "scanner",
+      "ip"
+    ],
+    "icon": "angryip",
+    "popular": false,
+    "size": "~3 MB",
+    "logoUrl": "/images/logos/angryziber-angryipscanner.png"
+  },
+  {
+    "id": "apt:nmap",
+    "name": "Nmap",
+    "description": "Network scanner",
+    "category": "Utilities",
+    "tags": [
+      "network",
+      "scanner",
+      "security"
+    ],
+    "icon": "nmap",
+    "popular": false,
+    "size": "~50 MB",
+    "logoUrl": "/images/logos/insecure-nmap.png"
+  }
+]
