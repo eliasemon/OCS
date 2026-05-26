@@ -6,7 +6,8 @@
 "use client"
 
 import { useState } from "react"
-import packagesData from "@/data/packages.json"
+import windowsPackagesData from "@/data/packages.json"
+import macPackagesData from "@/data/mac-packages.json"
 import type { Package } from "@/types/package"
 import { Catalog } from "@/components/Catalog"
 import { Sidebar } from "@/components/Sidebar"
@@ -14,9 +15,11 @@ import { Navbar } from "@/components/Navbar"
 import { CommandModal } from "@/components/CommandModal"
 import { usePresetFromURL } from "@/hooks/usePresetFromUrl"
 import { useSelectionStore } from "@/store/selection"
+import { useOsStore } from "@/store/os"
 
 export function AppPageClient() {
-  const packages = packagesData as Package[]
+  const { os } = useOsStore()
+  const packages = (os === "mac" ? macPackagesData : windowsPackagesData) as Package[]
   const [searchQuery, setSearchQuery] = useState("")
   const [commandModalOpen, setCommandModalOpen] = useState(false)
 

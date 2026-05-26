@@ -553,7 +553,7 @@
     "icon": "chrome",
     "popular": true,
     "size": "~100 MB",
-    "logoUrl": "/images/logos/google-chrome.png"
+    "logoUrl": "/images/logos/google-chrome.svg"
   },
   {
     "id": "Mozilla.Firefox",
@@ -1491,7 +1491,7 @@
     "icon": "googledrive",
     "popular": false,
     "size": "~200 MB",
-    "logoUrl": "/images/logos/google-drive.png"
+    "logoUrl": "/images/logos/google-drive.svg"
   },
   {
     "id": "Microsoft.OneDrive",
@@ -2511,7 +2511,7 @@
     "icon": "gcp",
     "popular": false,
     "size": "~100 MB",
-    "logoUrl": "/images/logos/google-cloudsdk.png"
+    "logoUrl": "/images/logos/google-cloudsdk.svg"
   },
   {
     "id": "Kubernetes.kubectl",

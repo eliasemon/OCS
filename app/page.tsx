@@ -7,18 +7,21 @@ import { WindowsLogo, AppIcons } from "@/components/HeroIllustrations"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "oneCommandSetup (OCS) - Set Up Windows in Minutes",
-  description: "Set Up Windows in Minutes. One command installs everything. Skip the installer clicking and get your perfect development environment in just 5 minutes.",
+  title: "oneCommandSetup (OCS) - Set Up Windows & macOS in Minutes",
+  description: "Set Up Windows & macOS in Minutes. One command installs everything. Skip the installer clicking and get your perfect development environment in just 5 minutes.",
   keywords: [
     "winget",
+    "homebrew",
     "windows package manager",
+    "mac package manager",
     "oneCommandSetup",
     "OCS",
-    "windows installer",
-    "bulk install windows apps",
+    "mac installer",
+    "bulk install apps",
     "powershell installer",
+    "brew installer",
     "developer tools",
-    "windows setup automation"
+    "setup automation"
   ],
   authors: [{ name: "oneCommandSetup" }],
   creator: "oneCommandSetup",
@@ -28,22 +31,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://onecommandsetup.app",
-    title: "oneCommandSetup - Set Up Windows in Minutes",
-    description: "Set Up Windows in Minutes. One command installs everything. Skip the installer clicking.",
+    title: "oneCommandSetup - Set Up Windows & macOS in Minutes",
+    description: "Set Up Windows & macOS in Minutes. One command installs everything. Skip the installer clicking.",
     siteName: "oneCommandSetup",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "oneCommandSetup - Set Up Windows in Minutes"
+        alt: "oneCommandSetup - Set Up Windows & macOS in Minutes"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "oneCommandSetup - Set Up Windows in Minutes",
-    description: "Set Up Windows in Minutes. One command installs everything. Skip the installer clicking.",
+    title: "oneCommandSetup - Set Up Windows & macOS in Minutes",
+    description: "Set Up Windows & macOS in Minutes. One command installs everything. Skip the installer clicking.",
     images: ["/og-image.png"],
   },
   alternates: {
@@ -55,14 +58,14 @@ const features = [
   {
     icon: Zap,
     title: "Lightning Fast",
-    description: "Install 50+ apps in the time it takes to install one manually. Winget handles everything in parallel.",
+    description: "Install 50+ apps in the time it takes to install one manually. Winget and Homebrew handle everything.",
     gradient: "from-[hsl(var(--color-primary))] to-[hsl(var(--color-accent))] bg-gradient-to-br",
     bgGradient: "from-[hsl(var(--color-primary)/0.1)] to-[hsl(var(--color-accent)/0.05)]",
   },
   {
     icon: Shield,
     title: "Official Sources",
-    description: "Every package comes directly from the official publisher via Microsoft's winget repository.",
+    description: "Every package comes directly from the official publishers via Microsoft's Winget and Apple's Homebrew.",
     gradient: "from-[hsl(var(--color-accent))] to-[hsl(var(--color-primary))] bg-gradient-to-br",
     bgGradient: "from-[hsl(var(--color-accent)/0.1)] to-[hsl(var(--color-primary)/0.05)]",
   },
@@ -91,7 +94,7 @@ const steps = [
   {
     number: "03",
     title: "Generate",
-    description: "Copy your custom PowerShell command with one click",
+    description: "Copy your custom PowerShell or Homebrew command with one click",
     icon: Terminal,
   },
   {
@@ -135,7 +138,7 @@ export default function LandingPage() {
 
               {/* Headline */}
               <h1 className="text-5xl font-bold tracking-tight mb-6 sm:text-6xl lg:text-7xl animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-                Set Up Windows
+                Set Up Windows <br className="hidden sm:block" />& macOS
                 <span className="gradient-text-animated block mt-2">
                   in Minutes
                 </span>
@@ -209,7 +212,7 @@ export default function LandingPage() {
               Why Choose <span className="gradient-text">OCS</span>?
             </h2>
             <p className="text-lg text-[hsl(var(--color-muted-foreground))] max-w-2xl mx-auto">
-              The fastest way to set up your Windows development environment with trusted, official packages.
+              The fastest way to set up your Windows or macOS development environment with trusted, official packages.
             </p>
           </div>
 
@@ -372,7 +375,7 @@ export default function LandingPage() {
                 <span className="text-xl font-bold">OCS</span>
               </Link>
               <p className="text-sm text-[hsl(var(--color-muted-foreground))] max-w-xs">
-                Open source • Powered by winget • Built for developers
+                Open source • Powered by Winget & Homebrew • Built for developers
               </p>
             </div>
 

@@ -6,10 +6,12 @@ import { toast } from "sonner"
 import {
   buildPowerShellCommand,
   buildCmdCommand,
+  buildBrewCommand,
   buildShareUrl,
   copyToClipboard,
   downloadJson,
 } from "@/lib/utils"
+import { useOsStore } from "@/store/os"
 import type { InstallConfig } from "@/types/package"
 import {
   Dialog,
@@ -28,19 +30,30 @@ interface CommandModalProps {
   selectedIds: string[]
 }
 
-type TerminalType = "powershell" | "cmd"
+type TerminalType = "powershell" | "cmd" | "zsh" | "bash"
 
 export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) {
+  const { os } = useOsStore()
   const [copied, setCopied] = useState(false)
-  const [terminalType, setTerminalType] = useState<TerminalType>("powershell")
+  const [terminalType, setTerminalType] = useState<TerminalType>(os === "mac" ? "zsh" : "powershell")
   const [showAdvanced, setShowAdvanced] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
 
+  // Ensure terminal type matches current OS
+  if (os === "mac" && (terminalType === "powershell" || terminalType === "cmd")) {
+    setTerminalType("zsh")
+  } else if (os === "windows" && (terminalType === "zsh" || terminalType === "bash")) {
+    setTerminalType("powershell")
+  }
+
   const powerShellCommand = buildPowerShellCommand(selectedIds)
   const cmdCommand = buildCmdCommand(selectedIds)
+  const brewCommand = buildBrewCommand(selectedIds)
   const shareUrl = buildShareUrl(selectedIds)
 
-  const currentCommand = terminalType === "powershell" ? powerShellCommand : cmdCommand
+  const currentCommand = os === "mac" 
+    ? brewCommand 
+    : terminalType === "powershell" ? powerShellCommand : cmdCommand
 
   const handleCopyCommand = async () => {
     await copyToClipboard(currentCommand)
@@ -107,30 +120,61 @@ export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) 
           {/* Terminal Type Toggle */}
           <div className="sticky top-0 z-10 bg-[hsl(var(--color-card))] px-6 pt-1 pb-4">
             <div className="flex items-center gap-2 p-1 bg-[hsl(var(--color-muted))] rounded-xl shadow-sm border border-[hsl(var(--color-border))]">
-            <button
-              onClick={() => setTerminalType("powershell")}
-              className={cn(
-                "flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300",
-                terminalType === "powershell"
-                  ? "bg-[hsl(var(--color-primary))] text-white shadow-lg"
-                  : "text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]"
-              )}
-            >
-              <Cpu className="h-4 w-4" />
-              PowerShell
-            </button>
-            <button
-              onClick={() => setTerminalType("cmd")}
-              className={cn(
-                "flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300",
-                terminalType === "cmd"
-                  ? "bg-[hsl(var(--color-primary))] text-white shadow-lg"
-                  : "text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]"
-              )}
-            >
-              <Terminal className="h-4 w-4" />
-              CMD
-            </button>
+            {os === "windows" ? (
+              <>
+                <button
+                  onClick={() => setTerminalType("powershell")}
+                  className={cn(
+                    "flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300",
+                    terminalType === "powershell"
+                      ? "bg-[hsl(var(--color-primary))] text-white shadow-lg"
+                      : "text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]"
+                  )}
+                >
+                  <Cpu className="h-4 w-4" />
+                  PowerShell
+                </button>
+                <button
+                  onClick={() => setTerminalType("cmd")}
+                  className={cn(
+                    "flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300",
+                    terminalType === "cmd"
+                      ? "bg-[hsl(var(--color-primary))] text-white shadow-lg"
+                      : "text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]"
+                  )}
+                >
+                  <Terminal className="h-4 w-4" />
+                  CMD
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  onClick={() => setTerminalType("zsh")}
+                  className={cn(
+                    "flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300",
+                    terminalType === "zsh"
+                      ? "bg-[hsl(var(--color-primary))] text-white shadow-lg"
+                      : "text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]"
+                  )}
+                >
+                  <Terminal className="h-4 w-4" />
+                  ZSH
+                </button>
+                <button
+                  onClick={() => setTerminalType("bash")}
+                  className={cn(
+                    "flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300",
+                    terminalType === "bash"
+                      ? "bg-[hsl(var(--color-primary))] text-white shadow-lg"
+                      : "text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]"
+                  )}
+                >
+                  <Cpu className="h-4 w-4" />
+                  Bash
+                </button>
+              </>
+            )}
             </div>
           </div>
 
@@ -148,7 +192,7 @@ export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) 
                     <div className="w-3 h-3 rounded-full bg-green-500/80" />
                   </div>
                   <span className="text-xs font-medium text-[hsl(var(--color-muted-foreground))] ml-2">
-                    {terminalType === "powershell" ? "PowerShell" : "Command Prompt"}
+                    {os === "mac" ? (terminalType === "zsh" ? "ZSH" : "Bash") : (terminalType === "powershell" ? "PowerShell" : "Command Prompt")}
                   </span>
                 </div>
                 <span className="text-xs text-[hsl(var(--color-muted-foreground))]">
@@ -198,7 +242,7 @@ export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) 
               <strong className="text-[hsl(var(--color-foreground))]">How to use:</strong>
               <ol className="mt-2 space-y-1 list-decimal list-inside">
                 <li>Copy the command above</li>
-                <li>Open {terminalType === "powershell" ? "PowerShell" : "Command Prompt"} as Administrator</li>
+                <li>Open {os === "mac" ? "Terminal" : (terminalType === "powershell" ? "PowerShell" : "Command Prompt")} {os === "windows" && "as Administrator"}</li>
                 <li>Paste and press Enter</li>
               </ol>
             </div>

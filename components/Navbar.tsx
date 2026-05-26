@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Zap, Terminal, Sparkles } from "lucide-react"
 import { ThemeToggle } from "@/components/ThemeToggle"
+import { OsToggle } from "@/components/OsToggle"
 import { SearchBar } from "@/components/SearchBar"
 import { useSelectionStore } from "@/store/selection"
 import { cn } from "@/lib/utils"
@@ -45,6 +46,7 @@ export function Navbar({
 
           {/* Actions */}
           <div className="flex items-center gap-3 flex-shrink-0">
+            <OsToggle />
             <ThemeToggle />
             
             {/* Command Button */}

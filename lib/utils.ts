@@ -36,3 +36,22 @@ export function buildCmdCommand(appIds: string[], base = "https://winsetup.app")
 export function buildShareUrl(appIds: string[], base = "https://winsetup.app"): string {
   return `${base}/share?apps=${appIds.join(",")}`
 }
+
+export function buildBrewCommand(appIds: string[]): string {
+  const casks = appIds.filter(id => id.startsWith('cask:')).map(id => id.replace('cask:', ''))
+  const formulas = appIds.filter(id => id.startsWith('formula:')).map(id => id.replace('formula:', ''))
+  const unclassified = appIds.filter(id => !id.startsWith('cask:') && !id.startsWith('formula:'))
+
+  let cmd = `# Install Homebrew if not installed
+if ! command -v brew &> /dev/null; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Install packages
+`
+  if (casks.length > 0) cmd += `brew install --cask ${casks.join(" ")}\n`
+  if (formulas.length > 0) cmd += `brew install ${formulas.join(" ")}\n`
+  if (unclassified.length > 0) cmd += `brew install ${unclassified.join(" ")}\n`
+
+  return cmd.trim()
+}
