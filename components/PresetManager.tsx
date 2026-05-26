@@ -18,6 +18,7 @@
 import { useState } from "react"
 import { useSelectionStore } from "@/store/selection"
 import { usePresetsStore } from "@/store/presets"
+import { useOsStore } from "@/store/os"
 import { BUILT_IN_PRESETS } from "@/lib/presets"
 import { toast } from "sonner"
 import { Plus, Save, Folder, Star, Sparkles, Loader2, Wand2 } from "lucide-react"
@@ -107,6 +108,7 @@ export function PresetManager() {
         body: JSON.stringify({
           query: aiQuery.trim(),
           limit: 15,
+          os: useOsStore.getState().os,
         }),
       })
 

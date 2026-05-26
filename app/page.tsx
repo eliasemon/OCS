@@ -135,7 +135,7 @@ export default function LandingPage() {
                 <span className="text-sm font-medium text-[hsl(var(--color-foreground))]">
                   Introducing oneCommandSetup
                 </span>
-                <span className="text-xs text-[hsl(var(--color-muted-foreground))]">v2.0</span>
+                <span className="text-xs text-[hsl(var(--color-muted-foreground))]">Beta</span>
               </div>
 
               {/* Headline */}
@@ -161,7 +161,7 @@ export default function LandingPage() {
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/eliasemon/OCS"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary group text-base"
@@ -359,7 +359,7 @@ export default function LandingPage() {
                   <ArrowRight className="h-5 w-5" />
                 </Link>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/eliasemon/OCS"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-8 py-4 text-base font-semibold text-white border border-white/20 transition-all hover:bg-white/20"
@@ -419,19 +419,19 @@ export default function LandingPage() {
                 <h3 className="text-sm font-semibold mb-4">Resources</h3>
                 <ul className="space-y-3">
                   <li>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
+                    <a href="https://github.com/eliasemon/OCS" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
                       <Github className="h-4 w-4 group-hover:text-[hsl(var(--color-primary))] transition-colors" />
                       GitHub
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
+                    <a href="https://github.com/eliasemon/OCS/issues" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
                       <Bug className="h-4 w-4 group-hover:text-[hsl(var(--color-primary))] transition-colors" />
                       Issues
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
+                    <a href="https://github.com/eliasemon/OCS/releases" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
                       <FileCheck className="h-4 w-4 group-hover:text-[hsl(var(--color-primary))] transition-colors" />
                       Changelog
                     </a>
@@ -465,7 +465,7 @@ export default function LandingPage() {
             </p>
             <div className="flex items-center gap-6">
               <a
-                href="https://github.com"
+                href="https://github.com/eliasemon/OCS"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[hsl(var(--color-muted-foreground))] transition-colors hover:text-[hsl(var(--color-foreground))]"

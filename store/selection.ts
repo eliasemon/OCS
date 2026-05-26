@@ -2,6 +2,7 @@
 
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
+import { getPersistedOs, mapPackageIdsToOs } from "@/lib/presetMapper"
 
 interface SelectionStore {
   selectedIds: Set<string>
@@ -26,7 +27,9 @@ export const useSelectionStore = create<SelectionStore>()(
         }),
       clearAll: () => set({ selectedIds: new Set(), count: 0 }),
       loadPreset: (ids: readonly string[]) => {
-        const next = new Set(ids)
+        const targetOs = getPersistedOs()
+        const mappedIds = mapPackageIdsToOs(ids, targetOs)
+        const next = new Set(mappedIds)
         set({ selectedIds: next, count: next.size })
       },
     }),

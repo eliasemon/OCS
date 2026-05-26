@@ -15,7 +15,9 @@
  */
 
 import { NextRequest, NextResponse } from "next/server"
-import packagesData from "@/data/packages.json"
+import windowsPackagesData from "@/data/packages.json"
+import macPackagesData from "@/data/mac-packages.json"
+import linuxPackagesData from "@/data/linux-packages.json"
 import type { Package } from "@/types/package"
 import { rateLimiters, getClientIp } from "@/lib/rateLimiter"
 
@@ -25,6 +27,8 @@ interface PresetRequest {
   query: string
   // Maximum number of packages to include in the preset
   limit?: number
+  // Target operating system for the preset
+  os?: "windows" | "mac" | "linux"
 }
 
 interface PresetResponse {
@@ -51,8 +55,7 @@ const FALLBACK_MODELS = [
  * Generate mock preset recommendations when API key is not configured
  * This provides a fallback experience for development/demo purposes
  */
-function getMockPreset(query: string, limit: number): PresetResponse {
-  const packages = packagesData as Package[]
+function getMockPreset(query: string, limit: number, packages: Package[]): PresetResponse {
   const lowerQuery = query.toLowerCase()
 
   // Simple keyword-based matching for demo
@@ -104,9 +107,10 @@ async function callOpenRouterWithModel(
   query: string,
   limit: number,
   model: string,
-  packages: Package[]
+  packages: Package[],
+  os: string
 ): Promise<PresetResponse> {
-  const systemPrompt = `You are a Windows software expert helping users create presets.
+  const systemPrompt = `You are a ${os} software expert helping users create presets.
 Users describe what they need, and you recommend the best packages from the catalog.
 
 IMPORTANT: This is for PRESET CREATION, not search. Create a curated selection.
@@ -177,8 +181,7 @@ Constraints:
 /**
  * Call AI API to generate preset recommendations via OpenRouter
  */
-async function callAIService(query: string, limit: number): Promise<PresetResponse> {
-  const packages = packagesData as Package[]
+async function callAIService(query: string, limit: number, packages: Package[], os: string): Promise<PresetResponse> {
   const errors: Error[] = []
 
   // Try OpenRouter models
@@ -187,7 +190,7 @@ async function callAIService(query: string, limit: number): Promise<PresetRespon
 
     for (const model of modelsToTry) {
       try {
-        return await callOpenRouterWithModel(query, limit, model, packages)
+        return await callOpenRouterWithModel(query, limit, model, packages, os)
       } catch (error) {
         errors.push(error instanceof Error ? error : new Error(String(error)))
         console.warn(`OpenRouter model ${model} failed, trying next...`)
@@ -235,6 +238,7 @@ export async function POST(request: NextRequest) {
 
   let query = ""
   let limit = 10
+  let packages = windowsPackagesData as Package[]
 
   try {
     const body = await request.json() as PresetRequest
@@ -250,16 +254,23 @@ export async function POST(request: NextRequest) {
     query = body.query.trim()
     limit = Math.min(Math.max(body.limit ?? 10, 1), 30)
 
+    const os = body.os || "windows"
+    packages = (
+      os === "mac" ? macPackagesData :
+      os === "linux" ? linuxPackagesData :
+      windowsPackagesData
+    ) as Package[]
+
     // Use mock preset if API key is not configured
     if (!OPENROUTER_API_KEY) {
-      const mockResult = getMockPreset(query, limit)
+      const mockResult = getMockPreset(query, limit, packages)
       headers["Cache-Control"] = "no-store"
       headers["X-Mock-Response"] = "true"
       return NextResponse.json(mockResult, { headers })
     }
 
     // Call AI service via OpenRouter
-    const result = await callAIService(query, limit)
+    const result = await callAIService(query, limit, packages, os)
 
     headers["Cache-Control"] = "no-store"
     return NextResponse.json(result, { headers })
@@ -275,7 +286,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Fall back to mock preset on error
-    const mockResult = getMockPreset(query || "general setup", limit)
+    const mockResult = getMockPreset(query || "general setup", limit, packages)
     headers["X-Fallback-Response"] = "true"
     return NextResponse.json({
       ...mockResult,
