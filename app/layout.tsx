@@ -5,14 +5,15 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import "./globals.css"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://appnest.app"),
   title: {
-    default: "oneCommandSetup (OCS) - Set Up Windows in Minutes",
-    template: "%s | oneCommandSetup"
+    default: "Appnest - Set Up Windows in Minutes",
+    template: "%s | Appnest"
   },
   description: "Set Up Windows in Minutes. One command installs everything. Skip the installer clicking and get your perfect development environment in just 5 minutes.",
   keywords: [
-    "oneCommandSetup",
-    "OCS",
+    "Appnest",
+    "Appnest",
     "winget",
     "windows package manager",
     "windows installer",
@@ -21,34 +22,34 @@ export const metadata: Metadata = {
     "developer tools",
     "windows setup automation"
   ],
-  authors: [{ name: "oneCommandSetup" }],
-  creator: "oneCommandSetup",
-  publisher: "oneCommandSetup",
+  authors: [{ name: "Appnest" }],
+  creator: "Appnest",
+  publisher: "Appnest",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://onecommandsetup.app",
-    title: "oneCommandSetup - Set Up Windows in Minutes",
+    url: "https://Appnest.app",
+    title: "Appnest - Set Up Windows in Minutes",
     description: "Set Up Windows in Minutes. One command installs everything.",
-    siteName: "oneCommandSetup",
+    siteName: "Appnest",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "oneCommandSetup - Set Up Windows in Minutes"
+        alt: "Appnest - Set Up Windows in Minutes"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "oneCommandSetup - Set Up Windows in Minutes",
+    title: "Appnest - Set Up Windows in Minutes",
     description: "Set Up Windows in Minutes. One command installs everything.",
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://onecommandsetup.app"
+    canonical: "https://Appnest.app"
   }
 }
 

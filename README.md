@@ -1,9 +1,9 @@
-# oneCommandSetup (OCS)
+# Appnest
 
 > The fastest way to set up your Windows, macOS, or Linux development environment with a single command.
 
 ## Overview
-**oneCommandSetup** (formerly WinSetup) is an open-source web application that allows developers and power users to select their favorite applications and generate a single installation script. Skip the installer clicking and let the package managers do the heavy lifting.
+**Appnest** (formerly Appnest) is an open-source web application that allows developers and power users to select their favorite applications and generate a single installation script. Skip the installer clicking and let the package managers do the heavy lifting.
 
 ## Supported Platforms
 - **Windows**: Uses `winget` (Windows Package Manager)
@@ -15,8 +15,8 @@
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/eliasemon/OCS.git
-cd OCS
+git clone https://github.com/eliasemon/Appnest.git
+cd Appnest
 npm install
 npm run dev
 ```
@@ -41,9 +41,9 @@ The application is built on a reactive, client-first architecture:
 
 ## 🔍 How the "One Command" Works (Complete Transparency)
 
-We believe in complete transparency. OCS does not use proprietary installers, hidden binaries, or intermediate servers to install your software. Everything happens entirely on your local machine using native OS package managers. 
+We believe in complete transparency. Appnest does not use proprietary installers, hidden binaries, or intermediate servers to install your software. Everything happens entirely on your local machine using native OS package managers. 
 
-When you click "Generate Command", OCS dynamically builds a raw, readable shell script containing your selected packages. Here is exactly what happens under the hood:
+When you click "Generate Command", Appnest dynamically builds a raw, readable shell script containing your selected packages. Here is exactly what happens under the hood:
 
 ### 🪟 Windows (Winget)
 - **Technology**: PowerShell & [Windows Package Manager (Winget)](https://learn.microsoft.com/en-us/windows/package-manager/winget/).

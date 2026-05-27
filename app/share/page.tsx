@@ -14,8 +14,8 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   const params = await searchParams
   const count = params.apps?.split(",").filter(Boolean).length ?? 0
   return {
-    title: `WinSetup — ${count} apps pre-selected`,
-    description: "Someone shared a WinSetup configuration with you.",
+    title: `Appnest — ${count} apps pre-selected`,
+    description: "Someone shared a Appnest configuration with you.",
   }
 }
 

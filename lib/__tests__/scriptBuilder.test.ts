@@ -87,7 +87,7 @@ describe('scriptBuilder', () => {
     it('should include source in header', () => {
       const script = buildInstallScript(['Git.Git'], [])
 
-      expect(script).toContain('.SOURCE    winsetup.app')
+      expect(script).toContain('.SOURCE    appnest.app')
     })
 
     it('should generate warning blocks for invalid IDs', () => {
@@ -145,14 +145,14 @@ describe('scriptBuilder', () => {
       const script = buildInstallScript(['Git.Git'], [])
 
       expect(script).toContain('Retry failed:')
-      expect(script).toContain('powershell -c "irm https://winsetup.app/api/install.ps1?apps=')
+      expect(script).toContain('powershell -c "irm https://appnest.app/api/install.ps1?apps=')
     })
 
     it('should include banner with ASCII art', () => {
       const script = buildInstallScript(['Git.Git'], [])
 
       expect(script).toContain('Write-Banner')
-      expect(script).toContain('WinSetup')
+      expect(script).toContain('Appnest')
     })
 
     it('should include winget installation check', () => {
@@ -225,14 +225,14 @@ describe('scriptBuilder', () => {
       const script = buildCliScript()
 
       expect(script).toContain('#Requires -Version 5.1')
-      expect(script).toContain('WinSetup CLI')
+      expect(script).toContain('Appnest CLI')
       expect(script).toContain('Interactive Installer')
     })
 
     it('should include base URL', () => {
       const script = buildCliScript()
 
-      expect(script).toContain('$baseUrl = "https://winsetup.app"')
+      expect(script).toContain('$baseUrl = "https://appnest.app"')
     })
 
     it('should include package fetching function', () => {

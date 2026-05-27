@@ -1,4 +1,4 @@
-# WinSetup Test Suite Summary
+# Appnest Test Suite Summary
 
 **Date**: 2025-03-17
 **Test Framework**: Vitest (unit/component), Playwright (E2E)

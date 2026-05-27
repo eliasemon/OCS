@@ -14,7 +14,7 @@ describe('/api/cli.ps1', () => {
       expect(response.headers.get('Content-Type')).toContain('text/plain')
       expect(response.headers.get('Cache-Control')).toBe('no-store')
       expect(script).toContain('#Requires -Version 5.1')
-      expect(script).toContain('WinSetup CLI')
+      expect(script).toContain('Appnest CLI')
       expect(script).toContain('Interactive Installer')
     })
 
@@ -25,7 +25,7 @@ describe('/api/cli.ps1', () => {
       const response = await GET(request)
       const script = await response.text()
 
-      expect(script).toContain('$baseUrl = "https://winsetup.app"')
+      expect(script).toContain('$baseUrl = "https://appnest.app"')
     })
 
     it('should include Get-Packages function', async () => {
@@ -122,7 +122,7 @@ describe('/api/cli.ps1', () => {
       const script = await response.text()
 
       expect(script).toContain('function Write-Banner')
-      expect(script).toContain('winsetup.app')
+      expect(script).toContain('appnest.app')
     })
 
     it('should use Read-Host for user input', async () => {

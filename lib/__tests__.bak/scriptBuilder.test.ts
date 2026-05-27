@@ -61,7 +61,7 @@ describe('scriptBuilder', () => {
       expect(script).toContain('Git.Git')
       expect(script).toContain('Google.Chrome')
       expect(script).toContain('2') // package count
-      expect(script).toContain('winsetup.app')
+      expect(script).toContain('appnest.app')
     })
 
     it('should include warnings for invalid package IDs', () => {
@@ -130,14 +130,14 @@ describe('scriptBuilder', () => {
     it('should provide retry URL for failed packages', () => {
       const script = buildInstallScript(['Git.Git'], [])
       expect(script).toContain('Retry failed:')
-      expect(script).toContain('powershell -c "irm https://winsetup.app/api/install.ps1?apps=')
+      expect(script).toContain('powershell -c "irm https://appnest.app/api/install.ps1?apps=')
     })
 
     it('should generate banner with ASCII art', () => {
       const script = buildInstallScript(['Git.Git'], [])
       expect(script).toContain('Write-Banner')
       expect(script).toContain('██╗')
-      expect(script).toContain('WinSetup')
+      expect(script).toContain('Appnest')
     })
 
     it('should track and report installation results', () => {
@@ -171,7 +171,7 @@ describe('scriptBuilder', () => {
     it('should generate an interactive CLI installer script', () => {
       const script = buildCliScript()
       expect(script).toContain('#Requires -Version 5.1')
-      expect(script).toContain('WinSetup CLI')
+      expect(script).toContain('Appnest CLI')
       expect(script).toContain('Interactive Installer')
     })
 
@@ -207,7 +207,7 @@ describe('scriptBuilder', () => {
 
     it('should use the correct base URL', () => {
       const script = buildCliScript()
-      expect(script).toContain('$baseUrl = "https://winsetup.app"')
+      expect(script).toContain('$baseUrl = "https://appnest.app"')
     })
 
     it('should display package counts per category', () => {

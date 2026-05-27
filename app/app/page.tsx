@@ -1,5 +1,14 @@
 import { Suspense } from "react"
 import { AppPageClient } from "@/components/AppPageClient"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Package Catalog",
+  description: "Browse and select from hundreds of developer tools, applications, and utilities to install with a single command.",
+  alternates: {
+    canonical: "https://appnest.app/app"
+  }
+}
 
 export default function AppPage() {
   return (

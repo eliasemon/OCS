@@ -11,12 +11,12 @@ export default function DocsPage() {
     <div className="min-h-screen bg-[hsl(var(--color-background))] text-[hsl(var(--color-foreground))]">
       <div className="max-w-4xl mx-auto px-6 py-12">
         <Link href="/" className="text-[hsl(var(--color-primary))] hover:text-[hsl(var(--color-primary-hover))] transition-colors">
-          &larr; Back to OneSetup
+          &larr; Back to Appnest
         </Link>
 
-        <h1 className="text-4xl font-bold mt-8 mb-4">OneSetup Documentation</h1>
+        <h1 className="text-4xl font-bold mt-8 mb-4">Appnest Documentation</h1>
         <p className="text-lg text-[hsl(var(--color-muted-foreground))] mb-8">
-          Learn how to install, configure, and use OneSetup across different operating systems.
+          Learn how to install, configure, and use Appnest across different operating systems.
         </p>
 
         {/* Tab Navigation */}
@@ -58,9 +58,9 @@ export default function DocsPage() {
           {activeTab === "windows" && (
             <div className="space-y-8">
               <section>
-                <h2 className="text-2xl font-semibold text-[hsl(var(--color-primary))]">What is OneSetup for Windows?</h2>
+                <h2 className="text-2xl font-semibold text-[hsl(var(--color-primary))]">What is Appnest for Windows?</h2>
                 <p className="mt-2 text-[hsl(var(--color-muted-foreground))]">
-                  OneSetup on Windows leverages <strong>winget</strong> (Windows Package Manager) to help you install applications seamlessly. 
+                  Appnest on Windows leverages <strong>winget</strong> (Windows Package Manager) to help you install applications seamlessly. 
                   Select your apps from the catalog, generate a PowerShell command, and install everything with a single line.
                 </p>
               </section>
@@ -78,7 +78,7 @@ export default function DocsPage() {
                 <h2 className="text-2xl font-semibold text-[hsl(var(--color-primary))]">Example Command</h2>
                 <pre className="mt-4 p-4 bg-[hsl(var(--color-card))] rounded-lg border border-[hsl(var(--color-border))] overflow-x-auto">
                   <code className="text-sm text-[hsl(var(--color-primary))]">
-                    powershell -ExecutionPolicy Bypass -c "irm https://winsetup.app/api/install.ps1?apps=Git.Git,Google.Chrome | iex"
+                    powershell -ExecutionPolicy Bypass -c "irm https://appnest.app/api/install.ps1?apps=Git.Git,Google.Chrome | iex"
                   </code>
                 </pre>
               </section>
@@ -88,7 +88,7 @@ export default function DocsPage() {
                 <dl className="mt-4 space-y-4">
                   <div>
                     <dt className="font-semibold text-[hsl(var(--color-foreground))]">Is it safe?</dt>
-                    <dd className="text-[hsl(var(--color-muted-foreground))]">Yes. OneSetup only generates PowerShell scripts that use winget, Microsoft's official package manager.</dd>
+                    <dd className="text-[hsl(var(--color-muted-foreground))]">Yes. Appnest only generates PowerShell scripts that use winget, Microsoft's official package manager.</dd>
                   </div>
                   <div>
                     <dt className="font-semibold text-[hsl(var(--color-foreground))]">What's winget?</dt>
@@ -106,9 +106,9 @@ export default function DocsPage() {
           {activeTab === "mac" && (
             <div className="space-y-8">
               <section>
-                <h2 className="text-2xl font-semibold text-[hsl(var(--color-primary))]">What is OneSetup for macOS?</h2>
+                <h2 className="text-2xl font-semibold text-[hsl(var(--color-primary))]">What is Appnest for macOS?</h2>
                 <p className="mt-2 text-[hsl(var(--color-muted-foreground))]">
-                  OneSetup on macOS uses <strong>Homebrew</strong>, the missing package manager for macOS, to install applications and developer tools. 
+                  Appnest on macOS uses <strong>Homebrew</strong>, the missing package manager for macOS, to install applications and developer tools. 
                   Generate a shell script to automate the installation of apps, casks, and fonts.
                 </p>
               </section>
@@ -139,7 +139,7 @@ export default function DocsPage() {
                 <h2 className="text-2xl font-semibold text-[hsl(var(--color-primary))]">Example Command</h2>
                 <pre className="mt-4 p-4 bg-[hsl(var(--color-card))] rounded-lg border border-[hsl(var(--color-border))] overflow-x-auto">
                   <code className="text-sm text-[hsl(var(--color-primary))]">
-                    curl -sSL "https://winsetup.app/api/mac/install.sh?apps=google-chrome,visual-studio-code" | bash
+                    curl -sSL "https://appnest.app/api/mac/install.sh?apps=google-chrome,visual-studio-code" | bash
                   </code>
                 </pre>
               </section>
@@ -149,9 +149,9 @@ export default function DocsPage() {
           {activeTab === "linux" && (
             <div className="space-y-8">
               <section>
-                <h2 className="text-2xl font-semibold text-[hsl(var(--color-primary))]">What is OneSetup for Linux?</h2>
+                <h2 className="text-2xl font-semibold text-[hsl(var(--color-primary))]">What is Appnest for Linux?</h2>
                 <p className="mt-2 text-[hsl(var(--color-muted-foreground))]">
-                  OneSetup on Linux supports multiple package managers (APT, Flatpak, Snap) to install applications across different distributions like Ubuntu, Debian, Fedora, and Arch.
+                  Appnest on Linux supports multiple package managers (APT, Flatpak, Snap) to install applications across different distributions like Ubuntu, Debian, Fedora, and Arch.
                 </p>
               </section>
 
@@ -179,7 +179,7 @@ export default function DocsPage() {
                 <h2 className="text-2xl font-semibold text-[hsl(var(--color-primary))]">Example Command</h2>
                 <pre className="mt-4 p-4 bg-[hsl(var(--color-card))] rounded-lg border border-[hsl(var(--color-border))] overflow-x-auto">
                   <code className="text-sm text-[hsl(var(--color-primary))]">
-                    curl -sSL "https://winsetup.app/api/linux/install.sh?apps=git,curl,vlc" | bash
+                    curl -sSL "https://appnest.app/api/linux/install.sh?apps=git,curl,vlc" | bash
                   </code>
                 </pre>
               </section>

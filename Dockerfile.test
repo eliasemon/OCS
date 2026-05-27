@@ -1,4 +1,4 @@
-# Test Dockerfile for WinSetup API testing
+# Test Dockerfile for Appnest API testing
 FROM node:20-alpine
 
 WORKDIR /app

@@ -216,7 +216,7 @@ describe('usePresetsStore', () => {
       const state = usePresetsStore.getState()
       state.savePreset(mockPreset)
 
-      const savedData = localStorage.getItem('winsetup-presets')
+      const savedData = localStorage.getItem('appnest-presets')
       expect(savedData).toBeDefined()
     })
   })

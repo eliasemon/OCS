@@ -4,10 +4,11 @@ import { ArrowRight, Zap, Shield, Bookmark, Package, Github, Terminal, Clock, Us
 import { MetricCounter } from "@/components/MetricCounter"
 import { DemoTerminal } from "@/components/DemoTerminal"
 import { OsLogos, AppIcons } from "@/components/HeroIllustrations"
+import { AppnestIcon } from "@/components/AppnestIcon"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "oneCommandSetup (OCS) - Set Up Windows, macOS & Linux in Minutes",
+  title: "Appnest - Set Up Windows, macOS & Linux in Minutes",
   description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking and get your perfect development environment in just 5 minutes.",
   keywords: [
     "winget",
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
     "windows package manager",
     "mac package manager",
     "linux package manager",
-    "oneCommandSetup",
-    "OCS",
+    "Appnest",
+    "Appnest",
     "mac installer",
     "bulk install apps",
     "powershell installer",
@@ -25,34 +26,34 @@ export const metadata: Metadata = {
     "developer tools",
     "setup automation"
   ],
-  authors: [{ name: "oneCommandSetup" }],
-  creator: "oneCommandSetup",
-  publisher: "oneCommandSetup",
+  authors: [{ name: "Appnest" }],
+  creator: "Appnest",
+  publisher: "Appnest",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://onecommandsetup.app",
-    title: "oneCommandSetup - Set Up Windows, macOS & Linux in Minutes",
+    url: "https://Appnest.app",
+    title: "Appnest - Set Up Windows, macOS & Linux in Minutes",
     description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
-    siteName: "oneCommandSetup",
+    siteName: "Appnest",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "oneCommandSetup - Set Up Windows, macOS & Linux in Minutes"
+        alt: "Appnest - Set Up Windows, macOS & Linux in Minutes"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "oneCommandSetup - Set Up Windows, macOS & Linux in Minutes",
+    title: "Appnest - Set Up Windows, macOS & Linux in Minutes",
     description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://onecommandsetup.app"
+    canonical: "https://Appnest.app"
   }
 }
 
@@ -116,6 +117,35 @@ const trustedBy = [
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[hsl(var(--color-background))]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Appnest",
+            "operatingSystem": "Windows, macOS, Linux",
+            "applicationCategory": "DeveloperApplication",
+            "description": "Set Up Windows, macOS & Linux in Minutes. One command installs everything.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Appnest",
+            "url": "https://appnest.app/"
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="hero-bg relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Animated background grid */}
@@ -133,7 +163,7 @@ export default function LandingPage() {
               <div className="mb-8 inline-flex items-center gap-2 rounded-full glass px-4 py-2 animate-fade-in-down hover:scale-105 transition-transform duration-300">
                 <Zap className="h-4 w-4 text-[hsl(var(--color-primary))] animate-pulse" />
                 <span className="text-sm font-medium text-[hsl(var(--color-foreground))]">
-                  Introducing oneCommandSetup
+                  Introducing Appnest
                 </span>
                 <span className="text-xs text-[hsl(var(--color-muted-foreground))]">Beta</span>
               </div>
@@ -161,7 +191,7 @@ export default function LandingPage() {
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
                 <a
-                  href="https://github.com/eliasemon/OCS"
+                  href="https://github.com/eliasemon/Appnest"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary group text-base"
@@ -220,7 +250,7 @@ export default function LandingPage() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
-              Why Choose <span className="gradient-text">OCS</span>?
+              Why Choose <span className="gradient-text">Appnest</span>?
             </h2>
             <p className="text-lg text-[hsl(var(--color-muted-foreground))] max-w-2xl mx-auto">
               The fastest way to set up your Windows, macOS, or Linux development environment with trusted, official packages.
@@ -359,7 +389,7 @@ export default function LandingPage() {
                   <ArrowRight className="h-5 w-5" />
                 </Link>
                 <a
-                  href="https://github.com/eliasemon/OCS"
+                  href="https://github.com/eliasemon/Appnest"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-8 py-4 text-base font-semibold text-white border border-white/20 transition-all hover:bg-white/20"
@@ -381,9 +411,9 @@ export default function LandingPage() {
             <div className="lg:col-span-1">
               <Link href="/" className="flex items-center gap-3 mb-4 group hover:scale-[1.02] transition-transform">
                 <div className="h-10 w-10 rounded-xl bg-[hsl(var(--color-primary))] flex items-center justify-center shadow-lg group-hover:shadow-[var(--shadow-glow-primary)] transition-shadow">
-                  <Zap className="h-6 w-6 text-white group-hover:animate-bounce-subtle" />
+                  <AppnestIcon className="text-white group-hover:animate-bounce-subtle" size={24} />
                 </div>
-                <span className="text-xl font-bold">OCS</span>
+                <span className="text-xl font-bold">Appnest</span>
               </Link>
               <p className="text-sm text-[hsl(var(--color-muted-foreground))] max-w-xs">
                 Open source • Powered by Winget, Homebrew & APT • Built for developers
@@ -419,19 +449,19 @@ export default function LandingPage() {
                 <h3 className="text-sm font-semibold mb-4">Resources</h3>
                 <ul className="space-y-3">
                   <li>
-                    <a href="https://github.com/eliasemon/OCS" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
+                    <a href="https://github.com/eliasemon/Appnest" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
                       <Github className="h-4 w-4 group-hover:text-[hsl(var(--color-primary))] transition-colors" />
                       GitHub
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/eliasemon/OCS/issues" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
+                    <a href="https://github.com/eliasemon/Appnest/issues" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
                       <Bug className="h-4 w-4 group-hover:text-[hsl(var(--color-primary))] transition-colors" />
                       Issues
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/eliasemon/OCS/releases" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
+                    <a href="https://github.com/eliasemon/Appnest/releases" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:translate-x-1 transition-all group">
                       <FileCheck className="h-4 w-4 group-hover:text-[hsl(var(--color-primary))] transition-colors" />
                       Changelog
                     </a>
@@ -461,11 +491,11 @@ export default function LandingPage() {
           {/* Bottom bar */}
           <div className="mt-12 pt-8 border-t border-[hsl(var(--color-border))] flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-[hsl(var(--color-muted-foreground))]">
-              © 2025 oneCommandSetup. MIT License.
+              © 2025 Appnest. MIT License.
             </p>
             <div className="flex items-center gap-6">
               <a
-                href="https://github.com/eliasemon/OCS"
+                href="https://github.com/eliasemon/Appnest"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[hsl(var(--color-muted-foreground))] transition-colors hover:text-[hsl(var(--color-foreground))]"

@@ -1,8 +1,8 @@
-# oneCommandSetup (OCS) - UX/UI Overhaul Plan
+# Appnest - UX/UI Overhaul Plan
 
 ## Executive Summary
 
-This document outlines a comprehensive UX/UI overhaul for the oneCommandSetup application, transforming it into a modern, bold, and vibrant experience inspired by Stripe and Vercel's design language.
+This document outlines a comprehensive UX/UI overhaul for the Appnest application, transforming it into a modern, bold, and vibrant experience inspired by Stripe and Vercel's design language.
 
 **Design Direction:** Bold & Vibrant
 **Scope:** Full Redesign
@@ -156,7 +156,7 @@ Layout:
 ┌─────────────────────────────────────────────────────────────┐
 │ [Animated Gradient Mesh Background]                         │
 │                                                             │
-│         ⚡ oneCommandSetup                                  │
+│         ⚡ Appnest                                  │
 │                                                             │
 │         Set Up Windows                                      │
 │         in Minutes                                          │
@@ -187,7 +187,7 @@ Layout:
 ```
 Layout:
 ┌─────────────────────────────────────────────────────────────┐
-│                    Why Choose OCS?                          │
+│                    Why Choose Appnest?                          │
 │                                                             │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
 │  │ ⚡          │  │ 🛡️          │  │ 📁          │        │
@@ -265,14 +265,14 @@ Layout:
 ┌─────────────────────────────────────────────────────────────┐
 │ ─────────────────────────────────────────────────────────── │
 │                                                             │
-│  ⚡ OCS          Product         Resources       Community  │
+│  ⚡ Appnest          Product         Resources       Community  │
 │                  Features        Documentation   GitHub     │
 │  Open source     Presets         API Reference   Discord    │
 │  Powered by      Enterprise      Blog            Twitter    │
 │  winget                                                         │
 │                                                             │
 │  ───────────────────────────────────────────────────────────│
-│  © 2024 OCS • MIT License • Built with ❤️                   │
+│  © 2024 Appnest • MIT License • Built with ❤️                   │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -288,7 +288,7 @@ Layout:
 Desktop Layout:
 ┌─────────────────────────────────────────────────────────────┐
 │  ╭─────────────────────────────────────────────────────╮   │
-│  │ ⚡ OCS  │  🔍 Search packages... [⌘K]  │ 🌙 [42] ⚡ │   │
+│  │ ⚡ Appnest  │  🔍 Search packages... [⌘K]  │ 🌙 [42] ⚡ │   │
 │  ╰─────────────────────────────────────────────────────╯   │
 └─────────────────────────────────────────────────────────────┘
 
@@ -404,14 +404,14 @@ Modal Layout:
 │                                                             │
 │  ╭────────────────────────────────────────────────────────╮│
 │  │ # Install 42 packages with one command                 ││
-│  │ irm https://ocs.app/install.ps1 | iex -PackageIds @    ││
+│  │ irm https://appnest.app/install.ps1 | iex -PackageIds @    ││
 │  │   "VSCode","Figma","Chrome","Spotify","Discord",...    ││
 │  │                                               [📋 Copy] ││
 │  ╰────────────────────────────────────────────────────────╯│
 │                                                             │
 │  📋 Share Configuration                                     │
 │  ┌────────────────────────────────────┐ [Copy Link]        │
-│  │ https://ocs.app/s/abc123           │                    │
+│  │ https://appnest.app/s/abc123           │                    │
 │  └────────────────────────────────────┘                    │
 │                                                             │
 │  💡 Run as Administrator for best results                   │
@@ -530,7 +530,7 @@ Modal Layout:
 ```
 Mobile Layout:
 ┌─────────────────────┐
-│ ⚡ OCS    🔍  🌙 [42]│
+│ ⚡ Appnest    🔍  🌙 [42]│
 ├─────────────────────┤
 │                     │
 │   [Package Cards]   │
@@ -770,4 +770,4 @@ lib/
 
 ## Conclusion
 
-This comprehensive UX/UI overhaul will transform oneCommandSetup into a modern, visually striking application that stands out in the developer tools space. The bold, vibrant design inspired by Stripe and Vercel will create an memorable user experience while maintaining excellent usability and performance.
+This comprehensive UX/UI overhaul will transform Appnest into a modern, visually striking application that stands out in the developer tools space. The bold, vibrant design inspired by Stripe and Vercel will create an memorable user experience while maintaining excellent usability and performance.

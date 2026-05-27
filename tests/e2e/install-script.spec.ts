@@ -28,7 +28,7 @@ test.describe('Install Script Generation', () => {
     expect(script).toContain('#Requires -Version 5.1')
     expect(script).toContain('Git.Git')
     expect(script).toContain('Google.Chrome')
-    expect(script).toContain('winsetup.app')
+    expect(script).toContain('appnest.app')
   })
 
   test('should handle single package', async ({ page, request }) => {

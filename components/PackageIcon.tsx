@@ -4,7 +4,7 @@
  * Displays package icons with the following priority order:
  * 1. Downloaded logo from img.logo.dev (PNG/JPG images)
  * 2. Simple Icons brand icon (SVG, pre-sanitized)
- * 3. OCS default icon (fallback)
+ * 3. Appnest default icon (fallback)
  *
  * SECURITY:
  * - Simple Icons SVGs are pre-sanitized at BUILD TIME using DOMPurify
@@ -16,7 +16,7 @@
  */
 
 import { cn } from '@/lib/utils'
-import { OCSIcon } from './OCSIcon'
+import { AppnestIcon } from './AppnestIcon'
 import type { Package } from '@/types/package'
 import React from 'react'
 
@@ -141,7 +141,7 @@ function BrandIcon({ svg, size, className }: { svg: string; size: number; classN
   const pathData = React.useMemo(() => parseSVGPath(svg), [svg])
 
   if (!pathData) {
-    return <OCSIcon size={size} className={className} />
+    return <AppnestIcon size={size} className={className} />
   }
 
   return (
@@ -164,7 +164,7 @@ function BrandIcon({ svg, size, className }: { svg: string; size: number; classN
  * Priority order:
  * 1. Downloaded logo (logoUrl) - from img.logo.dev
  * 2. Simple Icons brand icon (SVG)
- * 3. OCS default icon (fallback)
+ * 3. Appnest default icon (fallback)
  */
 export function PackageIcon({ package: pkg, size = 24, className, showFallback = true }: PackageIconProps) {
   // First priority: Check for downloaded logo from img.logo.dev
@@ -180,9 +180,9 @@ export function PackageIcon({ package: pkg, size = 24, className, showFallback =
     return <BrandIcon svg={iconSvg} size={size} className={className} />
   }
 
-  // Third priority: OCS default icon
+  // Third priority: Appnest default icon
   if (showFallback) {
-    return <OCSIcon size={size} className={className} />
+    return <AppnestIcon size={size} className={className} />
   }
 
   return null

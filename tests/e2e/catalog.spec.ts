@@ -7,7 +7,7 @@ test.describe('Package Catalog', () => {
 
   test('should load the main page', async ({ page }) => {
     await expect(page.getByRole('main')).toBeVisible()
-    await expect(page).toHaveTitle(/WinSetup/)
+    await expect(page).toHaveTitle(/Appnest/)
   })
 
   test('should display package cards', async ({ page }) => {

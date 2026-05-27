@@ -22,7 +22,7 @@ export const useOsStore = create<OsStore>()(
       },
     }),
     {
-      name: "winsetup-os-mode",
+      name: "appnest-os-mode",
     }
   )
 )

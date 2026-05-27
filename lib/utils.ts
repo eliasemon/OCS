@@ -19,21 +19,21 @@ export function downloadJson(data: unknown, filename: string): void {
   URL.revokeObjectURL(url)
 }
 
-export function buildInstallUrl(appIds: string[], base = "https://winsetup.app"): string {
+export function buildInstallUrl(appIds: string[], base = "https://appnest.app"): string {
   return `${base}/api/install.ps1?apps=${appIds.join(",")}`
 }
 
-export function buildPowerShellCommand(appIds: string[], base = "https://winsetup.app"): string {
+export function buildPowerShellCommand(appIds: string[], base = "https://appnest.app"): string {
   const url = buildInstallUrl(appIds, base)
   return `powershell -ExecutionPolicy Bypass -c "irm ${url} | iex"`
 }
 
-export function buildCmdCommand(appIds: string[], base = "https://winsetup.app"): string {
+export function buildCmdCommand(appIds: string[], base = "https://appnest.app"): string {
   const url = buildInstallUrl(appIds, base)
   return `powershell -ExecutionPolicy Bypass -Command "irm ${url} | iex"`
 }
 
-export function buildShareUrl(appIds: string[], base = "https://winsetup.app"): string {
+export function buildShareUrl(appIds: string[], base = "https://appnest.app"): string {
   return `${base}/share?apps=${appIds.join(",")}`
 }
 

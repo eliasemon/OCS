@@ -34,7 +34,7 @@ export const useSelectionStore = create<SelectionStore>()(
       },
     }),
     {
-      name: "winsetup-selection",
+      name: "appnest-selection",
       storage: {
         getItem: (name) => {
           if (typeof window === "undefined") return null

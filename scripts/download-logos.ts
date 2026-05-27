@@ -373,7 +373,7 @@ function delay(ms: number): Promise<void> {
  * Main function
  */
 async function main() {
-  console.log('🔷 Logo Downloader for WinSetup')
+  console.log('🔷 Logo Downloader for Appnest')
   console.log('==================================\n')
 
   // Read packages.json
