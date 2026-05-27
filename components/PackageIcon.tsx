@@ -4,7 +4,7 @@
  * Displays package icons with the following priority order:
  * 1. Downloaded logo from img.logo.dev (PNG/JPG images)
  * 2. Simple Icons brand icon (SVG, pre-sanitized)
- * 3. Appnest default icon (fallback)
+ * 3. Installora default icon (fallback)
  *
  * SECURITY:
  * - Simple Icons SVGs are pre-sanitized at BUILD TIME using DOMPurify
@@ -16,7 +16,7 @@
  */
 
 import { cn } from '@/lib/utils'
-import { AppnestIcon } from './AppnestIcon'
+import { InstalloraIcon } from './InstalloraIcon'
 import type { Package } from '@/types/package'
 import React from 'react'
 
@@ -141,7 +141,7 @@ function BrandIcon({ svg, size, className }: { svg: string; size: number; classN
   const pathData = React.useMemo(() => parseSVGPath(svg), [svg])
 
   if (!pathData) {
-    return <AppnestIcon size={size} className={className} />
+    return <InstalloraIcon size={size} className={className} />
   }
 
   return (
@@ -164,7 +164,7 @@ function BrandIcon({ svg, size, className }: { svg: string; size: number; classN
  * Priority order:
  * 1. Downloaded logo (logoUrl) - from img.logo.dev
  * 2. Simple Icons brand icon (SVG)
- * 3. Appnest default icon (fallback)
+ * 3. Installora default icon (fallback)
  */
 export function PackageIcon({ package: pkg, size = 24, className, showFallback = true }: PackageIconProps) {
   // First priority: Check for downloaded logo from img.logo.dev
@@ -180,9 +180,9 @@ export function PackageIcon({ package: pkg, size = 24, className, showFallback =
     return <BrandIcon svg={iconSvg} size={size} className={className} />
   }
 
-  // Third priority: Appnest default icon
+  // Third priority: Installora default icon
   if (showFallback) {
-    return <AppnestIcon size={size} className={className} />
+    return <InstalloraIcon size={size} className={className} />
   }
 
   return null

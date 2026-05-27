@@ -124,7 +124,7 @@ function generateTypeDefinitions(iconMap: IconMap): string {
 export type BrandSlug =
   ${iconKeys.map(k => `  | '${k}'`).join('\n')}
 
-export type BrandSlugWithOptional = BrandSlug | 'appnest' | 'default'
+export type BrandSlugWithOptional = BrandSlug | 'installora' | 'default'
 `
 }
 

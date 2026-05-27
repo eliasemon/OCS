@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Terminal, Sparkles } from "lucide-react"
 import { ThemeToggle } from "@/components/ThemeToggle"
 import { OsToggle } from "@/components/OsToggle"
-import { AppnestIcon } from "@/components/AppnestIcon"
+import { InstalloraIcon } from "@/components/InstalloraIcon"
 import { SearchBar } from "@/components/SearchBar"
 import { useSelectionStore } from "@/store/selection"
 import { cn } from "@/lib/utils"
@@ -31,9 +31,9 @@ export function Navbar({
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0 group">
             <div className="h-10 w-10 rounded-xl bg-[hsl(var(--color-primary))] flex items-center justify-center shadow-lg group-hover:shadow-[var(--shadow-glow-primary)] transition-shadow duration-300">
-              <AppnestIcon className="text-white" size={24} />
+              <InstalloraIcon className="text-white" size={24} />
             </div>
-            <span className="font-bold text-xl text-[hsl(var(--color-foreground))] hidden sm:block">Appnest</span>
+            <span className="font-bold text-xl text-[hsl(var(--color-foreground))] hidden sm:block">Installora</span>
           </Link>
 
           {/* Search */}

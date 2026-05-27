@@ -1,4 +1,4 @@
-# Appnest Architecture Critique
+# Installora Architecture Critique
 **Technical Architect Review**
 **Date**: 2026-03-17
 **Reviewer**: tech-architect

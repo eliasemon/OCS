@@ -22,7 +22,7 @@ export const useOsStore = create<OsStore>()(
       },
     }),
     {
-      name: "appnest-os-mode",
+      name: "installora-os-mode",
     }
   )
 )

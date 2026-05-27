@@ -1,8 +1,8 @@
-# Appnest Testing Guide
+# Installora Testing Guide
 
 ## Overview
 
-This document describes the comprehensive testing strategy for the Appnest project. The testing framework covers unit tests, integration tests, component tests, end-to-end tests, and accessibility testing.
+This document describes the comprehensive testing strategy for the Installora project. The testing framework covers unit tests, integration tests, component tests, end-to-end tests, and accessibility testing.
 
 ## Test Framework
 

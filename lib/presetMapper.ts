@@ -10,7 +10,7 @@ export type OsMode = "windows" | "mac" | "linux"
 export function getPersistedOs(): OsMode {
   if (typeof window === "undefined") return "windows"
   try {
-    const val = localStorage.getItem("appnest-os-mode")
+    const val = localStorage.getItem("installora-os-mode")
     if (val) {
       const parsed = JSON.parse(val)
       if (parsed?.state?.os) {

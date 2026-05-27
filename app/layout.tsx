@@ -5,46 +5,51 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://installora-beta.vercel.app"),
   title: {
-    default: "Appnest - Set Up Windows in Minutes",
-    template: "%s | Appnest"
+    default: "Installora - Set Up Windows, macOS & Linux in Minutes",
+    template: "%s | Installora"
   },
-  description: "Set Up Windows in Minutes. One command installs everything. Skip the installer clicking and get your perfect development environment in just 5 minutes.",
+  description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking and get your perfect development environment in just 5 minutes.",
   keywords: [
-    "Appnest",
     "winget",
+    "homebrew",
+    "apt",
     "windows package manager",
-    "windows installer",
-    "bulk install windows apps",
+    "mac package manager",
+    "linux package manager",
+    "Installora",
+    "mac installer",
+    "bulk install apps",
     "powershell installer",
+    "brew installer",
     "developer tools",
-    "windows setup automation"
+    "setup automation"
   ],
-  authors: [{ name: "Appnest" }],
-  creator: "Appnest",
-  publisher: "Appnest",
+  authors: [{ name: "Installora" }],
+  creator: "Installora",
+  publisher: "Installora",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app",
-    title: "Appnest - Set Up Windows in Minutes",
-    description: "Set Up Windows in Minutes. One command installs everything.",
-    siteName: "Appnest",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://installora-beta.vercel.app",
+    title: "Installora - Set Up Windows, macOS & Linux in Minutes",
+    description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
+    siteName: "Installora",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Appnest - Set Up Windows in Minutes"
+        alt: "Installora - Set Up Windows, macOS & Linux in Minutes"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Appnest - Set Up Windows in Minutes",
-    description: "Set Up Windows in Minutes. One command installs everything.",
+    title: "Installora - Set Up Windows, macOS & Linux in Minutes",
+    description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
     images: ["/logo.png"],
   },
   alternates: {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Package Catalog",
   description: "Browse and select from hundreds of developer tools, applications, and utilities to install with a single command.",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app"}/app`
+    canonical: "/app"
   }
 }
 

@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Appnest',
-    short_name: 'Appnest',
+    name: 'Installora',
+    short_name: 'Installora',
     description: 'Set Up Windows, macOS & Linux in Minutes. One command installs everything.',
     start_url: '/',
     display: 'standalone',

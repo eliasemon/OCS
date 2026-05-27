@@ -1,8 +1,8 @@
-# Appnest — Session Complete
+# Installora — Session Complete
 
 **Date**: 2026-03-17
 **Status**: ✅ PRODUCTION READY
-**Team**: appnest-test-team (standing by)
+**Team**: installora-test-team (standing by)
 
 ---
 
@@ -80,7 +80,7 @@
 ### Deployment Command
 
 ```bash
-cd appnest
+cd installora
 npx vercel --prod
 ```
 
@@ -94,8 +94,8 @@ npx vercel --prod
 | **Architecture Teammate** | 🟢 Standing By | Code quality, patterns, scalability |
 | **Devil's Advocate** | 🟢 Standing By | Security, edge cases, failure modes |
 
-**Team**: appnest-test-team
-**Config**: `~/.claude/teams/appnest-test-team/`
+**Team**: installora-test-team
+**Config**: `~/.claude/teams/installora-test-team/`
 
 ---
 
@@ -137,7 +137,7 @@ npx vercel --prod
 
 ## 💬 Final Team Messages
 
-**UX Teammate**: *"The three-perspective model proved its value. We made Appnest both delightful AND secure."*
+**UX Teammate**: *"The three-perspective model proved its value. We made Installora both delightful AND secure."*
 
 **Architecture Teammate**: *"The collaborative specialist model caught issues no single reviewer would have found."*
 
@@ -158,4 +158,4 @@ npx vercel --prod
 
 ---
 
-**Appnest is ready for deployment. The multi-agent team approach delivered specialized expertise that transformed this from a basic tool into a production-ready, secure application.** 🚀
+**Installora is ready for deployment. The multi-agent team approach delivered specialized expertise that transformed this from a basic tool into a production-ready, secure application.** 🚀

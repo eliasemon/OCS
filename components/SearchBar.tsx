@@ -10,7 +10,7 @@ interface SearchBarProps {
   onAISearch?: (query: string) => void
 }
 
-const RECENT_SEARCHES_KEY = "appnest-recent-searches"
+const RECENT_SEARCHES_KEY = "installora-recent-searches"
 const MAX_RECENT_SEARCHES = 5
 const DEBOUNCE_MS = 300
 

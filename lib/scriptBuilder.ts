@@ -20,10 +20,10 @@ export function buildInstallScript(validIds: string[], invalidIds: string[]): st
 
   return `#Requires -Version 5.1
 <#
-.SYNOPSIS  Appnest Installer
+.SYNOPSIS  Installora Installer
 .GENERATED ${timestamp}
 .PACKAGES  ${validIds.length}
-.SOURCE    appnest-beta.vercel.app
+.SOURCE    installora-beta.vercel.app
 #>
 $ErrorActionPreference = "Continue"
 $packages = @(
@@ -40,7 +40,7 @@ function Write-Banner {
   Write-Host "  ██║███╗██║██║██║╚██╗██║╚════██║██╔══╝     ██║   ██║   ██║██╔═══╝ " -ForegroundColor $c
   Write-Host "  ╚███╔███╔╝██║██║ ╚████║███████║███████╗   ██║   ╚██████╔╝██║     " -ForegroundColor $c
   Write-Host "   ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝    " -ForegroundColor $c
-  Write-Host "  Automated Windows Package Installer — appnest-beta.vercel.app" -ForegroundColor DarkGray
+  Write-Host "  Automated Windows Package Installer — installora-beta.vercel.app" -ForegroundColor DarkGray
   Write-Host ""
 }
 
@@ -50,16 +50,16 @@ function Test-WingetInstalled {
 }
 
 function Install-WingetIfMissing {
-  Write-Host "[Appnest] winget not found. Installing..." -ForegroundColor Yellow
+  Write-Host "[Installora] winget not found. Installing..." -ForegroundColor Yellow
   try {
     $rel = Invoke-RestMethod "https://api.github.com/repos/microsoft/winget-cli/releases/latest"
     $url = ($rel.assets | Where-Object { $_.name -like "*.msixbundle" })[0].browser_download_url
     $tmp = "$env:TEMP\\WinGet.msixbundle"
     Invoke-WebRequest -Uri $url -OutFile $tmp -UseBasicParsing
     Add-AppxPackage -Path $tmp
-    Write-Host "[Appnest] winget installed." -ForegroundColor Green
+    Write-Host "[Installora] winget installed." -ForegroundColor Green
   } catch {
-    Write-Error "[Appnest] Could not install winget: $_"; exit 1
+    Write-Error "[Installora] Could not install winget: $_"; exit 1
   }
 }
 
@@ -86,8 +86,8 @@ function Install-Package {
 Write-Banner
 if (-not (Test-WingetInstalled)) { Install-WingetIfMissing }
 $ver = winget --version
-Write-Host "[Appnest] winget $ver" -ForegroundColor DarkGray
-Write-Host "[Appnest] Installing $($packages.Count) package(s)..." -ForegroundColor Cyan
+Write-Host "[Installora] winget $ver" -ForegroundColor DarkGray
+Write-Host "[Installora] Installing $($packages.Count) package(s)..." -ForegroundColor Cyan
 
 $r = @{
   success = [System.Collections.Generic.List[string]]::new()
@@ -109,7 +109,7 @@ if ($r.failed.Count -gt 0) {
   Write-Host ""
   Write-Host "  Retry failed:" -ForegroundColor Red
   $fl = $r.failed -join ","
-  Write-Host "  powershell -c \"irm https://appnest-beta.vercel.app/api/install.ps1?apps=$fl | iex\"" -ForegroundColor DarkGray
+  Write-Host "  powershell -c \"irm https://installora-beta.vercel.app/api/install.ps1?apps=$fl | iex\"" -ForegroundColor DarkGray
 }
 Write-Host ""
 Write-Host "  Restart terminal to apply PATH changes." -ForegroundColor DarkCyan
@@ -118,15 +118,15 @@ Write-Host ""`
 
 export function buildCliScript(): string {
   return `#Requires -Version 5.1
-<# Appnest CLI — Interactive Terminal Installer #>
+<# Installora CLI — Interactive Terminal Installer #>
 
 $ErrorActionPreference = "Continue"
-$baseUrl = "${process.env.NEXT_PUBLIC_APP_URL || 'https://appnest-beta.vercel.app'}"
+$baseUrl = "${process.env.NEXT_PUBLIC_APP_URL || 'https://installora-beta.vercel.app'}"
 
 function Write-Banner {
   Write-Host ""
-  Write-Host "  Appnest CLI — Interactive Installer" -ForegroundColor Cyan
-  Write-Host "  appnest-beta.vercel.app" -ForegroundColor DarkGray
+  Write-Host "  Installora CLI — Interactive Installer" -ForegroundColor Cyan
+  Write-Host "  installora-beta.vercel.app" -ForegroundColor DarkGray
   Write-Host ""
 }
 

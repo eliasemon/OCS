@@ -1,20 +1,20 @@
 /**
- * Appnest Default Icon
+ * Installora Default Icon
  *
  * Fallback icon for packages without a brand icon.
- * Displays a geometric monogram with "Appnest" text.
+ * Displays a geometric monogram with "Installora" text.
  */
 
 import { cn } from '@/lib/utils'
 
-interface AppnestIconProps {
+interface InstalloraIconProps {
   /** Icon size in pixels */
   size?: number
   /** Additional CSS classes */
   className?: string
 }
 
-export function AppnestIcon({ size = 24, className }: AppnestIconProps) {
+export function InstalloraIcon({ size = 24, className }: InstalloraIconProps) {
   return (
     <svg
       viewBox="0 0 24 24"

@@ -1,4 +1,4 @@
-# Test Dockerfile for Appnest API testing
+# Test Dockerfile for Installora API testing
 FROM node:20-alpine
 
 WORKDIR /app

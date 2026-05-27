@@ -81,7 +81,7 @@ export function CommandModal({ open, onClose, selectedIds }: CommandModalProps) 
       created: new Date().toISOString(),
       packages: selectedIds,
     }
-    downloadJson(config, "appnest-install-config.json")
+    downloadJson(config, "installora-install-config.json")
     toast.success("Configuration exported!")
   }
 

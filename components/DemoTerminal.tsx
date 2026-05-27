@@ -67,7 +67,7 @@ export function DemoTerminal() {
             <span className="text-[hsl(var(--color-success))] mr-2 shrink-0">PS C:\Users\Developer{">"}</span>
             {step >= 1 && (
               <span className="inline-block border-r-2 border-transparent animate-typewriter">
-                irm https://appnest-beta.vercel.app/install.ps1 | iex
+                irm https://installora-beta.vercel.app/install.ps1 | iex
               </span>
             )}
             {step === 0 && (

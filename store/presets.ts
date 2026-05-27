@@ -29,6 +29,6 @@ export const usePresetsStore = create<PresetsStore>()(
       getPreset: (id: string) =>
         get().customPresets.find(p => p.id === id),
     }),
-    { name: "appnest-presets" }
+    { name: "installora-presets" }
   )
 )

@@ -216,7 +216,7 @@ describe('usePresetsStore', () => {
       const state = usePresetsStore.getState()
       state.savePreset(mockPreset)
 
-      const savedData = localStorage.getItem('appnest-presets')
+      const savedData = localStorage.getItem('installora-presets')
       expect(savedData).toBeDefined()
     })
   })

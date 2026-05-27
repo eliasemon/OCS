@@ -115,7 +115,7 @@ Recommend ${limit} packages based on this context.`
     headers: {
       "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
       "Content-Type": "application/json",
-      "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app",
+      "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://installora-beta.vercel.app",
     },
     body: JSON.stringify({
       model,

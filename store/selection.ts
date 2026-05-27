@@ -34,7 +34,7 @@ export const useSelectionStore = create<SelectionStore>()(
       },
     }),
     {
-      name: "appnest-selection",
+      name: "installora-selection",
       storage: {
         getItem: (name) => {
           if (typeof window === "undefined") return null

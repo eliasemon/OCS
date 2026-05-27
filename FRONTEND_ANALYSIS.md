@@ -1,4 +1,4 @@
-# Frontend Analysis Report - Appnest Premium Redesign
+# Frontend Analysis Report - Installora Premium Redesign
 
 **Date:** 2025-03-18
 **Analyst:** Frontend Specialist
