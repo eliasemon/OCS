@@ -18,7 +18,6 @@ export const metadata: Metadata = {
     "mac package manager",
     "linux package manager",
     "Appnest",
-    "Appnest",
     "mac installer",
     "bulk install apps",
     "powershell installer",
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Appnest",
     images: [
       {
-        url: "/og-image.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Appnest - Set Up Windows, macOS & Linux in Minutes"
@@ -50,10 +49,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Appnest - Set Up Windows, macOS & Linux in Minutes",
     description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
-    images: ["/og-image.png"],
+    images: ["/logo.png"],
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app"
+    canonical: "/"
   }
 }
 

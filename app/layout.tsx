@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   description: "Set Up Windows in Minutes. One command installs everything. Skip the installer clicking and get your perfect development environment in just 5 minutes.",
   keywords: [
     "Appnest",
-    "Appnest",
     "winget",
     "windows package manager",
     "windows installer",
@@ -35,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Appnest",
     images: [
       {
-        url: "/og-image.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Appnest - Set Up Windows in Minutes"
@@ -46,10 +45,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Appnest - Set Up Windows in Minutes",
     description: "Set Up Windows in Minutes. One command installs everything.",
-    images: ["/og-image.png"],
+    images: ["/logo.png"],
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app"
+    canonical: "/"
   }
 }
 
