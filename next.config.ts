@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
             "style-src 'self' 'unsafe-inline'",
             "img-src 'self' data: https://github.com https://raw.githubusercontent.com",
             "font-src 'self' data:",
-            "connect-src 'self' https://api.github.com https://installora-beta.vercel.app",
+            "connect-src 'self' https://api.github.com https://installora.vercel.app",
             "frame-ancestors 'none'",
           ].join("; "),
         },

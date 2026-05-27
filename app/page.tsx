@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_APP_URL || "https://installora-beta.vercel.app",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://installora.vercel.app",
     title: "Installora - Set Up Windows, macOS & Linux in Minutes",
     description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
     siteName: "Installora",
@@ -141,7 +141,7 @@ export default function LandingPage() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "Installora",
-            "url": process.env.NEXT_PUBLIC_APP_URL || "https://installora-beta.vercel.app/"
+            "url": process.env.NEXT_PUBLIC_APP_URL || "https://installora.vercel.app/"
           })
         }}
       />

@@ -404,14 +404,14 @@ Modal Layout:
 │                                                             │
 │  ╭────────────────────────────────────────────────────────╮│
 │  │ # Install 42 packages with one command                 ││
-│  │ irm https://installora-beta.vercel.app/install.ps1 | iex -PackageIds @    ││
+│  │ irm https://installora.vercel.app/install.ps1 | iex -PackageIds @    ││
 │  │   "VSCode","Figma","Chrome","Spotify","Discord",...    ││
 │  │                                               [📋 Copy] ││
 │  ╰────────────────────────────────────────────────────────╯│
 │                                                             │
 │  📋 Share Configuration                                     │
 │  ┌────────────────────────────────────┐ [Copy Link]        │
-│  │ https://installora-beta.vercel.app/s/abc123           │                    │
+│  │ https://installora.vercel.app/s/abc123           │                    │
 │  └────────────────────────────────────┘                    │
 │                                                             │
 │  💡 Run as Administrator for best results                   │

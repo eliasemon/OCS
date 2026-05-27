@@ -5,7 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://installora-beta.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://installora.vercel.app"),
   title: {
     default: "Installora - Set Up Windows, macOS & Linux in Minutes",
     template: "%s | Installora"
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_APP_URL || "https://installora-beta.vercel.app",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://installora.vercel.app",
     title: "Installora - Set Up Windows, macOS & Linux in Minutes",
     description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
     siteName: "Installora",

@@ -28,7 +28,7 @@ test.describe('Install Script Generation', () => {
     expect(script).toContain('#Requires -Version 5.1')
     expect(script).toContain('Git.Git')
     expect(script).toContain('Google.Chrome')
-    expect(script).toContain('installora-beta.vercel.app')
+    expect(script).toContain('installora.vercel.app')
   })
 
   test('should handle single package', async ({ page, request }) => {
