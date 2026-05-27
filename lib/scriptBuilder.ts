@@ -23,7 +23,7 @@ export function buildInstallScript(validIds: string[], invalidIds: string[]): st
 .SYNOPSIS  Appnest Installer
 .GENERATED ${timestamp}
 .PACKAGES  ${validIds.length}
-.SOURCE    appnest.app
+.SOURCE    appnest-beta.vercel.app
 #>
 $ErrorActionPreference = "Continue"
 $packages = @(
@@ -40,7 +40,7 @@ function Write-Banner {
   Write-Host "  ██║███╗██║██║██║╚██╗██║╚════██║██╔══╝     ██║   ██║   ██║██╔═══╝ " -ForegroundColor $c
   Write-Host "  ╚███╔███╔╝██║██║ ╚████║███████║███████╗   ██║   ╚██████╔╝██║     " -ForegroundColor $c
   Write-Host "   ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝    " -ForegroundColor $c
-  Write-Host "  Automated Windows Package Installer — appnest.app" -ForegroundColor DarkGray
+  Write-Host "  Automated Windows Package Installer — appnest-beta.vercel.app" -ForegroundColor DarkGray
   Write-Host ""
 }
 
@@ -109,7 +109,7 @@ if ($r.failed.Count -gt 0) {
   Write-Host ""
   Write-Host "  Retry failed:" -ForegroundColor Red
   $fl = $r.failed -join ","
-  Write-Host "  powershell -c \"irm https://appnest.app/api/install.ps1?apps=$fl | iex\"" -ForegroundColor DarkGray
+  Write-Host "  powershell -c \"irm https://appnest-beta.vercel.app/api/install.ps1?apps=$fl | iex\"" -ForegroundColor DarkGray
 }
 Write-Host ""
 Write-Host "  Restart terminal to apply PATH changes." -ForegroundColor DarkCyan
@@ -121,12 +121,12 @@ export function buildCliScript(): string {
 <# Appnest CLI — Interactive Terminal Installer #>
 
 $ErrorActionPreference = "Continue"
-$baseUrl = "https://appnest.app"
+$baseUrl = "${process.env.NEXT_PUBLIC_APP_URL || 'https://appnest-beta.vercel.app'}"
 
 function Write-Banner {
   Write-Host ""
   Write-Host "  Appnest CLI — Interactive Installer" -ForegroundColor Cyan
-  Write-Host "  appnest.app" -ForegroundColor DarkGray
+  Write-Host "  appnest-beta.vercel.app" -ForegroundColor DarkGray
   Write-Host ""
 }
 

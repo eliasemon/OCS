@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
 
   if (valid.length === 0) {
     return new NextResponse(
-      `Write-Error "No valid package IDs found. Check IDs at appnest.app"; exit 1`,
+      `Write-Error "No valid package IDs found. Check IDs at appnest-beta.vercel.app"; exit 1`,
       { headers: PLAIN_TEXT }
     )
   }

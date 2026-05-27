@@ -87,7 +87,7 @@ describe('scriptBuilder', () => {
     it('should include source in header', () => {
       const script = buildInstallScript(['Git.Git'], [])
 
-      expect(script).toContain('.SOURCE    appnest.app')
+      expect(script).toContain('.SOURCE    appnest-beta.vercel.app')
     })
 
     it('should generate warning blocks for invalid IDs', () => {
@@ -145,7 +145,7 @@ describe('scriptBuilder', () => {
       const script = buildInstallScript(['Git.Git'], [])
 
       expect(script).toContain('Retry failed:')
-      expect(script).toContain('powershell -c "irm https://appnest.app/api/install.ps1?apps=')
+      expect(script).toContain('powershell -c "irm https://appnest-beta.vercel.app/api/install.ps1?apps=')
     })
 
     it('should include banner with ASCII art', () => {
@@ -232,7 +232,7 @@ describe('scriptBuilder', () => {
     it('should include base URL', () => {
       const script = buildCliScript()
 
-      expect(script).toContain('$baseUrl = "https://appnest.app"')
+      expect(script).toContain('$baseUrl = "https://appnest-beta.vercel.app"')
     })
 
     it('should include package fetching function', () => {

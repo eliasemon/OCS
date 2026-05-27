@@ -25,7 +25,7 @@ describe('/api/cli.ps1', () => {
       const response = await GET(request)
       const script = await response.text()
 
-      expect(script).toContain('$baseUrl = "https://appnest.app"')
+      expect(script).toContain('$baseUrl = "https://appnest-beta.vercel.app"')
     })
 
     it('should include Get-Packages function', async () => {
@@ -122,7 +122,7 @@ describe('/api/cli.ps1', () => {
       const script = await response.text()
 
       expect(script).toContain('function Write-Banner')
-      expect(script).toContain('appnest.app')
+      expect(script).toContain('appnest-beta.vercel.app')
     })
 
     it('should use Read-Host for user input', async () => {

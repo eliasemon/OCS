@@ -61,7 +61,7 @@ describe('scriptBuilder', () => {
       expect(script).toContain('Git.Git')
       expect(script).toContain('Google.Chrome')
       expect(script).toContain('2') // package count
-      expect(script).toContain('appnest.app')
+      expect(script).toContain('appnest-beta.vercel.app')
     })
 
     it('should include warnings for invalid package IDs', () => {
@@ -130,7 +130,7 @@ describe('scriptBuilder', () => {
     it('should provide retry URL for failed packages', () => {
       const script = buildInstallScript(['Git.Git'], [])
       expect(script).toContain('Retry failed:')
-      expect(script).toContain('powershell -c "irm https://appnest.app/api/install.ps1?apps=')
+      expect(script).toContain('powershell -c "irm https://appnest-beta.vercel.app/api/install.ps1?apps=')
     })
 
     it('should generate banner with ASCII art', () => {
@@ -207,7 +207,7 @@ describe('scriptBuilder', () => {
 
     it('should use the correct base URL', () => {
       const script = buildCliScript()
-      expect(script).toContain('$baseUrl = "https://appnest.app"')
+      expect(script).toContain('$baseUrl = "https://appnest-beta.vercel.app"')
     })
 
     it('should display package counts per category', () => {

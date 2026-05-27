@@ -5,7 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://appnest.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app"),
   title: {
     default: "Appnest - Set Up Windows in Minutes",
     template: "%s | Appnest"
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://Appnest.app",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app",
     title: "Appnest - Set Up Windows in Minutes",
     description: "Set Up Windows in Minutes. One command installs everything.",
     siteName: "Appnest",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://Appnest.app"
+    canonical: process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app"
   }
 }
 

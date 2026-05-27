@@ -90,7 +90,7 @@ Constraints:
     headers: {
       "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
       "Content-Type": "application/json",
-      "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://appnest.app",
+      "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app",
     },
     body: JSON.stringify({
       model,

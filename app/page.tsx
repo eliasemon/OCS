@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://Appnest.app",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app",
     title: "Appnest - Set Up Windows, macOS & Linux in Minutes",
     description: "Set Up Windows, macOS & Linux in Minutes. One command installs everything. Skip the installer clicking.",
     siteName: "Appnest",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://Appnest.app"
+    canonical: process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app"
   }
 }
 
@@ -142,7 +142,7 @@ export default function LandingPage() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "Appnest",
-            "url": "https://appnest.app/"
+            "url": process.env.NEXT_PUBLIC_APP_URL || "https://appnest-beta.vercel.app/"
           })
         }}
       />

@@ -404,14 +404,14 @@ Modal Layout:
 │                                                             │
 │  ╭────────────────────────────────────────────────────────╮│
 │  │ # Install 42 packages with one command                 ││
-│  │ irm https://appnest.app/install.ps1 | iex -PackageIds @    ││
+│  │ irm https://appnest-beta.vercel.app/install.ps1 | iex -PackageIds @    ││
 │  │   "VSCode","Figma","Chrome","Spotify","Discord",...    ││
 │  │                                               [📋 Copy] ││
 │  ╰────────────────────────────────────────────────────────╯│
 │                                                             │
 │  📋 Share Configuration                                     │
 │  ┌────────────────────────────────────┐ [Copy Link]        │
-│  │ https://appnest.app/s/abc123           │                    │
+│  │ https://appnest-beta.vercel.app/s/abc123           │                    │
 │  └────────────────────────────────────┘                    │
 │                                                             │
 │  💡 Run as Administrator for best results                   │

@@ -25,7 +25,7 @@ describe('/api/install.ps1', () => {
       expect(response.headers.get('Cache-Control')).toBe('no-store')
       expect(script).toContain('#Requires -Version 5.1')
       expect(script).toContain('Git.Git')
-      expect(script).toContain('appnest.app')
+      expect(script).toContain('appnest-beta.vercel.app')
     })
 
     it('should generate install script for multiple valid packages', async () => {
@@ -259,7 +259,7 @@ describe('/api/install.ps1', () => {
       const response = await GET(request)
       const script = await response.text()
 
-      expect(script).toContain('appnest.app')
+      expect(script).toContain('appnest-beta.vercel.app')
     })
 
     it('should include winget auto-install logic', async () => {
